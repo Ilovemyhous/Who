@@ -1,0 +1,25 @@
+.content {
+    position: fixed;
+}
+
+#white {
+    color: white;
+    font-family: sans-serif;
+}
+
+p {
+    color: white;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+#background {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }

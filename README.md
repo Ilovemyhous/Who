@@ -7,8 +7,17 @@ Made by *Ilovemyhouse*.
 This is a game about one person (or two if we count you) were you will be asked questions, resolve puzzles, and talk themes such as the meaning of life, **verbal abuse**, and **anxiety**.
 
 The game is only writen in HTML, CSS and JavaScript... that's it.
+## To-Do
+*Along with their time and date of completion.*
+ - [x] Finish the arrival
+ - [ ] Finish the story
+ - [ ] Finish the hub
+ - [ ] Finish the settings
+ More to come
 
 ## Credits
 Inspiration: [When the Darkness comes](https://www.sirhaian.net/games/sheet.php?p=when_the_darkness_comes)
+Libraries: [p5.js](https://p5js.org/)
+Backgrounds: TBA
+Sounds: Many sounds come from [this](https://docs.google.com/document/d/1E1xIQhgPNj1vrtfPS7yZrl1tiCpzFN3uczYo1TNZkNg/edit) list.
 Music: TBA
-Sounds: TBA
