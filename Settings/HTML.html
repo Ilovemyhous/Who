@@ -6,13 +6,35 @@
     <title>Settings</title>
 </head>
 <body>
+    <h1>Settings/Checks</h1>
+    <h2>Autoplay check</h2>
+    <br>
     <p id="autoplay_fail"></p>
-    <video autoplay controls id="autoplay" width="25%">
+    <video autoplay controls muted id="autoplay" width="25%">
         <source src="../Media/Settings/Audio.mp4" type="video/mp4">
     </video>
     <p id="autoplay_success"></p>
+    <br>
+    <h2>Audio settings</h2>
+    <h3>Check with the audio file below if the volume is adequate.</h3>
+    <audio controls>
+        <source src="../Media/Sound/Dramatic Pad 2.wav" type="audio/wav">
+    </audio>
+    <br>
+    <div>
+        <label>Play music during the game?</label>
+        <input id="enable_music"type="checkbox" checked>
+    </div>
+    <div>
+        <label>Play sounds during the game?</label>
+        <input id="enable_sounds"type="checkbox" checked>
+    </div>
+    <br>
+    <a href="../Hub/HTML.html">
+        <button>Go back</button>
+    </a>
     <script src="JS.js"></script>
-    <p>Add cookies to remember the settings.</p>
+    <i><p>Cookies are used to ONLY remember the settings, they expire after 7 days.</p></i>
     <footer style="position: absolute; bottom: 5px; color: white;">By Ilovemyhouse</footer>
 </body>
 </html>
