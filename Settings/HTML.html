@@ -16,13 +16,13 @@
     <p id="autoplay_success"></p>
     <br>
     <h2>Audio settings</h2>
-    <h3>Check with the audio file below if the volume is adequate.</h3>
+    <h3>Check with the audio file below if the volume on your device is adequate.</h3>
     <audio controls>
         <source src="../Media/Sound/Dramatic Pad 2.wav" type="audio/wav">
     </audio>
     <br>
     <div>
-        <label>Play music during the game?</label>
+        <label onload="document.cookie = 'music=true; expires=11 Feb 2022 12:00:00 UTC; SameSite=None; Secure';">Play music during the game?</label>
         <input id="music" type="checkbox" onchange="set_check_music();" checked>
     </div>
     <div>

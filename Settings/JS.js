@@ -11,7 +11,7 @@ if (promise !== undefined) {
   }).catch(error => {
     // Autoplay not allowed!
     console.log("Autoplay disabled");
-    document.getElementById("autoplay_fail").innerHTML = "Autoplay has to be enabled for the game. Enable it, and reload the page."
+    document.getElementById("autoplay_fail").innerHTML = "Autoplay has to be enabled for the game. Enable it, (for the browser NOT this tab) and reload the page."
     document.getElementById("autoplay_fail").style.color = "red"
     //alert("Autoplay has to be enabled for the game.")
   });
