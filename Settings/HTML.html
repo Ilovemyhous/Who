@@ -11,7 +11,7 @@
     <br>
     <p id="autoplay_fail"></p>
     <video autoplay controls muted id="autoplay" width="25%">
-        <source src="../Media/Settings/Audio.mp4" type="video/mp4">
+        <source src="../Media/Settings/Autoplay.mp4" type="video/mp4">
     </video>
     <p id="autoplay_success"></p>
     <br>
@@ -23,11 +23,11 @@
     <br>
     <div>
         <label onload="document.cookie = 'music=true; expires=11 Feb 2022 12:00:00 UTC; SameSite=None; Secure';">Play music during the game?</label>
-        <input id="music" type="checkbox" onchange="set_check_music();" checked>
+        <input id="music" type="checkbox" onload="set_check_sounds();" onchange="set_check_music();" checked>
     </div>
     <div>
         <label>Play sounds during the game?</label>
-        <input id="sounds" type="checkbox" onchange="set_check_sounds();" checked>
+        <input id="sounds" type="checkbox" onload="set_check_sounds();" onchange="set_check_sounds();" checked>
     </div>
     <br>
     <a href="../Hub/HTML.html">
