@@ -8,4 +8,4 @@ Sounds were also downloaded. *Check the [`README.md`](https://github.com/Ilovemy
 ## Version 0.0.2
 *4th March 2022*
 Finished the [settings](https://github.com/Ilovemyhous/Who/blob/main/Settings/HTML.html) page.
-Edited the buttons in the [Hub](https)
+Trying to edit the buttons in the [Hub](https://github.com/Ilovemyhous/Who/blob/main/Hub/HTML.html) page.)
