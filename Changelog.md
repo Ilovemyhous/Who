@@ -5,3 +5,7 @@ Created the repository
 *3th February 2022*
 Created the [`Arrival.html`](https://github.com/Ilovemyhous/Who/blob/main/Arrival.html), along with the [hub](https://github.com/Ilovemyhous/Who/blob/main/Hub/HTML.html), and along with the [settings](https://github.com/Ilovemyhous/Who/blob/main/Settings/HTML.html) page.
 Sounds were also downloaded. *Check the [`README.md`](https://github.com/Ilovemyhous/Who/blob/main/README.md) for more information.*
+## Version 0.0.2
+*4th March 2022*
+Finished the [settings](https://github.com/Ilovemyhous/Who/blob/main/Settings/HTML.html) page.
+Edited the buttons in the [Hub](https)
