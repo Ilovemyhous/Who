@@ -19,7 +19,27 @@ body {
     min-height: 100%;
   }
 
-button {
+a:hover {
+    color: #fff;
+    font-size: 300%;
+    transition: 0.5s;
+}
+
+a {
+    font-size: 200%;
+    position: fixed;
+    color: #34b7eb;
+    transition: 1.5s;
+    right: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+/*button {
     position: relative;
     background-color: #000000;
     border-radius: 25%;
@@ -32,7 +52,8 @@ button {
     margin: 4px 2px;
     cursor: pointer;
     right: 50%;
-}
+}*/
+
 #start {
     position: fixed;
     top: 40%;
