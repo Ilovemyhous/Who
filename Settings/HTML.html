@@ -5,7 +5,7 @@
     <meta charset="utf-8" name="author" content="Ilovemyhouse">
     <title>Settings</title>
 </head>
-<body>
+<body onload="setCheck()">
     <h1>Settings/Checks</h1>
     <h2>Autoplay check</h2>
     <br>
@@ -20,22 +20,17 @@
     <audio controls>
         <source src="../Media/Sound/Dramatic Pad 2.wav" type="audio/wav">
     </audio>
-    <br>
+    <br><br><br>
     <div>
-        <label onload="document.cookie = 'music=true; expires=11 Feb 2022 12:00:00 UTC; SameSite=None; Secure';">Play music during the game?</label>
-        <input id="music" type="checkbox" onload="set_check_sounds();" onchange="set_check_music();" checked>
-    </div>
-    <div>
-        <label>Play sounds during the game?</label>
-        <input id="sounds" type="checkbox" onload="set_check_sounds();" onchange="set_check_sounds();" checked>
+        <label>Play audio during the game?</label>
+        <input id="sound" type="checkbox" value="true">
     </div>
     <br>
     <a href="../Hub/HTML.html">
         <button>Go back</button>
     </a>
     <script src="JS.js"></script>
-    <i><p>Cookies are used to ONLY remember the settings, they expire after 7 days.</p></i>
-    <i><h7>Playing with headphones and in fullscreen is also recommanded.</h7></i>
+    <i><p style="font-size: small;">Playing with headphones and in fullscreen is also recommanded.</h7></i>
     <footer style="position: absolute; bottom: 5px; color: white;">By Ilovemyhouse</footer>
 </body>
 </html>

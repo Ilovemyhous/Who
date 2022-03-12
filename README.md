@@ -9,15 +9,19 @@ This is a game about one person (or two if we count you) were you will be asked 
 The game is only writen in HTML, CSS and JavaScript... that's it.
 ## To-Do
 *Along with their time and date of completion.*
- - [x] Finish the arrival
  - [ ] Finish the story
- - [ ] Finish the hub
+ - [x] Finish the arrival
+ - [X] Finish the hub
  - [X] Finish the settings
- More to come...
+ - [X] Finish the error screen
+ *More to come...*
+
+## Install
+To use things like the audio setting in the settings, you will need [*vscode-live-server*](https://github.com/ritwickdey/vscode-live-server).
 
 ## Credits
 Inspiration: [When the Darkness comes](https://www.sirhaian.net/games/sheet.php?p=when_the_darkness_comes)
 Libraries: [p5.js](https://p5js.org/)
-Backgrounds: TBA
+Backgrounds: [Error](https://github.com/Ilovemyhous/Who/blob/main/Game/Error/HTML.html) by [Elisabéth](https://codepen.io/elisabethdiang/pen/WNbBxXq)
 Sounds: Many sounds come from [this](https://docs.google.com/document/d/1E1xIQhgPNj1vrtfPS7yZrl1tiCpzFN3uczYo1TNZkNg/edit) list.
 Music: TBA

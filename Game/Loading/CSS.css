@@ -1,0 +1,44 @@
+.content {
+    position: fixed;
+}
+
+h1 {
+    text-align: center;
+}
+
+#white {
+    color: white;
+    font-family: sans-serif;
+}
+
+p, h1, h2, h3, h7, div {
+    color: white;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+#bar_empty {
+    width: 100%;
+    background-color: #ddd;
+  }
+  
+#bar_filling {
+    width: 0%;
+    height: 30px;
+    background-color: #48ff00;
+    text-align: center;
+    line-height: 30px;
+    color: rgb(0, 0, 0);
+    transition: 1000ms;
+  }
+
+#background {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }

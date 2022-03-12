@@ -64,6 +64,11 @@ a {
     top: 50%;
 }
 
+#settings_text {
+    position: fixed;
+    top: 52%;
+}
+
 #about {
     position: fixed;
     top: 60%;

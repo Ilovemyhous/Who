@@ -19,3 +19,11 @@ Added, and finished the [About](https://github.com/Ilovemyhous/Who/blob/main/Abo
 ## Version 0.0.4
 *10th March 2022*
 Finished the [Hub](https://github.com/Ilovemyhous/Who/blob/main/Hub/HTML.html).
+
+## Version 0.0.5
+*11th & 12th March 2022*
+The [settings](https://github.com/Ilovemyhous/Who/blob/main/Settings/HTML.html) page has been reworked by using *localeStorage*. Check the [README](https://github.com/Ilovemyhous/Who/blob/main/README.md) for more information.
+Created a [loading](https://github.com/Ilovemyhous/Who/blob/main/Game/Loading/HTML.html) page.
+Created an [error](https://github.com/Ilovemyhous/Who/blob/main/Game/Error/HTML.html) page.
+Remade the [hub background](https://raw.githubusercontent.com/Ilovemyhous/Who/main/Media/Hub/Background.mp4).
+Some minor fixes overall.

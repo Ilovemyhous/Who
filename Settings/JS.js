@@ -17,59 +17,64 @@ if (promise !== undefined) {
   });
 }
 
-//document.cookie = "music=true; expires=11 Feb 2022 12:00:00 UTC; SameSite=None; Secure";
-//document.cookie = "sounds=true; expires=11 Feb 2022 12:00:00 UTC; SameSite=None; Secure";
-
-//Source: https://stackoverflow.com/questions/11801042/getting-a-checkbox-to-write-a-javascript-cookie
-// Cookie for the music
-function setCookie(c_name,value,expiredays) {
-  var exdate=new Date()
-  exdate.setDate(exdate.getDate()+expiredays)
-  document.cookie=c_name+ "=" +escape(value)+((expiredays==null) ? "" : ";expires="+exdate)
+// CODE FOR THE AUDIO CHECKBOX
+function setCheck() {
+  var x = document.getElementById("sound");
+  x.checked = true;
+  //console.log("Debug setCheck");
+  let sound = true
+  localStorage.sound = "on"
+  console.log("sound: "+sound);
+  //localStorage && (localStorage.sound = sound.value);
+  console.log("sound debug: "+localStorage.sound);
 }
 
-function getCookie(c_name) {
-  if (document.cookie.length>0) {
-      c_start=document.cookie.indexOf(c_name + "=")
-      if (c_start!=-1) { 
-          c_start=c_start + c_name.length+1 
-          c_end=document.cookie.indexOf(";",c_start)
-          if (c_end==-1) c_end=document.cookie.length
-              return unescape(document.cookie.substring(c_start,c_end))
-      } 
+// Bind function to onclick event for checkbox
+document.getElementById('sound').onclick = function() {
+  // access properties using this keyword
+  if ( this.checked ) {
+      // Returns true if checked
+      let sound = true
+      console.log(sound);
+      localStorage.sound = "on"
+      console.log("sound debug: "+localStorage.sound);
+  } else {
+      // Returns false if not checked
+      let sound = false
+      console.log(sound);
+      localStorage.sound = "off"
+      console.log("sound debug: "+localStorage.sound);
+      var test = localStorage.getItem('sound')
+      console.log("Test: "+test);
   }
-  return null
-}
-onload=function(){
-document.getElementById('music').checked = getCookie('music')==1? true : false;
-}
-function set_check_music(){
-setCookie('music', document.getElementById('music').checked? 1 : 0, 100);
 }
 
-//Source: https://stackoverflow.com/questions/11801042/getting-a-checkbox-to-write-a-javascript-cookie
-// Cookie for the sounds
-function setCookie(c_name,value,expiredays) {
-  var exdate=new Date()
-  exdate.setDate(exdate.getDate()+expiredays)
-  document.cookie=c_name+ "=" +escape(value)+((expiredays==null) ? "" : ";expires="+exdate)
-}
+// //document.cookie = "sound=true; expires=11 Feb 2022 12:00:00 UTC; SameSite=None; Secure";
+// //document.cookie = "sounds=true; expires=11 Feb 2022 12:00:00 UTC; SameSite=None; Secure";
 
-function getCookie(c_name) {
-  if (document.cookie.length>0) {
-      c_start=document.cookie.indexOf(c_name + "=")
-      if (c_start!=-1) { 
-          c_start=c_start + c_name.length+1 
-          c_end=document.cookie.indexOf(";",c_start)
-          if (c_end==-1) c_end=document.cookie.length
-              return unescape(document.cookie.substring(c_start,c_end))
-      } 
-  }
-  return null
-}
-onload=function(){
-document.getElementById('sounds').checked = getCookie('sounds')==1? true : false;
-}
-function set_check_sounds(){
-setCookie('sounds', document.getElementById('sounds').checked? 1 : 0, 100);
-}
+// //Source: https://stackoverflow.com/questions/11801042/getting-a-checkbox-to-write-a-javascript-cookie
+// // Cookie for the sound
+// function setCookie(c_name,value,expiredays) {
+//   var exdate=new Date()
+//   exdate.setDate(exdate.getDate()+expiredays)
+//   document.cookie=c_name+ "=" +escape(value)+((expiredays==null) ? "" : ";expires="+exdate)
+// }
+
+// function getCookie(c_name) {
+//   if (document.cookie.length>0) {
+//       c_start=document.cookie.indexOf(c_name + "=")
+//       if (c_start!=-1) { 
+//           c_start=c_start + c_name.length+1 
+//           c_end=document.cookie.indexOf(";",c_start)
+//           if (c_end==-1) c_end=document.cookie.length
+//               return unescape(document.cookie.substring(c_start,c_end))
+//       } 
+//   }
+//   return null
+// }
+// onload=function(){
+// document.getElementById('sound').checked = getCookie('sound')==1? true : false;
+// }
+// function set_check_sound(){
+// setCookie('sound', document.getElementById('sound').checked? 1 : 0, 100);
+// }
