@@ -1,5 +1,5 @@
 ﻿# Who ?
-A game for school coded in JavaScript.
+A game for a school project coded in JavaScript.
 Made by *Ilovemyhouse*.
 
 ![Somes notes I before creating the project, and yes I have a horrible handwriting, thank you.](https://cdn.discordapp.com/attachments/670769691936948265/938693325832216617/image0.jpg)

@@ -38,5 +38,5 @@ function code(){
         console.log("Name: "+name);
         //document.getElementById("asking").style.visibility = "visible"
         }
-    }, 12000)
+    }, 11500)
 }
