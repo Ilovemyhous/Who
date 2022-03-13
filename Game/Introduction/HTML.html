@@ -6,21 +6,20 @@
     <meta name="viewport" content="width=device-width" />
     <title>Introduction</title>
 </head>
-<body>
-    <script src="JS.js"></script>
+<body onload="audio()">
     <div class="scanlines"></div>
     <h2>
-        <!--Code for the text-->
-        <span class="typer" id="recovery_mode"
-        data-words="Booting into recovery mode...,Computer: Who... who are you?,Computer: Hello..."+name+"..."
-        data-delay="100"
-        data-colors="red, gray, gray"
-        data-loop="1"></span>
-
-        <!--Code for the cursor-->
-        <span class="cursor"
-        data-owner="main"></span>
+        <div>
+            <span class="typer" id="recovery_mode" 
+            data-words="Booting into recovery mode..."
+            data-delay="100"
+            data-colors="red"
+            data-loop="1"></span>
+            <!--Code for the cursor-->
+            <span class="cursor" data-owner="main"></span>
+        </div>
     </h2>
-    <script async src="../../libs/typer.js"></script>
+    <script src="../../libs/typer.js"></script>
+    <script src="JS.js"></script>
 </body>
 </html>
