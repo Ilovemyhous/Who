@@ -2,6 +2,19 @@
 console.log(localStorage);
 console.log(localStorage.sound);
 
+const sound_playable = localStorage.sound === "on";
+
+function play_typing() {
+    if (sound_playable) {
+        audio = new Audio("../../Media/Sound/Computer typing 2.wav");
+        audio.play(); 
+    }
+}
+
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+
 function create_element_typer(text_to_print) {
     const paragraph = document.createElement("p");
     paragraph.classList.add("typer");
@@ -19,36 +32,32 @@ function proceed_to_typer_element(text_to_print) {
     new Typer(my_element);
 }
 
-function code(){
-    setTimeout(function(){
-        let name;
-        // System that prevents empty names
-        do{
-            name = prompt("Who are you?");
-        }while(name == "" || name == null || name == undefined);
-        
-        console.log("Name: "+name);
-        proceed_to_typer_element("Hello..." + name + " ...");
-        // document.getElementById("asking").style.visibility = "visible"
-    }, 500);
+async function code(){
+
+    await sleep(4000);
+
+    proceed_to_typer_element("Computer: Who... who are you?");
+    play_typing();
+
+    await sleep(4000);
+    
+    let name;
+
+    // System that prevents empty names
+    do{
+        name = prompt("Who are you?");
+    }while(name == "" || name == null || name == undefined);
+
+    proceed_to_typer_element("Hello..." + name + " ...");
 }
 
-if (localStorage.sound === "off"){
-    console.log("if audio: "+localStorage.sound);
-    console.log("No audio");
-}
-
-else {
+if (sound_playable) {
     console.log("else audio: "+localStorage.sound);
     var audio = new Audio("../../Media/Sound/Tuesday T.wav");
     console.log("Debug audio")
     audio.play();
     audio = new Audio("../../Media/Sound/Computer typing.mp3");
     audio.play();
-    setTimeout(function(){
-        audio = new Audio("../../Media/Sound/Computer typing 2.wav");
-        audio.play();
-    }, 7500)
 }
 
 code();
