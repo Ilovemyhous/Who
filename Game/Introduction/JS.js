@@ -16,7 +16,7 @@ function sleep(ms) {
 }
 
 function create_element_typer(text_to_print) {
-    const paragraph = document.createElement("p");
+    const paragraph = document.createElement("span");
     paragraph.classList.add("typer");
     paragraph.setAttribute('data-colors', 'gray');
     paragraph.setAttribute('data-words',text_to_print);
@@ -27,8 +27,12 @@ function create_element_typer(text_to_print) {
 }
 
 function proceed_to_typer_element(text_to_print) {
+    const div = document.createElement("div");
     const my_element = create_element_typer(text_to_print);
-    document.querySelector('h2').appendChild(my_element);
+    div.appendChild(my_element);
+    const cursor = document.querySelector('.cursor');
+    div.appendChild(cursor);
+    document.querySelector('h2').appendChild(div);
     new Typer(my_element);
 }
 
