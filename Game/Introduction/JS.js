@@ -2,6 +2,8 @@
 console.log(localStorage);
 console.log(localStorage.sound);
 
+let color_text = 'gray';
+
 function audio() {
     if (localStorage.sound === "off"){
         console.log("if audio: "+localStorage.sound);
@@ -24,10 +26,10 @@ function sleep(ms) {
 function create_element_typer(text_to_print) {
     const paragraph = document.createElement("span");
     paragraph.classList.add("typer");
-    paragraph.setAttribute('data-colors', 'gray');
+    paragraph.setAttribute('data-colors', color_text);
     paragraph.setAttribute('data-words',text_to_print);
     paragraph.setAttribute('data-delay',"100");
-    paragraph.setAttribute('id','creationEl');
+    // paragraph.setAttribute('id','creationEl');
     paragraph.setAttribute('data-loop',"1");
     return paragraph;
 }
@@ -80,6 +82,15 @@ async function code(){
     await sleep(5000);
     proceed_to_typer_element("Computer: Wha... what happened?")
     audio_typing()
+
+    await sleep(2000);
+    color_text = "green";
+    proceed_to_typer_element("Computer: I know how to print in green 😮 ?");
+
+
+    await sleep(200);
+    color_text = "pink";
+    proceed_to_typer_element("Computer : " + name + ", I'm your father !");
 }
 
 code();
