@@ -29,3 +29,13 @@ Created and the [introduction](https://github.com/Ilovemyhous/Who/blob/main/Game
 Remade the [hub background](https://raw.githubusercontent.com/Ilovemyhous/Who/main/Media/Hub/Background.mp4).
 Added new sounds.
 Some minor fixes overall.
+
+## Version 0.0.6
+*13th March 2022*
+Continued working on the introduction.
+
+## Version 0.0.7
+*17th and 18th March 2022*
+Added the [GameOver](https://github.com/Ilovemyhous/Who/blob/main/Game/GameOver/HTML.html) page.
+Continued the [introduction](https://github.com/Ilovemyhous/Who/blob/main/Game/Introduction/HTML.html) page.
+Reduced the sound of the error sound.

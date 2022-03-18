@@ -2,7 +2,7 @@ body {
     background: black;
 }
 
-@font-face { font-family: Modeseven; src: url('../../Fonts/Modeseven-L3n5.ttf'); } 
+@font-face { font-family: Modeseven; src: url("../../Fonts/Modeseven-L3n5.ttf"); }
       h1, h2, h3 {
          font-family: Modeseven;
          color: white;
