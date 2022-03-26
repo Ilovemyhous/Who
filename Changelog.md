@@ -39,3 +39,8 @@ Continued working on the introduction.
 Added the [GameOver](https://github.com/Ilovemyhous/Who/blob/main/Game/GameOver/HTML.html) page.
 Continued the [introduction](https://github.com/Ilovemyhous/Who/blob/main/Game/Introduction/HTML.html) page.
 Reduced the sound of the error sound.
+
+## Version 0.0.8
+*26th March 2022*
+Finished the [Game Over](https://github.com/Ilovemyhoud/Who/blob/main/Game/Game Over/HTML.html) page.
+Some changes here and there.

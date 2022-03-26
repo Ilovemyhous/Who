@@ -2,18 +2,14 @@
 <html>
 <head>
     <link href="CSS.css" rel="stylesheet" type="text/css"/>
-    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
     <meta charset="utf-8" name="author" content="Ilovemyhouse">
-    <meta name="viewport" content="width=device-width" />
-    <title>ERROR</title>
+    <title>Loading</title>
 </head>
-<body>
+<body onload="bar()">
     <script src="JS.js"></script>
-    <div class="container">
-        <div class="glitch" data-text="FATAL ERROR">FATAL ERROR</div>
-        <div class="glow">FATAL ERROR</div>
-        <p class="subtitle">A fatal error has occured while loading!</p>
-    </div>
-    <div class="scanlines"></div>
+    <h1>Loading...</h1>
+    <div id="bar_empty">
+        <div id="bar_filling">0%</div>
+    </div>  
 </body>
 </html>

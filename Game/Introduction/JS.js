@@ -101,7 +101,7 @@ async function code(){
     proceed_to_typer_element("?????: It looks like something crashed.")
     audio_typing()
 
-    color_text = "green"
+    color_text = "lime"
     await sleep(7500);
     proceed_to_typer_element("Computer: I'm the computer btw.")
     audio_typing()
@@ -131,10 +131,13 @@ async function code(){
         if (choice_help == "Yes") {
             console.log("Help accepted");
             delay_text = "500"
-            color_text = "green"
-            proceed_to_typer_element("Computer: THANK YOU!")
+            color_text = "lime"
             audio = new Audio("../../Media/Sound/User Interface, Data, Processing, Loading, Old Computer, Fast Stutter Followed By Choppy Stutter SND68328 1.wav");
             audio.play();
+            proceed_to_typer_element("Computer: Thank you.")
+            await sleep(5000)
+            proceed_to_typer_element("Computer: Okay, let's get started.")
+            audio_typing()
         }
         else if (choice_help == "No"){
             console.log("Help rejected");
@@ -150,7 +153,7 @@ async function code(){
             await sleep(500)
             close;
             window.close();
-            window.open("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/293572d0-d49e-48a2-8ba8-6d94ec953d59/ddaf3t8-380e0b88-9a9d-4ccf-af65-b8c1508d9e73.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzI5MzU3MmQwLWQ0OWUtNDhhMi04YmE4LTZkOTRlYzk1M2Q1OVwvZGRhZjN0OC0zODBlMGI4OC05YTlkLTRjY2YtYWY2NS1iOGMxNTA4ZDllNzMuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.GzE3yjRY6TGt1J_R21ijvNF_uWnVLp7oUgGSy3yvVKc","_self")
+            window.open("../GameOver/HTML.html","_self")
         }
         else {
             proceed_to_typer_element("Computer: I didn't understood you.")

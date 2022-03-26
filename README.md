@@ -23,5 +23,6 @@ To use things like the audio setting in the settings, you will need [*vscode-liv
 Inspiration: [When the Darkness comes](https://www.sirhaian.net/games/sheet.php?p=when_the_darkness_comes)
 Libraries: [p5.js](https://p5js.org/) | [Typer.js](https://steven.codes/typerjs/)
 Backgrounds: [Error](https://github.com/Ilovemyhous/Who/blob/main/Game/Error/HTML.html) by [Elisabéth](https://codepen.io/elisabethdiang/pen/WNbBxXq)
-Sounds: Many sounds come from [this](https://docs.google.com/document/d/1E1xIQhgPNj1vrtfPS7yZrl1tiCpzFN3uczYo1TNZkNg/edit) list. | [Computer glitch sound](https://freesound.org/people/InspectorJ/sounds/573189/) |
+Text/Animations: [Game Over](https://github.com/Ilovemyhoud/Who/blob/main/Game/Game Over/HTML.html) [Black Mirror Cracked Text Effect by George W. Park](https://codepen.io/GeorgePark/pen/jeBbGN)
+Sounds: Many sounds come from [this](https://docs.google.com/document/d/1E1xIQhgPNj1vrtfPS7yZrl1tiCpzFN3uczYo1TNZkNg/edit) list. | [Computer glitch sound](https://freesound.org/people/InspectorJ/sounds/573189/) | A few sounds come from [this game](https://gamejolt.com/games/FinalNights4/267878)
 Music: TBA
