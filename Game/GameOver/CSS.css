@@ -69,13 +69,13 @@ h1::after {
 }
 
 h1::before {
-  animation: crack1 2s linear forwards;
+  animation: crack1 1.75s linear forwards;
   -webkit-clip-path: polygon(0% 0%, 10% 0%, 55% 100%, 0% 100%);
           clip-path: polygon(0% 0%, 10% 0%, 55% 100%, 0% 100%);
 }
 
 h1::after {
-  animation: crack2 2s linear forwards;
+  animation: crack2 3.75s linear forwards;
   -webkit-clip-path: polygon(44% 0%, 100% 0%, 100% 100%, 70% 100%);
           clip-path: polygon(44% 0%, 100% 0%, 100% 100%, 70% 100%);
 }

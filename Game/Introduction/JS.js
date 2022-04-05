@@ -135,8 +135,10 @@ async function code(){
             audio = new Audio("../../Media/Sound/User Interface, Data, Processing, Loading, Old Computer, Fast Stutter Followed By Choppy Stutter SND68328 1.wav");
             audio.play();
             proceed_to_typer_element("Computer: Thank you.")
-            await sleep(5000)
-            proceed_to_typer_element("Computer: Okay, let's get started.")
+            await sleep(10500)
+            color_text = "gray"
+            delay_text = "100"
+            proceed_to_typer_element("Computer: Okay let's start.")
             audio_typing()
         }
         else if (choice_help == "No"){
