@@ -7,11 +7,14 @@ h1 {
 }
 
 h2 {
+  display: flex;
   position: absolute;
   opacity: 65%;
   font-size:large;
   text-decoration: underline azure;
   text-align: center;
+  align-items: center;
+  justify-content: center;
 }
 
 #back {

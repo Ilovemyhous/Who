@@ -44,3 +44,11 @@ Reduced the sound of the error sound.
 *26th March 2022*
 Finished the [Game Over](https://github.com/Ilovemyhoud/Who/blob/main/Game/Game Over/HTML.html) page.
 Some changes here and there.
+
+## Version 0.0.9
+*6th April 2022*
+Fixed the *Restart* text not being centered on the [Game Over](https://github.com/Ilovemyhoud/Who/blob/main/Game/Game Over/HTML.html) page.
+Added a new library called [howler.js](https://github.com/goldfire/howler.js).
+Started to make the first level/puzzle.
+Used a new sound system for the Introduction page.
+Got some music. The credits belong to their respective owner.

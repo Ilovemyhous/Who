@@ -39,6 +39,11 @@ a {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+noscript {
+    color: red;
+    font-style: oblique;
+}
+
 /*button {
     position: relative;
     background-color: #000000;

@@ -1,0 +1,33 @@
+body {
+  background: black;
+}
+
+@font-face { font-family: Modeseven; src: url("../../Fonts/Modeseven-L3n5.ttf"); }
+    h1, h2, h3 {
+       font-family: Modeseven;
+       color: white;
+       visibility: visible;
+    }
+
+.scanlines {
+  overflow: hidden;
+  mix-blend-mode: difference;
+}
+
+.scanlines::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+
+  background: repeating-linear-gradient(
+    to bottom,
+    transparent 0%,
+    rgba(255, 255, 255, 0.05) .5%,
+    transparent 1%
+  );
+
+  animation: fudge 7s ease-in-out alternate infinite;
+}

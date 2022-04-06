@@ -1,11 +1,19 @@
+//  TO-DO
+//Fix hawler.js to stop sound.
+
 // Debugging stuff
 //console.log(localStorage);
-console.log(localStorage.sound);
+console.info(localStorage.sound);
 
 let color_text = 'gray';
 let delay_text = '100';
 
-function audio() {
+//Defines the audio for the typing sound.
+var sound = new Howl({
+    src: ['../../Media/Sound/Computer typing.wav'],
+  });
+
+async function audio() {
     if (localStorage.sound === "off"){
         //console.log("if audio: "+localStorage.sound);
         //console.log("No audio");
@@ -15,8 +23,10 @@ function audio() {
         var audio = new Audio("../../Media/Sound/Tuesday T.wav");
         //console.log("Debug audio")
         audio.play();
-        audio = new Audio("../../Media/Sound/Computer typing.mp3");
-        audio.play();
+        var sound = new Howl({
+            src: ['../../Media/Sound/Computer typing.mp3'],
+          });
+        var typing_sound = sound.play()
     }
 }
 
@@ -45,18 +55,15 @@ function proceed_to_typer_element(text_to_print) {
     new Typer(my_element);
 }
 
-function audio_typing() {
+/*function audio_typing() {     //Not used anymore
     if (localStorage.sound === "off"){
         //console.log("if audio: "+localStorage.sound);
         //console.log("No audio");
     }
     else {
         //console.log("else audio: "+localStorage.sound);
-        var audio = new Audio("../../Media/Sound/Computer typing 2.wav");
-        //console.log("Debug audio")
-        audio.play();
     }
-}
+}*/
 
 async function code(){
 
@@ -68,7 +75,8 @@ async function code(){
     color_text = "darkred"
     await sleep(7500)
     proceed_to_typer_element("?????: Who... who are you?");
-    audio_typing()
+    var typing_sound = sound.play()
+    stop([typing_sound])
 
     await sleep(5000);
     
@@ -83,12 +91,12 @@ async function code(){
 
     color_text = "gray"
     await sleep(2500);
-    audio_typing()
+    var typing_sound = sound.play()
     proceed_to_typer_element("?????: Hello... " + name + "...");
 
     await sleep(5000);
     proceed_to_typer_element("?????: Wha... what happened?")
-    audio_typing()
+    var typing_sound = sound.play()
 
     delay_text = "1000"
     color_text = "white"
@@ -99,22 +107,22 @@ async function code(){
     color_text = "gray"
     await sleep(7500);
     proceed_to_typer_element("?????: It looks like something crashed.")
-    audio_typing()
+    var typing_sound = sound.play()
 
     color_text = "lime"
     await sleep(7500);
     proceed_to_typer_element("Computer: I'm the computer btw.")
-    audio_typing()
+    var typing_sound = sound.play()
 
     color_text = "aqua"
     await sleep(5000);
     proceed_to_typer_element("Computer: Nice to meet you "+name+".")
-    audio_typing()
+    var typing_sound = sound.play()
 
     color_text = "gray"
     await sleep(7500);
     proceed_to_typer_element("Computer: Do you want to help me?")
-    audio_typing()
+    var typing_sound = sound.play()
     await sleep(5000);
     ask_help()
 
@@ -129,7 +137,7 @@ async function code(){
         console.log("Choice: "+localStorage.choice_help);
 
         if (choice_help == "Yes") {
-            console.log("Help accepted");
+            console.info("Help accepted");
             delay_text = "500"
             color_text = "lime"
             audio = new Audio("../../Media/Sound/User Interface, Data, Processing, Loading, Old Computer, Fast Stutter Followed By Choppy Stutter SND68328 1.wav");
@@ -139,10 +147,15 @@ async function code(){
             color_text = "gray"
             delay_text = "100"
             proceed_to_typer_element("Computer: Okay let's start.")
-            audio_typing()
+            var typing_sound = sound.play()
+            await sleep(5000);
+            proceed_to_typer_element("Computer: But we'll need to find a way.")
+            var typing_sound = sound.play()
+            await sleep(5000)
+            window.open("../Level 1/HTML.html","_self")
         }
         else if (choice_help == "No"){
-            console.log("Help rejected");
+            console.info("Help rejected");
             delay_text = "500"
             color_text = "red"
             audio = new Audio("../../Media/Sound/Scary Violin.mp3");
@@ -154,12 +167,12 @@ async function code(){
             document.getElementById("body").style.background = "red"
             await sleep(500)
             close;
-            window.close();
+            window.close(); //Alternative scenario. Just for fun.
             window.open("../GameOver/HTML.html","_self")
         }
         else {
             proceed_to_typer_element("Computer: I didn't understood you.")
-            audio_typing()
+            var typing_sound = sound.play()
             await sleep(5000)
             ask_help()
         }
