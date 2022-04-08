@@ -6,15 +6,14 @@
     <title>Puzzle 1</title>
 </head>
 <body onload="audio()">
-    <div id="background"></div>
-    <script src="JS.js"></script>
-    <script src="../../libs/typer.js"></script>
-    <script src="../../libs/howler.js"></script>
+    <div id="background"></div>  
     <h1><span>Puzzle 1</span></h1>
+    <div class="scanlines"></div>
     <h2>
         <div>
-            <span class="typer" id="recovery_mode" 
-            data-words="Computer: There we are!"
+            <!--Code for the text-->
+            <span class="typer" 
+            data-words="Computer: So finally we are here."
             data-delay="100"
             data-colors="gray"
             data-loop="1"></span>
@@ -22,5 +21,14 @@
             <span class="cursor" data-owner="main"></span>
         </div>
     </h2>
+    <img id="puzzle_image" width="25%" length="25%">
+    <img id="chip_1" width="2%" length="2%">
+    <img id="chip_2" width="2%" length="2%">
+    <img id="chip_3" width="2%" length="2%">
+    <img id="chip_4" width="2%" length="2%">
+    <img id="chip_5" width="2%" length="2%">
+    <script src="JS.js"></script>
+    <script src="../../libs/typer.js"></script>
+    <script src="../../libs/howler.js"></script>
 </body>
 </html>

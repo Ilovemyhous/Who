@@ -46,7 +46,7 @@ Finished the [Game Over](https://github.com/Ilovemyhoud/Who/blob/main/Game/Game 
 Some changes here and there.
 
 ## Version 0.0.9
-*6th April 2022*
+*6th and 7th April 2022*
 Fixed the *Restart* text not being centered on the [Game Over](https://github.com/Ilovemyhoud/Who/blob/main/Game/Game Over/HTML.html) page.
 Added a new library called [howler.js](https://github.com/goldfire/howler.js).
 Started to make the first level/puzzle.
