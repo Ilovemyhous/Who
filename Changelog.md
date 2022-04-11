@@ -50,5 +50,10 @@ Some changes here and there.
 Fixed the *Restart* text not being centered on the [Game Over](https://github.com/Ilovemyhoud/Who/blob/main/Game/Game Over/HTML.html) page.
 Added a new library called [howler.js](https://github.com/goldfire/howler.js).
 Started to make the first level/puzzle.
-Used a new sound system for the Introduction page.
+Used a new sound system for the [introduction](https://github.com/Ilovemyhous/Who/blob/main/Game/Introduction/HTML.html) page.
 Got some music. The credits belong to their respective owner.
+
+## Version 0.0.10
+*11th April 2022*
+Finished the [Level 1](https://github.com/Ilovemyhous/Who/blob/main/Game/Level 1/HTML.html), and [Level 2(https://github.com/Ilovemyhous/Who/blob/main/Game/Level 2/HTML.html)].
+Started the [Level 3](https://github.com/Ilovemyhous/Who/blob/main/Game/Level 3/HTML.html), but I have no ideas what to do.

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="CSS.css" rel="stylesheet" type="text/css"/>
+    <meta charset="utf-8" name="author" content="Ilovemyhouse">
+    <title>Puzzle 3</title>
+</head>
+<body onload="audio()">
+    <div id="background"></div>  
+    <h1><span>Puzzle 3</span></h1>
+    <div class="scanlines"></div>
+    <h2>
+        <div>
+            <!--Code for the text-->
+            <span class="typer" 
+            data-words="Computer: Here we are. At the mainframe."
+            data-delay="100"
+            data-colors="gray"
+            data-loop="1"></span>
+            <!--Code for the cursor-->
+            <span class="cursor" data-owner="main"></span>
+        </div>
+    </h2>
+    <div>
+        <input type="text" name="answer" id="answer" class="hide">
+        <button type="button" name="confirm" id="button_answer" onclick="check_answer()" class="hide">Submit answer</button>
+    </div>
+    <script src="JS.js"></script>
+    <script src="../../libs/typer.js"></script>
+    <script src="../../libs/howler.js"></script>
+</body>
+</html>

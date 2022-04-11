@@ -2,38 +2,17 @@ body {
   background: black;
 }
 
-#container {
+form {
+  width: 50%;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
   position: relative;
-}
-
-#chip_1 {
-  position: absolute;
-  left: 5.5%;
-  top: 12%;
-}
-
-#chip_2 {
-  position: absolute;
-  left: 11%;
-  top: 37%;
-}
-
-#chip_3 {
-  position: absolute;
-  left: 1%;
-  top: 70%;
-}
-
-#chip_4 {
-  position: absolute;
-  left: 9%;
-  top: 86%;
-}
-
-#chip_5 {
-  position: absolute;
-  left: 17.75%;
-  top: 54%;
 }
 
 @font-face { font-family: Modeseven; src: url("../../Fonts/Modeseven-L3n5.ttf"); }
