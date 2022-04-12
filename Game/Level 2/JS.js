@@ -67,7 +67,7 @@ async function typing() {
     //console.log("Debug function")
     delay_text = "100"
     await sleep(5000);
-    proceed_to_typer_element("Computer: I'm out of ideas.");
+    proceed_to_typer_element("Computer: Hold on. There's a password with a puzzle on it.");
     //var typing_sound = sound.typing_sound.play()
     await sleep(2000);
     //sound.stop()
@@ -75,7 +75,25 @@ async function typing() {
     delay_text = '65'
     color_text = "white"
     await sleep(5000);
-    proceed_to_typer_element("Puzzle: I'm out of ideas");
+    proceed_to_typer_element("Puzzle: Fifteen people are trapped aboard a ship that's going to sink in exactly 20 minutes. Their only chance for survival is the five-person life raft stowed on their vessel. To make matters worse the waters around the ship are teeming with man-eating sharks. So swimming to safety is out of the question. A round-trip to the nearest island and back to the ship takes nine minutes on the raft. How many people will live to see dry land?");
     await sleep(30000);
+    //var answer = prompt("Your answer.")
+    let answer_input = document.getElementById("answer");
+    answer_input.classList.toggle("show");
+    await sleep(1000);
+    button_answer.classList.toggle("show");
 }
 typing()
+
+function check_answer() {
+    let answer = document.getElementById("answer").value
+    if ((answer === "2") || (answer === "Two") || (answer === "two")) {
+        //console.info("Correct answer!");
+        window.open('../Level 3/HTML.html','_self')
+    }
+
+    else {
+        //console.info("Wrong answer!");
+        window.open('../GameOver/HTML.html','_self')
+    }
+}

@@ -19,14 +19,20 @@ if (promise !== undefined) {
 
 // CODE FOR THE AUDIO CHECKBOX
 function setCheck() {
-  var x = document.getElementById("sound");
-  x.checked = true;
-  //console.log("Debug setCheck");
-  let sound = true
-  localStorage.sound = "on"
-  console.log("sound: "+sound);
-  //localStorage && (localStorage.sound = sound.value);
-  console.log("sound debug: "+localStorage.sound);
+  if (localStorage.sound === 'on') {
+      var x = document.getElementById("sound");
+      x.checked = true;
+      //console.log("Debug setCheck");
+      let sound = true
+      localStorage.sound = "on"
+      console.log("sound: "+sound);
+      //localStorage && (localStorage.sound = sound.value);
+      console.log("sound debug: "+localStorage.sound);
+  }
+  else {
+      //Do nothing.
+  }
+  
 }
 
 // Bind function to onclick event for checkbox

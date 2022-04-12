@@ -10,9 +10,17 @@ setTimeout(function bar() {
         clearInterval(id);
         document.getElementById("bar_filling").style.background = "red"
         i = 0;
-        var audio = new Audio("../../Media/Sound/Wii crashing sound.mp3");
-        console.log("Debug audio")
-        audio.play();
+        //Check for the audio
+          if (localStorage.sound === "off"){
+            //console.log("if audio: "+localStorage.sound);
+            console.log("No audio");
+          }
+          else {
+            //console.log("else audio: "+localStorage.sound);
+            var audio = new Audio("../../Media/Sound/Wii crashing sound.mp3");
+            //console.log("Debug audio")
+            audio.play();
+          }
         setTimeout(function(){
             window.open("../Error/HTML.html","_self") 
         }, 2500)

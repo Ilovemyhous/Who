@@ -9,11 +9,19 @@ let color_text = 'gray';
 let delay_text = '100';
 
 //Defines the audio for the typing sound.
-var sound = new Howl({
-    src: ['../../Media/Sound/Computer typing.wav'],
-});
+if (localStorage.sound === "off"){
+    //console.log("if audio: "+localStorage.sound);
+    console.log("No audio");
+}
+else {
+    //console.log("else audio: "+localStorage.sound);
+    var sound = new Howl({
+        src: ['../../Media/Sound/Computer typing.wav'],
+    });
+}
 
-async function audio() {
+//Check audio
+function audio() {
     if (localStorage.sound === "off"){
         //console.log("if audio: "+localStorage.sound);
         //console.log("No audio");
@@ -76,9 +84,18 @@ async function code(){
     color_text = "darkred"
     await sleep(7500)
     proceed_to_typer_element("?????: Who... who are you?");
-    var typing_sound = sound.play()
-    await sleep(2750);
-    sound.stop()
+    if (localStorage.sound === "off"){
+        //console.log("if audio: "+localStorage.sound);
+        //console.log("No audio");
+    }
+    else {
+        //console.log("else audio: "+localStorage.sound);
+        //console.log("Debug audio")
+            
+        var typing_sound = sound.play()
+        await sleep(2750);
+        sound.stop()
+    }
 
     await sleep(5000);
     
@@ -94,15 +111,33 @@ async function code(){
     color_text = "gray"
     await sleep(2500);
     proceed_to_typer_element("?????: Hello... " + name + "...");
-    var typing_sound = sound.play()
-    await sleep(2750);
-    sound.stop()
+    if (localStorage.sound === "off"){
+        //console.log("if audio: "+localStorage.sound);
+        //console.log("No audio");
+    }
+    else {
+        //console.log("else audio: "+localStorage.sound);
+        //console.log("Debug audio")
+            
+        var typing_sound = sound.play()
+        await sleep(2750);
+        sound.stop()
+    }
 
     await sleep(5000);
     proceed_to_typer_element("?????: Wha... what happened?")
-    var typing_sound = sound.play()
-    await sleep(3000);
-    sound.stop()
+    if (localStorage.sound === "off"){
+        //console.log("if audio: "+localStorage.sound);
+        //console.log("No audio");
+    }
+    else {
+        //console.log("else audio: "+localStorage.sound);
+        //console.log("Debug audio")
+            
+        var typing_sound = sound.play()
+        await sleep(3000);
+        sound.stop()
+    }
 
     delay_text = "1000"
     color_text = "white"
@@ -113,30 +148,66 @@ async function code(){
     color_text = "gray"
     await sleep(7500);
     proceed_to_typer_element("?????: It looks like something crashed.")
-    var typing_sound = sound.play()
-    await sleep(4000);
-    sound.stop()
+    if (localStorage.sound === "off"){
+        //console.log("if audio: "+localStorage.sound);
+        //console.log("No audio");
+    }
+    else {
+        //console.log("else audio: "+localStorage.sound);
+        //console.log("Debug audio")
+            
+        var typing_sound = sound.play()
+        await sleep(4000);
+        sound.stop()
+    }
 
     color_text = "lime"
     await sleep(7500);
     proceed_to_typer_element("Computer: I'm the computer by the way.")
-    var typing_sound = sound.play()
-    await sleep(4000);
-    sound.stop()
+    if (localStorage.sound === "off"){
+        //console.log("if audio: "+localStorage.sound);
+        //console.log("No audio");
+    }
+    else {
+        //console.log("else audio: "+localStorage.sound);
+        //console.log("Debug audio")
+            
+        var typing_sound = sound.play()
+        await sleep(4000);
+        sound.stop()
+    }
 
     color_text = "aqua"
     await sleep(5000);
     proceed_to_typer_element("Computer: Nice to meet you "+name+".")
-    var typing_sound = sound.play()
-    await sleep(3520);
-    sound.stop()
+    if (localStorage.sound === "off"){
+        //console.log("if audio: "+localStorage.sound);
+        //console.log("No audio");
+    }
+    else {
+        //console.log("else audio: "+localStorage.sound);
+        //console.log("Debug audio")
+            
+        var typing_sound = sound.play()
+        await sleep(3525);
+        sound.stop()
+    }
 
     color_text = "gray"
     await sleep(7500);
     proceed_to_typer_element("Computer: Do you want to help me?")
-    var typing_sound = sound.play()
-    await sleep(3250);
-    sound.stop()
+    if (localStorage.sound === "off"){
+        //console.log("if audio: "+localStorage.sound);
+        //console.log("No audio");
+    }
+    else {
+        //console.log("else audio: "+localStorage.sound);
+        //console.log("Debug audio")
+            
+        var typing_sound = sound.play()
+        await sleep(3250);
+        sound.stop()
+    }
     await sleep(5000);
     ask_help()
 
@@ -154,19 +225,47 @@ async function code(){
             console.info("Help accepted");
             delay_text = "500"
             color_text = "lime"
-            audio = new Audio("../../Media/Sound/User Interface, Data, Processing, Loading, Old Computer, Fast Stutter Followed By Choppy Stutter SND68328 1.wav");
-            audio.play();
+            if (localStorage.sound === "off"){
+                //console.log("if audio: "+localStorage.sound);
+                //console.log("No audio");
+            }
+            else {
+                //console.log("else audio: "+localStorage.sound);
+                //console.log("Debug audio")
+                    
+                audio = new Audio("../../Media/Sound/User Interface, Data, Processing, Loading, Old Computer, Fast Stutter Followed By Choppy Stutter SND68328 1.wav");
+                audio.play();
+            }
+            
             proceed_to_typer_element("Computer: Thank you.")
             await sleep(10500)
             color_text = "gray"
             delay_text = "100"
             proceed_to_typer_element("Computer: Okay let's start.")
-            var typing_sound = sound.play()
-            await sleep(3000);
-            sound.stop()
+            if (localStorage.sound === "off"){
+                //console.log("if audio: "+localStorage.sound);
+                //console.log("No audio");
+            }
+            else {
+                //console.log("else audio: "+localStorage.sound);
+                //console.log("Debug audio")
+                    
+                var typing_sound = sound.play()
+                await sleep(3000);
+                sound.stop()
+            }
             await sleep(3000);
             proceed_to_typer_element("Computer: But we'll need to find our way into the mainframe.")
-            var typing_sound = sound.play()
+            if (localStorage.sound === "off"){
+                //console.log("if audio: "+localStorage.sound);
+                //console.log("No audio");
+            }
+            else {
+                //console.log("else audio: "+localStorage.sound);
+                //console.log("Debug audio")
+                    
+                var typing_sound = sound.play()
+            }
             await sleep(10000)
             window.open("../Level 1/HTML.html","_self")
         }
