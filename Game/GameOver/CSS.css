@@ -51,7 +51,7 @@ h1 {
   user-select: none;
   white-space: nowrap;
   filter: blur(0.007em);
-  animation: shake 11s linear forwards;
+  animation: blur 11s linear forwards, shake 1.75s linear forwards;
 }
 
 h1 span {
@@ -80,33 +80,51 @@ h1::before {
 h1::after {
   animation: crack2 3.75s linear forwards;
   -webkit-clip-path: polygon(44% 0%, 100% 0%, 100% 100%, 70% 100%);
-          clip-path: polygon(44% 0%, 100% 0%, 100% 100%, 70% 100%);
+          clip-path: polygon(43% 0%, 100% 0%, 100% 100%, 70% 100%);
 }
 
 @keyframes shake {
   5%, 15%, 25%, 35%, 55%, 65%, 75%, 95% {
+      transform: translateY(0.008em) rotate(0deg);
+  }
+
+  10%, 30%, 40%, 50%, 70%, 80%, 90% {
+      transform: translateY(-0.018em) rotate(0.05deg);
+  }
+
+  20%, 60% {
+      transform: translate(-0.0075em, 0.01em) rotate(0.05deg);
+  }
+
+  45%, 85% {
+      transform: translate(0.00em, -0.01em) rotate(0deg);
+  }
+
+  100% {
+      transform: translate(0.0em) rotate(-7.5deg);
+  }
+}
+
+@keyframes blur {
+    5%, 15%, 25%, 35%, 55%, 65%, 75%, 95% {
       filter: blur(0.018em);
-      transform: translateY(0.018em) rotate(0deg);
+      transform: translateY(0.008em) rotate(0deg);
   }
 
   10%, 30%, 40%, 50%, 70%, 80%, 90% {
       filter: blur(0.01em);
-      transform: translateY(-0.018em) rotate(0deg);
   }
 
   20%, 60% {
       filter: blur(0.03em);
-      transform: translate(-0.018em, 0.018em) rotate(0deg);
   }
 
   45%, 85% {
       filter: blur(0.25em);
-      transform: translate(0.018em, -0.018em) rotate(0deg);
   }
 
   100% {
-      filter: blur(0.007em);
-      transform: translate(0) rotate(-0.5deg);
+      filter: blur(0.000em);
   }
 }
 
@@ -116,7 +134,7 @@ h1::after {
   }
 
   100% {
-      transform: translate(-51%, -48%);
+      transform: translate(-53%, -46%);
   }
 }
 
@@ -126,7 +144,7 @@ h1::after {
   }
 
   100% {
-      transform: translate(-49%, -53%);
+      transform: translate(-48%, -52%);
   }
 }
 
@@ -146,30 +164,17 @@ body {
     100% { background-color: #000000; }
   }
 
-p, h2, h3, h7, div {
+h2, h3, h7, div {
     color: white;
     font-family: sans-serif;
 }
 
-#bar_empty {
-    width: 100%;
-    background-color: #ddd;
-  }
-  
-#bar_filling {
-    width: 0%;
-    height: 30px;
-    background-color: #48ff00;
-    text-align: center;
-    line-height: 30px;
-    color: rgb(0, 0, 0);
-    transition: 1000ms;
-  }
+@keyframes opacity_image {
+  0% { opacity: 0%; }
+  100% { opacity: 100%; }
+}
 
-#background {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-  }
+@keyframes opacity_text {
+  0% { opacity: 100%; }
+  100% { opacity: 0%; }
+}

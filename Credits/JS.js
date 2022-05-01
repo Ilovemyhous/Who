@@ -1,0 +1,28 @@
+function audio() {
+    if (localStorage.sound === "off"){
+        //console.log("if audio: "+localStorage.sound);
+        console.log("No audio");
+        credits()
+    }
+    else {
+        //console.log("else audio: "+localStorage.sound);
+        var audio = new Audio("../../Media/Music/Caspar - Final Nights 4 - Original Soundtrack - 09 Closure.flac");
+        console.log("Debug audio")
+        audio.play();
+        credits()
+    }
+}
+
+function credits() {
+    //window.scrollTo(0,5000000,{ behavior: 'smooth' });
+    //console.log("Debug function");
+    console.log("Name: "+localStorage.name);
+    username = localStorage.name
+    if (username == "" || username == null || username == undefined) {
+        document.getElementById("user").innerHTML = "And thank YOU for playing!"
+    }
+
+    else {
+        document.getElementById("user").innerHTML = "Thank you, "+username+" for playing!" 
+    }
+}

@@ -1,0 +1,44 @@
+
+h1, h2, h3, h6 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+}
+
+#white {
+    color: white;
+    font-family: sans-serif;
+}
+
+body {	
+    text-align:center;
+    font-size: 56px;
+    background-color: black;
+}
+
+#CreditHeader {
+    font-size: 48px;
+}
+
+.Credit {
+    margin-top: 200px;
+}
+
+#Credits {
+          height: 100vh;
+          display: block;
+          position: absolute;
+          top: 100%;
+          width: 99%;
+          animation: creditRoll 130s linear forwards infinite;
+          animation-delay: 2s;
+          animation-iteration-count: 1;
+       }
+       
+@keyframes creditRoll {
+  0% {
+    top: 100%;
+  }
+  100% {
+    top: -387%;
+  }
+}

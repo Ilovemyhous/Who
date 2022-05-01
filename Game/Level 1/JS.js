@@ -22,7 +22,7 @@ async function audio() {
         //Defines the audio for the typing sound, and audio.
         var sound = {
             music: new Howl({
-                src: ['../../Media/Music/Black Fingerprint - Dylan Owen.wav'],
+                src: ['../../Media/Music/Running - DanThePianoMan.wav'],
                 //src: ['../../Media/Sound/Wii crashing sound.mp3'],
                 html5: true,
                 volume: 0,
