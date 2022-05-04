@@ -61,3 +61,12 @@ Started the [Level 3](https://github.com/Ilovemyhous/Who/blob/main/Game/Level 3/
 ## Version 0.0.11
 *12th April 2022*
 Some things related to audio were changed, modified, and/or edited.
+
+## Version 0.0.12
+*1st Mai 2022*
+Added a [Credits](https://github.com/Ilovemyhous/Who/blob/main/Credits/HTML.html) page. *(Might be buggy.)*
+Added an easter, have fun finding it.
+
+## Version 0.0.13
+*2nd 2022*
+Continued working on the Level 3... which is still not done.

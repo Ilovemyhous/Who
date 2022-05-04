@@ -21,21 +21,17 @@ async function audio() {
     else {
         //Defines the audio for the typing sound, and audio.
         var sound = {
-            music: new Howl({
-                //CHANGE IT
-                src: ['../../Media/Music/Mystery - Wee Free Music.wav'],
-                //src: ['../../Media/Sound/Wii crashing sound.mp3'],
-                html5: true,
-                volume: 0,
+            hello: new Howl({
+                src: ['../../Media/Sound/Hello.wav'],
+                volume: 1,
             }),
             typing_sound: new Howl({
                 src: ['../../Media/Sound/Computer typing.mp3']
             })
         };
 
-        var music = sound.music.play();
-        sound.music.fade(0,0.5,5000,music);
-        var typing_sound = sound.typing_sound.play()
+        var hello = sound.hello.play();
+        var typing_sound = sound.typing_sound
     }
 }
 
@@ -65,31 +61,28 @@ function proceed_to_typer_element(text_to_print) {
 async function typing() {
     await sleep(100)
     //console.log("Debug function")
-    delay_text = "100"
-    await sleep(5000);
-    proceed_to_typer_element("Computer: Hold on. There's a password with a puzzle on it.");
+    delay_text = "250"
+    await sleep(10000);
+    color_text = "yellow"
+    proceed_to_typer_element("Computer: What... what was that?");
     //var typing_sound = sound.typing_sound.play()
     await sleep(2000);
     //sound.stop()
 
-    delay_text = '65'
-    color_text = "white"
+    delay_text = '100'
+    color_text = "gray"
+    await sleep(7500);
+    proceed_to_typer_element("Computer: I think we are not alone...");
     await sleep(5000);
-    proceed_to_typer_element("Puzzle: Fifteen people are trapped aboard a ship that's going to sink in exactly 20 minutes. Their only chance for survival is the five-person life raft stowed on their vessel. To make matters worse the waters around the ship are teeming with man-eating sharks. So swimming to safety is out of the question. A round-trip to the nearest island and back to the ship takes nine minutes on the raft. How many people will live to see dry land? (Answer only in numbers)");
-    await sleep(32500);
-    //var answer = prompt("Your answer.")
-    let answer_input = document.getElementById("answer");
-    answer_input.classList.toggle("show");
-    await sleep(1000);
-    button_answer.classList.toggle("show");
+    color_text = "red"
+    proceed_to_typer_element("?????: Sorry to disturb you but I think I've done a little oopsie whoopsie.")
 }
 typing()
 
 function check_answer() {
     let answer = document.getElementById("answer").value
-    if (answer === "13") {
+    if ((answer === "2") || (answer === "Two") || (answer === "two")) {
         //console.info("Correct answer!");
-        window.open('../Level 3 - Story/HTML.html','_self')
     }
 
     else {
