@@ -108,6 +108,22 @@ async function code(){
     localStorage.name = name
     console.log("Name: "+localStorage.name);
 
+    //For the easter egg.
+    if (name == "root" || name == "sudo") {
+        console.log("Debug Easter egg");
+        color_text = "orange"
+        proceed_to_typer_element("Easter Egg: This ain't a Linux terminal.")
+        var typing_sound = sound.play()
+        await sleep(5000);
+        sound.stop()
+
+        do{
+            name = prompt("Who are you ?");
+        }while(name == "" || name == null || name == undefined || name == "sudo" || name == "root");
+        localStorage.name = name
+        console.log("Name: "+localStorage.name);
+    }
+
     color_text = "gray"
     await sleep(2500);
     proceed_to_typer_element("?????: Hello... " + name + "...");
