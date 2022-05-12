@@ -29,10 +29,6 @@ function setCheck() {
       //localStorage && (localStorage.sound = sound.value);
       console.log("sound debug: "+localStorage.sound);
   }
-  else {
-      //Do nothing.
-  }
-  
 }
 
 // Bind function to onclick event for checkbox

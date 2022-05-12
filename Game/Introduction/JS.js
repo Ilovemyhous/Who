@@ -283,7 +283,7 @@ async function code(){
                 var typing_sound = sound.play()
             }
             await sleep(10000)
-            window.open("../Level 1/HTML.html","_self")
+            window.open("../Level1/HTML.html","_self")
         }
         else if (choice_help == "No"){
             console.info("Help rejected");

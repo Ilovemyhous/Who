@@ -1,5 +1,6 @@
 //  TO-DO
-//Place the chips at the right position.
+//Add the audio
+//Finish the sotry for this page.
 
 // Debugging stuff
 //console.log(localStorage);
@@ -73,9 +74,24 @@ async function typing() {
     color_text = "gray"
     await sleep(7500);
     proceed_to_typer_element("Computer: I think we are not alone...");
+    var typing_sound = sound.play()
+
     await sleep(5000);
     color_text = "red"
     proceed_to_typer_element("?????: Sorry to disturb you but I think I've done a little oopsie whoopsie.")
+
+    delay_text = '100'
+    color_text = "gray"
+    await sleep(8000);
+    proceed_to_typer_element("Computer: What... what do you mean?");
+
+    delay_text = '100'
+    color_text = "red"
+    await sleep(7500);
+    proceed_to_typer_element("?????: You remember what you said about something crashed?");
+    await sleep(7500);
+    delay_text = '250'
+    proceed_to_typer_element("?????: Well... it was ME!")
 }
 typing()
 

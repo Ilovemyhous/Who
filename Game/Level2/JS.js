@@ -1,5 +1,5 @@
 //  TO-DO
-//Place the chips at the right position.
+//X
 
 // Debugging stuff
 //console.log(localStorage);
@@ -89,7 +89,7 @@ function check_answer() {
     let answer = document.getElementById("answer").value
     if (answer === "13") {
         //console.info("Correct answer!");
-        window.open('../Level 3 - Story/HTML.html','_self')
+        window.open('../Story1/HTML.html','_self')
     }
 
     else {
