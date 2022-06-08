@@ -74,7 +74,6 @@ async function typing() {
     color_text = "gray"
     await sleep(7500);
     proceed_to_typer_element("Computer: I think we are not alone...");
-    var typing_sound = sound.play()
 
     await sleep(5000);
     color_text = "red"
@@ -87,22 +86,68 @@ async function typing() {
 
     delay_text = '100'
     color_text = "red"
-    await sleep(7500);
+    await sleep(7000);
     proceed_to_typer_element("?????: You remember what you said about something crashed?");
     await sleep(7500);
     delay_text = '250'
     proceed_to_typer_element("?????: Well... it was ME!")
-}
-typing()
-
-function check_answer() {
-    let answer = document.getElementById("answer").value
-    if ((answer === "2") || (answer === "Two") || (answer === "two")) {
-        //console.info("Correct answer!");
+    await sleep(7000);
+    delay_text = '100'
+    console.log("Name: "+localStorage.name);
+    username = localStorage.name
+    if (username == "" || username == null || username == undefined) {
+        proceed_to_typer_element("?????: I also know a few things about you.")
     }
 
     else {
-        //console.info("Wrong answer!");
-        window.open('../GameOver/HTML.html','_self')
+        proceed_to_typer_element("?????: I also know a few things about you... " +username+".")
     }
+    await sleep(7500)
+    //Code for the webcam
+    var constraints = { audio: false, video: { width: 1280, height: 720 } };
+
+    navigator.mediaDevices.getUserMedia(constraints)
+    .then(function(mediaStream) {
+    var video = document.querySelector('video');
+    video.srcObject = mediaStream;
+    video.onloadedmetadata = function(e) {
+        video.play();
+        console.log("Webcam access granted.");
+        access_granted()
+    };
+    })
+    // Always check for errors at the end.
+    .catch(function(err) { 
+    console.log(err.name + ": " + err.message);
+    console.log(err.name);
+    if (err.name == "NotAllowedError") {
+        alert("Access to camera rejected.")
+        proceed_to_typer_element("?????: So you rejected the access to your webcam? I would probably have done the same.")
+    }
+
+    if (err.name == "NotFoundError") {
+        alert("No Webcam has been detected.")
+        proceed_to_typer_element("?????: Hmmm... no webcam detected. That's fine.")
+    }
+    });
+    
+    function access_granted() {
+        proceed_to_typer_element("?????: Hello there!")
+    }
+
+    await sleep(5000)
+    proceed_to_typer_element("?????: I can also access your location.")
+    navigator.geolocation.getCurrentPosition(function(position) {
+        gps_long = position.coords.latitude
+        gps_lat = position.coords.longitude
+        console.log(gps_long);
+        console.log(gps_lat);
+        proceed_to_typer_element("?????: You're at "+gps_long+" and "+gps_long+".")
+    });
+
+    await sleep(5000)
+    proceed_to_typer_element("?????: I can also write things in the clipboard.")
+    navigator.clipboard.writeText("Hello world!");
+    
 }
+typing()

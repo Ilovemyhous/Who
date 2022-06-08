@@ -56,7 +56,7 @@ Got some music. The credits belong to their respective owner.
 ## Version 0.0.10
 *11th April 2022*
 Finished the [Level 1](https://github.com/Ilovemyhous/Who/blob/main/Game/Level 1/HTML.html), and [Level 2(https://github.com/Ilovemyhous/Who/blob/main/Game/Level 2/HTML.html)].
-Started the [Level 3](https://github.com/Ilovemyhous/Who/blob/main/Game/Level 3/HTML.html), but I have no ideas what to do.
+Started the [Level 3](https://github.com/Ilovemyhous/Who/blob/main/Game/Level 3/HTML.html), but I have no ideas what to do. *(Depreaceated)*
 
 ## Version 0.0.11
 *12th April 2022*
@@ -68,5 +68,11 @@ Added a [Credits](https://github.com/Ilovemyhous/Who/blob/main/Credits/HTML.html
 Added an easter, have fun finding it.
 
 ## Version 0.0.13
-*2nd 2022*
+*2nd June 2022*
 Continued working on the Level 3... which is still not done.
+
+## Version 0.0.14
+*8st Mai 2022*
+Some files were modified here and there. Like in the about page, but there's plenty more.
+Changed the puzzle of the second puzzle.
+Continued working on the [Story1](https://github.com/Ilovemyhous/Who/blob/main/Game/Story1/HTML.html).

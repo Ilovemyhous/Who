@@ -75,8 +75,8 @@ async function typing() {
     delay_text = '65'
     color_text = "white"
     await sleep(5000);
-    proceed_to_typer_element("Puzzle: Fifteen people are trapped aboard a ship that's going to sink in exactly 20 minutes. Their only chance for survival is the five-person life raft stowed on their vessel. To make matters worse the waters around the ship are teeming with man-eating sharks. So swimming to safety is out of the question. A round-trip to the nearest island and back to the ship takes nine minutes on the raft. How many people will live to see dry land? (Answer only in numbers)");
-    await sleep(32500);
+    proceed_to_typer_element("Puzzle: Mice are famous for their ability to multiply at breakneck speeds. The type of mouse we have here gives birth once a month birthing 12 babies each time. Baby mice mature and can give birth two months after they are born. You picked up one of these darling baby mice at the pet shop and brought it home the day after it was born. In 10 months from now how many mice will you have?  (Answer only in numbers)");
+    await sleep(30000);
     //var answer = prompt("Your answer.")
     let answer_input = document.getElementById("answer");
     answer_input.classList.toggle("show");
@@ -95,7 +95,7 @@ function clickPress(event) {
 
 function check_answer() {
     let answer = document.getElementById("answer").value
-    if (answer === "13") {
+    if (answer === "1") {
         //console.info("Correct answer!");
         window.open('../Story1/HTML.html','_self')
     }
