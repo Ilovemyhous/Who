@@ -124,6 +124,14 @@ async function code(){
         console.log("Name: "+localStorage.name);
     }
 
+    color_text = "white"
+    await sleep(2500);
+    proceed_to_typer_element("You: "+ name +".");
+    if (localStorage.sound === "off"){
+        //console.log("if audio: "+localStorage.sound);
+        //console.log("No audio");
+    }
+
     color_text = "gray"
     await sleep(2500);
     proceed_to_typer_element("?????: Hello... " + name + "...");

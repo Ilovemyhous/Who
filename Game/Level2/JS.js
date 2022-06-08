@@ -85,6 +85,14 @@ async function typing() {
 }
 typing()
 
+
+//Runs the "check_answer" function when you press enter.
+function clickPress(event) {
+    if (event.keyCode == 13) {
+        check_answer()
+    }
+}
+
 function check_answer() {
     let answer = document.getElementById("answer").value
     if (answer === "13") {
