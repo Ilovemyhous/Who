@@ -26,12 +26,20 @@ async function audio() {
                 src: ['../../Media/Sound/Hello.wav'],
                 volume: 1,
             }),
+            music: new Howl({
+                //CHANGE IT
+                src: ['../../Media/Music/horror-atmosphere-background.mp3'],
+                html5: true,
+                volume: 0,
+            }),
             typing_sound: new Howl({
                 src: ['../../Media/Sound/Computer typing.mp3']
             })
         };
 
         var hello = sound.hello.play();
+        var music = sound.music.play();
+        sound.music.fade(0,0.5,5000,music);
         var typing_sound = sound.typing_sound
     }
 }
@@ -121,12 +129,12 @@ async function typing() {
     console.log(err.name + ": " + err.message);
     console.log(err.name);
     if (err.name == "NotAllowedError") {
-        alert("Access to camera rejected.")
+        //alert("Access to camera rejected.")
         proceed_to_typer_element("?????: So you rejected the access to your webcam? I would probably have done the same.")
     }
 
     if (err.name == "NotFoundError") {
-        alert("No Webcam has been detected.")
+        //alert("No Webcam has been detected.")
         proceed_to_typer_element("?????: Hmmm... no webcam detected. That's fine.")
     }
     });
@@ -135,7 +143,7 @@ async function typing() {
         proceed_to_typer_element("?????: Hello there!")
     }
 
-    await sleep(5000)
+    await sleep(7500)
     proceed_to_typer_element("?????: I can also access your location.")
     navigator.geolocation.getCurrentPosition(function(position) {
         gps_long = position.coords.latitude
@@ -144,10 +152,76 @@ async function typing() {
         console.log(gps_lat);
         proceed_to_typer_element("?????: You're at "+gps_long+" and "+gps_long+".")
     });
-
     await sleep(5000)
+
+    /* Not used, since it requires the user to interact with the website.
     proceed_to_typer_element("?????: I can also write things in the clipboard.")
-    navigator.clipboard.writeText("Hello world!");
-    
+    if (username == "" || username == null || username == undefined) {
+        navigator.clipboard.writeText("Hello there!");
+    }
+
+    else {
+        navigator.clipboard.writeText("Hello "+username+"!");
+    }
+    navigator.clipboard.writeText("Hello world!");*/
+
+    proceed_to_typer_element("?????: And I can also download stuff on your computer.")
+    await sleep(7500)
+    if (username == "" || username == null || username == undefined) {
+        let download = new File(
+            ["Hello there!"],
+            "Hello.txt",
+            {type: "text/plain:charset=utf8"}
+        );
+        saveAs(download)
+    }
+
+    else {
+        let download = new File(
+            ["Hello " +username+"!"],
+            username+".txt",
+            {type: "text/plain:charset=utf8"}
+        );
+        saveAs(download)
+    }
+
+    await sleep(7500)
+    proceed_to_typer_element("?????: Finally I can detect what browser an OS you use.")
+
+    //Detect the OS
+    var OS = "Not known";
+      if (navigator.appVersion.indexOf("Win") != -1) OS = 
+        "Windows";
+      if (navigator.appVersion.indexOf("Mac") != -1) OS = 
+        "MacOS";
+      if (navigator.appVersion.indexOf("X11") != -1) OS = 
+        "Linux";
+      if (navigator.appVersion.indexOf("Linux") != -1) OS = 
+        "Linux";
+    console.log(OS);
+
+    //Detect the browser
+    var browser = "Not known";
+      if (navigator.userAgent.indexOf("Firefox") != -1) OS = 
+        "Firefox";
+      if (navigator.userAgent.indexOf("Chrome") != -1) OS = 
+        "Chrome";
+      if (navigator.userAgent.indexOf("Edge") != -1) OS = 
+        "Edge";
+      if (navigator.userAgent.indexOf("Opera") != -1) OS = 
+        "Opera";
+
+console.log(OS);
+
+    await sleep(6000)
+    proceed_to_typer_element("?????: Right now you're using "+OS+" and a browser based on "+browser+"." )
+
+    await sleep(10000)
+    proceed_to_typer_element("?????: Enough played! I guess you want to know how to recover.")
+    await sleep(7500)
+    proceed_to_typer_element("?????: You have to solve the puzzles and gather evidence.")
+    await sleep(5000)
+    proceed_to_typer_element("?????: We'll talk about the rest later...")
+
 }
 typing()

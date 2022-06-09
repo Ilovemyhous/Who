@@ -23,6 +23,6 @@ function credits() {
     }
 
     else {
-        document.getElementById("user").innerHTML = "Thank you, "+username+" for playing!" 
+        document.getElementById("user").innerHTML = "And thank you, "+username+" for playing!" 
     }
 }

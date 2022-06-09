@@ -72,7 +72,12 @@ Added an easter, have fun finding it.
 Continued working on the Level 3... which is still not done.
 
 ## Version 0.0.14
-*8st Mai 2022*
+*8th June 2022*
 Some files were modified here and there. Like in the about page, but there's plenty more.
 Changed the puzzle of the second puzzle.
 Continued working on the [Story1](https://github.com/Ilovemyhous/Who/blob/main/Game/Story1/HTML.html).
+
+## Version 0.0.15
+*9th June 2022*
+The README file was a bit updated.
+Continued working on [Story1](https://github.com/Ilovemyhous/Who/blob/main/Game/Story1/HTML.html), almost done.

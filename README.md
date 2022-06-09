@@ -18,6 +18,7 @@ The game is only writen in HTML, CSS and JavaScript... that's it.
  - [ ] Finish the credits
  - [ ] Add credits
  - [ ] Add easter eggs
+ - [ ] Fix audio issues
 
  *More to come...*
 
@@ -27,8 +28,19 @@ To use things like the audio setting in the settings, you will need [*vscode-liv
 
 ## Credits
 Inspiration: The [Professor Layton](https://www.laytonseries.com/) series
+
 Libraries: [p5.js](https://p5js.org/) | [Typer.js](https://steven.codes/typerjs/) | [howler.js](https://github.com/goldfire/howler.js)
+
 Backgrounds: [Error](https://github.com/Ilovemyhous/Who/blob/main/Game/Error/HTML.html) by [Elisabéth](https://codepen.io/elisabethdiang/pen/WNbBxXq)
-Text/Animations: [Game Over](https://github.com/Ilovemyhoud/Who/blob/main/Game/GameOver/HTML.html)[Black Mirror Cracked Text Effect by George W. Park](https://codepen.io/GeorgePark/pen/jeBbGN)
-Sounds: Many sounds come from [this](https://docs.google.com/document/d/1E1xIQhgPNj1vrtfPS7yZrl1tiCpzFN3uczYo1TNZkNg/edit) list. | [Computer glitch sound](https://freesound.org/people/InspectorJ/sounds/573189/) | A few sounds come from [this game](https://gamejolt.com/games/FinalNights4/267878)
-Music: [Running](https://open.spotify.com/track/3muQrtTOlkstoOqanoRWSF?si=a7d2f96580b045c5) - [DanThePianoMan](https://open.spotify.com/artist/3xtsfEhoTbTujLBC1LYc4m?si=TelLxHi5RFWThRMvCV6q5A) | [Black Fingerprint](https://www.youtube.com/watch?v=Uk5zngU-aAE) - [Dylan Owen](https://www.fiverr.com/dylanowen320/compose-and-produce-for-film-and-games) | [Closure](https://finalnights.bandcamp.com/track/closure) - [Casper](https://gamejolt.com/games/FinalNights4/267878)
+
+Text/Animations:
+[Game Over](https://github.com/Ilovemyhoud/Who/blob/main/Game/GameOver/HTML.html)[Black Mirror Cracked Text Effect by George W. Park](https://codepen.io/GeorgePark/pen/jeBbGN)
+
+Sounds:
+Many sounds come from [this](https://docs.google.com/document/d/1E1xIQhgPNj1vrtfPS7yZrl1tiCpzFN3uczYo1TNZkNg/edit) list. | [Computer glitch sound](https://freesound.org/people/InspectorJ/sounds/573189/) | 
+A few sounds come from [this game](https://gamejolt.com/games/FinalNights4/267878)
+
+Music:
+[Running](https://open.spotify.com/track/3muQrtTOlkstoOqanoRWSF?si=a7d2f96580b045c5) - [DanThePianoMan](https://open.spotify.com/artist/3xtsfEhoTbTujLBC1LYc4m?si=TelLxHi5RFWThRMvCV6q5A) | 
+[Black Fingerprint](https://www.youtube.com/watch?v=Uk5zngU-aAE) - [Dylan Owen](https://www.fiverr.com/dylanowen320/compose-and-produce-for-film-and-games) | 
+[Closure](https://finalnights.bandcamp.com/track/closure) - [Casper](https://gamejolt.com/games/FinalNights4/267878)
