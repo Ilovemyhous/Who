@@ -186,7 +186,7 @@ async function typing() {
     }
 
     await sleep(7500)
-    proceed_to_typer_element("?????: Finally I can detect what browser an OS you use.")
+    proceed_to_typer_element("?????: Finally I can detect what browser and OS you use.")
 
     //Detect the OS
     var OS = "Not known";
@@ -202,13 +202,13 @@ async function typing() {
 
     //Detect the browser
     var browser = "Not known";
-      if (navigator.userAgent.indexOf("Firefox") != -1) OS = 
+      if (navigator.userAgent.indexOf("Firefox") != -1) browser = 
         "Firefox";
-      if (navigator.userAgent.indexOf("Chrome") != -1) OS = 
+      if (navigator.userAgent.indexOf("Chrome") != -1) browser = 
         "Chrome";
-      if (navigator.userAgent.indexOf("Edge") != -1) OS = 
+      if (navigator.userAgent.indexOf("Edge") != -1) browser = 
         "Edge";
-      if (navigator.userAgent.indexOf("Opera") != -1) OS = 
+      if (navigator.userAgent.indexOf("Opera") != -1) browser = 
         "Opera";
 
 console.log(OS);
@@ -220,8 +220,9 @@ console.log(OS);
     proceed_to_typer_element("?????: Enough played! I guess you want to know how to recover.")
     await sleep(7500)
     proceed_to_typer_element("?????: You have to solve the puzzles and gather evidence.")
-    await sleep(5000)
+    await sleep(7500)
     proceed_to_typer_element("?????: We'll talk about the rest later...")
-
+    await sleep(5000)
+    window.open('../Level3/HTML.html','_self')
 }
 typing()

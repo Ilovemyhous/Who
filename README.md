@@ -43,4 +43,6 @@ A few sounds come from [this game](https://gamejolt.com/games/FinalNights4/26787
 Music:
 [Running](https://open.spotify.com/track/3muQrtTOlkstoOqanoRWSF?si=a7d2f96580b045c5) - [DanThePianoMan](https://open.spotify.com/artist/3xtsfEhoTbTujLBC1LYc4m?si=TelLxHi5RFWThRMvCV6q5A) | 
 [Black Fingerprint](https://www.youtube.com/watch?v=Uk5zngU-aAE) - [Dylan Owen](https://www.fiverr.com/dylanowen320/compose-and-produce-for-film-and-games) | 
+[Horror background atmosphere](https://www.chosic.com/download-audio/29697/)
+[Come Play with Me](https://www.chosic.com/download-audio/27250/) - [Kevin MacLeod](https://www.chosic.com/free-music/all/?keyword=Kevin%20MacLeod&artist) | 
 [Closure](https://finalnights.bandcamp.com/track/closure) - [Casper](https://gamejolt.com/games/FinalNights4/267878)
