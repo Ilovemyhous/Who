@@ -34,5 +34,5 @@ function credits() {
 credits_done()
 async function credits_done(){
     await sleep(145000)
-    window.open('../Hub/HTML.html','_self')
+    window.open('../Game/GoodEnding/HTML.html','_self')
 }

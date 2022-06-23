@@ -100,14 +100,15 @@ async function typing() {
     document.getElementById('shake').style.animation = "shake 0.35s";
 
     await sleep(3500)
-    document.getElementById('shake').style.animation = "";
     delay_text = '175'
     proceed_to_typer_element("?????: Now let me ask you a few questions...")
 
     //Choice 1
+    document.getElementById('shake').style.animation = "";
     await sleep(8500)
     proceed_to_typer_element("?????: Do you know WHO I am?")
     await sleep(7500)
+    let choose_no = 0
     let choice_question1 = "";
         do{
             choice_question1 = prompt("Do you know WHO I am? (Yes or No)");
@@ -124,9 +125,12 @@ async function typing() {
         document.getElementById('shake').style.animation = "shake 0.5s";
         var sfx = new Audio("../../Media/Sound/Glitch.mp3")
         sfx.play()
+        choose_no ++
+        console.log("Numbers of no: "+choose_no);
     }
 
     //Choice 2
+    document.getElementById('shake').style.animation = "";
     await sleep(8500)
     proceed_to_typer_element("?????: Do you know WHO you are?")
     await sleep(7500)
@@ -137,7 +141,7 @@ async function typing() {
 
     if (choice_question2 == "Yes") {
         await sleep(10);
-        proceed_to_typer_element("?????: We are but dust and shadows. -Horace")
+        proceed_to_typer_element("?????: What's the point?")
     }
 
     else {
@@ -146,6 +150,63 @@ async function typing() {
         document.getElementById('shake').style.animation = "shake 0.5s";
         var sfx = new Audio("../../Media/Sound/Glitch.mp3")
         sfx.play()
+        choose_no ++
+        console.log("Numbers of no: "+choose_no);
+    }
+
+    if (choose_no == 2) {
+        //console.log("Debug, 2 no");
+        var audio_no = new Audio("../../Media/Sound/Scary Violin.mp3")
+        audio_no.play()
+        /*var sound = {
+            jumpscare: new Howl({
+                src: ['../../Media/Sound/Scary violin loop.wav'],
+                volume: 1,
+                loop: false,
+            })
+        };
+        var jumpscare = sound.jumpscare.play();*/
+    };
+
+    //Choice 3
+    document.getElementById('shake').style.animation = "";
+    await sleep(8500)
+    proceed_to_typer_element("?????: Do you know WHY you are here?")
+    await sleep(7500)
+    let choice_question3 = "";
+        do{
+            choice_question3 = prompt("Do you know WHO you are? (Yes or No)");
+        }while(choice_question3 == "" || choice_question3 == null || choice_question3 == undefined);
+
+    if (choice_question2 == "Yes") {
+        await sleep(10);
+        proceed_to_typer_element("?????: Why do you persits?")
+    }
+
+    else {
+        await sleep(10)
+        document.getElementById("glass_3").src='../../Media/Images/Story 2/Glass3.png';
+        document.getElementById('shake').style.animation = "shake 0.5s";
+        var sfx = new Audio("../../Media/Sound/Glitch.mp3")
+        sfx.play()
+        choose_no ++
+        console.log("Numbers of no: "+choose_no);
+    }
+
+    if (choose_no == 3) {
+        document.body.style.background = "darkred";
+    };
+
+    var rise = new Audio("../../Media/Sound/Cinematic Rise.wav")
+    rise.play()
+
+    if (choose_no > 0 && choose_no < 4) {
+        delay_text = "200"
+        proceed_to_typer_element("?????: And I thought I could trust you...")
+        await sleep(11000)
+        proceed_to_typer_element("?????: In WHO can we trust nowadays?!")
+        await sleep(8500)
+        window.open("../BadEnding/HTML.html","_self")
     }
 
 }
