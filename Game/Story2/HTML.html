@@ -7,21 +7,25 @@
 </head>
 <body onload="audio()">
     <div id="background"></div>  
+    <div class="shake" id="shake">
     <div class="scanlines"></div>
     <h2>
-        <div>
-            <div class="shake">
-                <!--Code for the text-->
-                <span class="typer"
-                data-words="?????: Alright! I have ENOUGH!"
-                data-delay="100"
-                data-colors="red"
-                data-loop="1"></span>
-                <!--Code for the cursor-->
-                <span class="cursor" data-owner="main"></span>
-            </div>
-            
+        <div id="images">
+            <img id="glass_1" width="25%" length="25%">
+            <img id="glass_2" width="25%" length="25%">
         </div>
+        <div>
+            <!--Code for the text-->
+            <span class="typer"
+            data-words="?????: Alright! I have ENOUGH!"
+            data-delay="100"
+            data-colors="red"
+            data-loop="1"></span>
+            <!--Code for the cursor-->
+            <span class="cursor" data-owner="main"></span>
+        </div>
+            
+    </div>
     </h2>
     <script src="JS.js"></script>
     <script src="../../libs/typer.js"></script>

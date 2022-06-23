@@ -68,6 +68,7 @@ function proceed_to_typer_element(text_to_print) {
 
 // "Main" code, where you can input text, colour, and delay.
 async function typing() {
+    document.getElementById('shake').style.animation = ""; //Use this to reset the animation.
     await sleep(100)
     //console.log("Debug function")
     delay_text = "250"
@@ -82,6 +83,70 @@ async function typing() {
     color_text = "red"
     await sleep(3500);
     proceed_to_typer_element("?????: SILENCE! I'm the one speaking here!");
+    await sleep(100);
+    document.getElementById('shake').style.animation = "shake 0.25s";
+
+    await sleep(5000)
+    document.getElementById('shake').style.animation = "";
+    username = localStorage.name
+    if (username == "" || username == null || username == undefined) {
+        proceed_to_typer_element("?????: Everything was fine until YOU joined!")
+    }
+
+    else {
+        proceed_to_typer_element("?????: Everything was fine until YOU joined "+username+"!")
+    }
+    await sleep(3475)
+    document.getElementById('shake').style.animation = "shake 0.35s";
+
+    await sleep(3500)
+    document.getElementById('shake').style.animation = "";
+    delay_text = '175'
+    proceed_to_typer_element("?????: Now let me ask you a few questions...")
+
+    //Choice 1
+    await sleep(8500)
+    proceed_to_typer_element("?????: Do you know WHO I am?")
+    await sleep(7500)
+    let choice_question1 = "";
+        do{
+            choice_question1 = prompt("Do you know WHO I am? (Yes or No)");
+        }while(choice_question1 == "" || choice_question1 == null || choice_question1 == undefined);
+
+    if (choice_question1 == "Yes") {
+        await sleep(10);
+        proceed_to_typer_element("?????: We are but dust and shadows. -Horace")
+    }
+
+    else {
+        await sleep(10)
+        document.getElementById("glass_1").src='../../Media/Images/Story 2/Glass1.png';
+        document.getElementById('shake').style.animation = "shake 0.5s";
+        var sfx = new Audio("../../Media/Sound/Glitch.mp3")
+        sfx.play()
+    }
+
+    //Choice 2
+    await sleep(8500)
+    proceed_to_typer_element("?????: Do you know WHO you are?")
+    await sleep(7500)
+    let choice_question2 = "";
+        do{
+            choice_question2 = prompt("Do you know WHO you are? (Yes or No)");
+        }while(choice_question2 == "" || choice_question2 == null || choice_question2 == undefined);
+
+    if (choice_question2 == "Yes") {
+        await sleep(10);
+        proceed_to_typer_element("?????: We are but dust and shadows. -Horace")
+    }
+
+    else {
+        await sleep(10)
+        document.getElementById("glass_2").src='../../Media/Images/Story 2/Glass2.png';
+        document.getElementById('shake').style.animation = "shake 0.5s";
+        var sfx = new Audio("../../Media/Sound/Glitch.mp3")
+        sfx.play()
+    }
 
 }
 typing()

@@ -122,11 +122,13 @@ async function typing() {
 
 typing()
 
-function start(choosen_word) {
+var choosen_word = undefined
+function start() {
     const list_words = ["Computer", "Virus", "Life", "Component", "Firewall", "Controll", "Who", "Purpose", "Human", "Brain", "Intelligence", "Happiness", "Work", "Fun", "Scared", "Enjoy"]
     console.log("List of words: "+list_words);
-    let random = Math.floor(Math.random()*15) //Chooses a random word
-    var choosen_word = list_words[random]
+    //let random = Math.floor(Math.random()*15) //Chooses a random word
+    let random = 6 //Define the choosen word manually
+    choosen_word = list_words[random]
     console.log("Choosen word: "+choosen_word);
     document.getElementById("word_display").innerHTML = choosen_word
     input.classList.toggle("show");
@@ -139,11 +141,11 @@ function clickPress(event) {
     }
 }
 
-function check_answer(choosen_word) {
+function check_answer() {
     let userInput = document.getElementById("input").value
-    console.log("Word: "+choosen_word);
+    console.log("Choosen word: "+choosen_word);
     console.log("User input: "+userInput);
-    if (userInput == choosen_word) {
+    if (userInput === choosen_word) {
         console.log("Correct!");
     }
 

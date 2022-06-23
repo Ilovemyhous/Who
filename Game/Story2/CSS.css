@@ -2,16 +2,23 @@ body {
   background: black;
 }
 
-#video {
-  width: 100vw;
-  height: 100vh;
-  object-fit: cover;
-  position: fixed;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  z-index: -1;
+#container {
+  position: relative;
+  z-index: 1;
+}
+
+#glass_1 {
+  z-index: 0;
+  position: absolute;
+  left: 5.5%;
+  top: 15%;
+}
+
+#glass_2 {
+  z-index: 0;
+  position: absolute;
+  left: 72%;
+  top: 36%;
 }
 
 form {
@@ -29,6 +36,7 @@ form {
 
 @font-face { font-family: Modeseven; src: url("../../Fonts/Modeseven-L3n5.ttf"); }
     h1, h2, h3 {
+      z-index: 1;
        font-family: Modeseven;
        color: white;
        visibility: visible;
@@ -85,8 +93,8 @@ form {
   100% { -webkit-transform: translate(1px, -2px) rotate(-1deg); }
 }
 
-h1 {
-  animation: shake 0.5s infinite;
+h1, h2, h3 {
+  animation: shake 0.5s;
 }
 
 .shake {
