@@ -1,13 +1,15 @@
 //  TO-DO
 //X
-
+//--disable=W033
 // Debugging stuff
 //console.log(localStorage);
 console.info(localStorage.sound);
 
 let color_text = 'gray';
 let delay_text = '100';
-
+let random = 3;
+const list_words = ["Computer", "Virus", "Life", "Component", "Firewall", "Controll", "Who", "Purpose", "Human", "Brain", "Intelligence", "Happiness", "Work", "Fun", "Scared", "Enjoy"]
+var choosen_word = list_words[random];
 function sleep(ms) {        //Command that allow the sleep command
     return new Promise(resolve => setTimeout(resolve, ms));
 }
@@ -109,7 +111,7 @@ async function typing() {
         await sleep(5000)
         //start()
     }
-    
+
     else {
         await sleep(1000)
         proceed_to_typer_element("?????: Oh really?")
@@ -122,9 +124,9 @@ async function typing() {
 
 typing()
 
-var choosen_word = undefined
+
 function start() {
-    const list_words = ["Computer", "Virus", "Life", "Component", "Firewall", "Controll", "Who", "Purpose", "Human", "Brain", "Intelligence", "Happiness", "Work", "Fun", "Scared", "Enjoy"]
+
     console.log("List of words: "+list_words);
     //let random = Math.floor(Math.random()*15) //Chooses a random word
     let random = 6 //Define the choosen word manually
@@ -143,6 +145,7 @@ function clickPress(event) {
 
 function check_answer() {
     let userInput = document.getElementById("input").value
+    console.log("Random: "+random);
     console.log("Choosen word: "+choosen_word);
     console.log("User input: "+userInput);
     if (userInput === choosen_word) {
@@ -153,5 +156,5 @@ function check_answer() {
         console.log("Wrong!");
         //window.open("../GameOver/HTML.html","_self")
     }
-    return choosen_word
+    return choosen_word;
 }
