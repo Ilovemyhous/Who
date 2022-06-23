@@ -83,6 +83,10 @@ The README file was a bit updated.
 Continued working on [Story1](https://github.com/Ilovemyhous/Who/blob/main/Game/Story1/HTML.html), almost done.
 
 ## Version 0.0.16
-*14th Junes 2022*
+*14th June 2022*
 Finalised the [Story1](https://github.com/Ilovemyhous/Who/blob/main/Game/Story1/HTML.html).
 Started the puzzle 3.
+
+## Version 0.0.17
+*21th and 22th June 2022*
+Working on the 3rd Puzzle, and the second part of Story.

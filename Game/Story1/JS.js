@@ -27,7 +27,6 @@ async function audio() {
                 volume: 1,
             }),
             music: new Howl({
-                //CHANGE IT
                 src: ['../../Media/Music/horror-atmosphere-background.mp3'],
                 html5: true,
                 volume: 0,

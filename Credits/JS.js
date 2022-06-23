@@ -1,3 +1,7 @@
+function sleep(ms) {        //Command that allow the sleep command
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+
 function audio() {
     if (localStorage.sound === "off"){
         //console.log("if audio: "+localStorage.sound);
@@ -25,4 +29,10 @@ function credits() {
     else {
         document.getElementById("user").innerHTML = "And thank you, "+username+" for playing!" 
     }
+}
+
+credits_done()
+async function credits_done(){
+    await sleep(145000)
+    window.open('../Hub/HTML.html','_self')
 }

@@ -15,11 +15,18 @@ form {
   position: relative;
 }
 
+
 @font-face { font-family: Modeseven; src: url("../../Fonts/Modeseven-L3n5.ttf"); }
     h1, h2, h3 {
        font-family: Modeseven;
        color: white;
        visibility: visible;
+    }
+
+    p {
+      font-family: Modeseven;
+      color: white;
+      font-size: larger;
     }
 
 .scanlines {

@@ -25,6 +25,7 @@ async function audio() {
                 src: ['../../Media/Music/Come-Play-with-Me.mp3'],
                 html5: true,
                 volume: 0,
+                loop : true,
             }),
             typing_sound: new Howl({
                 src: ['../../Media/Sound/Computer typing.mp3']
@@ -61,6 +62,7 @@ function proceed_to_typer_element(text_to_print) {
 
 // "Main" code, where you can input text, colour, and delay.
 async function typing() {
+    start()
     await sleep(100)
     //console.log("Debug function")
     delay_text = "100"
@@ -89,7 +91,7 @@ async function typing() {
     }
 
     else {
-        proceed_to_typer_element("Comptuer: I count on you " +username+"!")
+        proceed_to_typer_element("Computer: I count on you " +username+"!")
     }
 
     await sleep(5000)
@@ -103,7 +105,9 @@ async function typing() {
 
     if (choice_ready == "Yes") {
         await sleep(1000);
-        proceed_to_typer_element("?????: Okay! Let's do this!")
+        proceed_to_typer_element("?????: Okay! Let's do this.")
+        await sleep(5000)
+        //start()
     }
     
     else {
@@ -118,7 +122,34 @@ async function typing() {
 
 typing()
 
+function start(choosen_word) {
+    const list_words = ["Computer", "Virus", "Life", "Component", "Firewall", "Controll", "Who", "Purpose", "Human", "Brain", "Intelligence", "Happiness", "Work", "Fun", "Scared", "Enjoy"]
+    console.log("List of words: "+list_words);
+    let random = Math.floor(Math.random()*15) //Chooses a random word
+    var choosen_word = list_words[random]
+    console.log("Choosen word: "+choosen_word);
+    document.getElementById("word_display").innerHTML = choosen_word
+    input.classList.toggle("show");
+}
 
-function game_over() {
-    window.open('../GameOver/HTML.html','_self')
+//Runs the "check_answer" function when you press enter.
+function clickPress(event) {
+    if (event.keyCode == 13) {
+        check_answer()
+    }
+}
+
+function check_answer(choosen_word) {
+    let userInput = document.getElementById("input").value
+    console.log("Word: "+choosen_word);
+    console.log("User input: "+userInput);
+    if (userInput == choosen_word) {
+        console.log("Correct!");
+    }
+
+    else {
+        console.log("Wrong!");
+        //window.open("../GameOver/HTML.html","_self")
+    }
+    return choosen_word
 }

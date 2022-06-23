@@ -36,7 +36,7 @@ body {
        
 @keyframes creditRoll {
   0% {
-    top: 115%;
+    top: 125%;
   }
   100% {
     top: -425%;
