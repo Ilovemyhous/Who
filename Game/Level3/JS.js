@@ -1,15 +1,14 @@
 //  TO-DO
 //X
-//--disable=W033
 // Debugging stuff
 //console.log(localStorage);
 console.info(localStorage.sound);
 
 let color_text = 'gray';
 let delay_text = '100';
-let random = 3;
+let random
 const list_words = ["Computer", "Virus", "Life", "Component", "Firewall", "Controll", "Who", "Purpose", "Human", "Brain", "Intelligence", "Happiness", "Work", "Fun", "Scared", "Enjoy"]
-var choosen_word = list_words[random];
+let choosen_word
 function sleep(ms) {        //Command that allow the sleep command
     return new Promise(resolve => setTimeout(resolve, ms));
 }
@@ -128,8 +127,8 @@ typing()
 function start() {
 
     console.log("List of words: "+list_words);
-    //let random = Math.floor(Math.random()*15) //Chooses a random word
-    let random = 6 //Define the choosen word manually
+    random = Math.floor(Math.random()*15) //Chooses a random word
+    //random = 7 //Define the choosen word manually
     choosen_word = list_words[random]
     console.log("Choosen word: "+choosen_word);
     document.getElementById("word_display").innerHTML = choosen_word
