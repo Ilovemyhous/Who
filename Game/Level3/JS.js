@@ -1,4 +1,5 @@
 
+//jshint -W033
 
 // Debugging stuff
 //console.log(localStorage);
@@ -6,7 +7,9 @@ console.info(localStorage.sound);
 
 let color_text = 'gray';
 let delay_text = '100';
-
+let random
+const list_words = ["Computer", "Virus", "Life", "Component", "Firewall", "Controll", "Who", "Purpose", "Human", "Brain", "Intelligence", "Happiness", "Work", "Fun", "Scared", "Enjoy"]
+let choosen_word
 function sleep(ms) {        //Command that allow the sleep command
     return new Promise(resolve => setTimeout(resolve, ms));
 }
@@ -108,7 +111,7 @@ async function typing() {
         await sleep(5000)
         //start()
     }
-    
+
     else {
         await sleep(1000)
         proceed_to_typer_element("?????: Oh really?")
@@ -121,25 +124,22 @@ async function typing() {
 
 typing()
 
-var global_choosen_word = "";
 function start() {
-    const list_words = ["Computer", "Virus", "Life", "Component", "Firewall", "Controll", "Who", "Purpose", "Human", "Brain", "Intelligence", "Happiness", "Work", "Fun", "Scared", "Enjoy"]
+
     console.log("List of words: "+list_words);
-    //let random = Math.floor(Math.random()*15) //Chooses a random word
-    let random = 6 //Define the choosen word manually
+    random = Math.floor(Math.random()*15) //Chooses a random word
+    //random = 7 //Define the choosen word manually
     choosen_word = list_words[random]
-    global_choosen_word = choosen_word
     console.log("Choosen word: "+choosen_word);
     document.getElementById("word_display").innerHTML = choosen_word
     input.classList.toggle("show");
-    timer()
+    //timer()
     /*async function timer(userInput) {
         await sleep(5000)
         userInput = "TimeOut"
         console.log(userInput);
         check_answer(userInput)
     }*/
-    return global_choosen_word;
 }
 
 //Runs the "check_answer" function when you press enter.
@@ -149,11 +149,13 @@ function clickPress(event) {
     }
 }
 
+
 function check_answer() {
     let userInput = document.getElementById("input").value
-    console.log("Choosen word: "+global_choosen_word);
+    console.log("Random: "+random);
+    console.log("Choosen word: "+choosen_word);
     console.log("User input: "+userInput);
-    if (userInput == global_choosen_word) {
+    if (userInput === choosen_word) {
         console.log("Correct!");
     }
 
@@ -161,5 +163,5 @@ function check_answer() {
         console.log("Wrong!");
         //window.open("../GameOver/HTML.html","_self")
     }
-    return choosen_word
+    return choosen_word;
 }
