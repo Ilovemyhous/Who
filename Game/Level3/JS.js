@@ -124,7 +124,6 @@ async function typing() {
 
 typing()
 
-
 function start() {
 
     console.log("List of words: "+list_words);
@@ -134,6 +133,13 @@ function start() {
     console.log("Choosen word: "+choosen_word);
     document.getElementById("word_display").innerHTML = choosen_word
     input.classList.toggle("show");
+    //timer()
+    /*async function timer(userInput) {
+        await sleep(5000)
+        userInput = "TimeOut"
+        console.log(userInput);
+        check_answer(userInput)
+    }*/
 }
 
 //Runs the "check_answer" function when you press enter.
@@ -142,6 +148,7 @@ function clickPress(event) {
         check_answer()
     }
 }
+
 
 function check_answer() {
     let userInput = document.getElementById("input").value

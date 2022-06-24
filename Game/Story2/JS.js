@@ -200,6 +200,11 @@ async function typing() {
     var rise = new Audio("../../Media/Sound/Cinematic Rise.wav")
     rise.play()
 
+    if (choose_no === 0) {
+        await sleep(19500)
+        window.open("../GoodEnding/HTML.html","_self")
+    }
+
     if (choose_no > 0 && choose_no < 4) {
         delay_text = "200"
         proceed_to_typer_element("?????: And I thought I could trust you...")
