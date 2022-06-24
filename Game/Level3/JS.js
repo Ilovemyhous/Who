@@ -1,6 +1,6 @@
 
 //jshint -W033
-
+//jshint -W104
 // Debugging stuff
 //console.log(localStorage);
 console.info(localStorage.sound);
@@ -8,6 +8,9 @@ console.info(localStorage.sound);
 let color_text = 'gray';
 let delay_text = '100';
 let random
+let countdown
+let correct = 0;
+let time = 5
 const list_words = ["Computer", "Virus", "Life", "Component", "Firewall", "Controll", "Who", "Purpose", "Human", "Brain", "Intelligence", "Happiness", "Work", "Fun", "Scared", "Enjoy"]
 let choosen_word
 function sleep(ms) {        //Command that allow the sleep command
@@ -64,7 +67,7 @@ function proceed_to_typer_element(text_to_print) {
 
 // "Main" code, where you can input text, colour, and delay.
 async function typing() {
-    start()
+    //start()
     await sleep(100)
     //console.log("Debug function")
     delay_text = "100"
@@ -109,7 +112,9 @@ async function typing() {
         await sleep(1000);
         proceed_to_typer_element("?????: Okay! Let's do this.")
         await sleep(5000)
-        //start()
+        input.classList.toggle("show");
+        start()
+        return true
     }
 
     else {
@@ -125,14 +130,15 @@ async function typing() {
 typing()
 
 function start() {
-
+    countdown = window.setInterval( timer , 1000);
     console.log("List of words: "+list_words);
     random = Math.floor(Math.random()*15) //Chooses a random word
     //random = 7 //Define the choosen word manually
     choosen_word = list_words[random]
     console.log("Choosen word: "+choosen_word);
     document.getElementById("word_display").innerHTML = choosen_word
-    input.classList.toggle("show");
+
+
     //timer()
     /*async function timer(userInput) {
         await sleep(5000)
@@ -141,10 +147,36 @@ function start() {
         check_answer(userInput)
     }*/
 }
+let can_check = true
 
+function timer(){
+    time -= 1
+    console.log('Time:'+time)
+    if (time <= 0) {
+
+        if (check_answer()){return}
+        //input.classList.toggle("show")
+        can_check = false
+        proceed_to_typer_element("?????: Well I'm not going to waste any more time.")
+        sleep(6000)
+        window.open("../GameOver/HTML.html","_self")
+
+    }
+    else if (time <= 1){
+        document.getElementById("word_display").style = "color: crimson;"
+    }
+    else if (time <= 3) {
+        document.getElementById("word_display").style="color: indianred;"
+    }
+
+    else {
+        document.getElementById("word_display").style="color: white;"
+    }
+
+}
 //Runs the "check_answer" function when you press enter.
 function clickPress(event) {
-    if (event.keyCode == 13) {
+    if (event.keyCode == 13 && can_check) {
         check_answer()
     }
 }
@@ -157,11 +189,23 @@ function check_answer() {
     console.log("User input: "+userInput);
     if (userInput === choosen_word) {
         console.log("Correct!");
-    }
+        window.clearInterval(countdown);
 
+        if (correct >= 10) {
+            window.open("../Story2/HTML.html","_self")
+        }
+        else {
+            correct++
+            console.log("Correct: "+correct);
+            time = 5
+            document.getElementById("input").value = ""
+            start()
+        }
+    }
     else {
         console.log("Wrong!");
-        //window.open("../GameOver/HTML.html","_self")
+        return false;
+        window.open("../GameOver/HTML.html","_self")
     }
-    return choosen_word;
+    return true;
 }
