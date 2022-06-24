@@ -90,3 +90,8 @@ Started the puzzle 3.
 ## Version 0.0.17
 *21th and 22th June 2022*
 Working on the 3rd Puzzle, and the second part of Story.
+
+## Version 0.0.18
+*24th June 2022*
+Need to fix one bug for Puzzle 3.
+Story 2 finished.

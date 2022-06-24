@@ -1,5 +1,6 @@
-//  TO-DO
-//X
+
+
+
 // Debugging stuff
 //console.log(localStorage);
 console.info(localStorage.sound);
@@ -130,9 +131,11 @@ function start() {
     random = Math.floor(Math.random()*15) //Chooses a random word
     //random = 7 //Define the choosen word manually
     choosen_word = list_words[random]
+    global_choosen_word += choosen_word
     console.log("Choosen word: "+choosen_word);
     document.getElementById("word_display").innerHTML = choosen_word
     input.classList.toggle("show");
+    return choosen_word;
 }
 
 //Runs the "check_answer" function when you press enter.
@@ -144,10 +147,14 @@ function clickPress(event) {
 
 function check_answer() {
     let userInput = document.getElementById("input").value
+<<<<<<< HEAD
     console.log("Random: "+random);
     console.log("Choosen word: "+choosen_word);
+=======
+    console.log("Choosen word: "+global_choosen_word);
+>>>>>>> refs/remotes/origin/main
     console.log("User input: "+userInput);
-    if (userInput === choosen_word) {
+    if (userInput === global_choosen_word) {
         console.log("Correct!");
     }
 
