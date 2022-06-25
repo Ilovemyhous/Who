@@ -30,15 +30,14 @@ body {
           top: 100%;
           width: 99%;
           animation: creditRoll 130s linear forwards infinite;
-          animation-delay: 2s;
           animation-iteration-count: 1;
        }
        
 @keyframes creditRoll {
   0% {
-    top: 125%;
+    top: 130%;
   }
   100% {
-    top: -425%;
+    top: -525%;
   }
 }

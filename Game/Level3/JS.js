@@ -1,6 +1,3 @@
-
-//jshint -W033
-//jshint -W104
 // Debugging stuff
 //console.log(localStorage);
 console.info(localStorage.sound);
@@ -204,8 +201,8 @@ function check_answer() {
     }
     else {
         console.log("Wrong!");
-        return false;
         window.open("../GameOver/HTML.html","_self")
+        return false;
     }
     return true;
 }

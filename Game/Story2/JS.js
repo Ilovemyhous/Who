@@ -180,7 +180,15 @@ async function typing() {
 
     if (choice_question2 == "Yes") {
         await sleep(10);
-        proceed_to_typer_element("?????: Why do you persits?")
+        delay_text = "500"
+        username = localStorage.name
+        if (username == "" || username == null || username == undefined) {
+            proceed_to_typer_element("?????: Why do you persits?")
+        }
+
+        else {
+            proceed_to_typer_element("?????: Why do you persits "+username+"?")
+        }
     }
 
     else {
@@ -202,7 +210,7 @@ async function typing() {
 
     if (choose_no === 0) {
         await sleep(19500)
-        window.open("../GoodEnding/HTML.html","_self")
+        window.open("../../Credits/HTML.html","_self")
     }
 
     if (choose_no > 0 && choose_no < 4) {

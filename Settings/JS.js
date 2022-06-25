@@ -50,33 +50,3 @@ document.getElementById('sound').onclick = function() {
       console.log("Test: "+test);
   }
 }
-
-// //document.cookie = "sound=true; expires=11 Feb 2022 12:00:00 UTC; SameSite=None; Secure";
-// //document.cookie = "sounds=true; expires=11 Feb 2022 12:00:00 UTC; SameSite=None; Secure";
-
-// //Source: https://stackoverflow.com/questions/11801042/getting-a-checkbox-to-write-a-javascript-cookie
-// // Cookie for the sound
-// function setCookie(c_name,value,expiredays) {
-//   var exdate=new Date()
-//   exdate.setDate(exdate.getDate()+expiredays)
-//   document.cookie=c_name+ "=" +escape(value)+((expiredays==null) ? "" : ";expires="+exdate)
-// }
-
-// function getCookie(c_name) {
-//   if (document.cookie.length>0) {
-//       c_start=document.cookie.indexOf(c_name + "=")
-//       if (c_start!=-1) { 
-//           c_start=c_start + c_name.length+1 
-//           c_end=document.cookie.indexOf(";",c_start)
-//           if (c_end==-1) c_end=document.cookie.length
-//               return unescape(document.cookie.substring(c_start,c_end))
-//       } 
-//   }
-//   return null
-// }
-// onload=function(){
-// document.getElementById('sound').checked = getCookie('sound')==1? true : false;
-// }
-// function set_check_sound(){
-// setCookie('sound', document.getElementById('sound').checked? 1 : 0, 100);
-// }
