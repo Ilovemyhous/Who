@@ -107,7 +107,7 @@ async function typing() {
     document.getElementById('shake').style.animation = "";
     await sleep(8500)
     proceed_to_typer_element("?????: Do you know WHO I am?")
-    await sleep(7500)
+    await sleep(5500)
     let choose_no = 0
     let choice_question1 = "";
         do{
@@ -131,7 +131,7 @@ async function typing() {
 
     //Choice 2
     document.getElementById('shake').style.animation = "";
-    await sleep(8500)
+    await sleep(7500)
     proceed_to_typer_element("?????: Do you know WHO you are?")
     await sleep(7500)
     let choice_question2 = "";
@@ -175,7 +175,7 @@ async function typing() {
     await sleep(7500)
     let choice_question3 = "";
         do{
-            choice_question3 = prompt("Do you know WHO you are? (Yes or No)");
+            choice_question3 = prompt("Do you know WHY you are here? (Yes or No)");
         }while(choice_question3 == "" || choice_question3 == null || choice_question3 == undefined);
 
     if (choice_question2 == "Yes") {
@@ -183,11 +183,11 @@ async function typing() {
         delay_text = "500"
         username = localStorage.name
         if (username == "" || username == null || username == undefined) {
-            proceed_to_typer_element("?????: Why do you persits?")
+            proceed_to_typer_element("?????: Why do you persist?")
         }
 
         else {
-            proceed_to_typer_element("?????: Why do you persits "+username+"?")
+            proceed_to_typer_element("?????: Why do you persist "+username+"?")
         }
     }
 

@@ -95,3 +95,8 @@ Working on the 3rd Puzzle, and the second part of Story.
 *24th June 2022*
 Need to fix one bug for Puzzle 3.
 Story 2 finished.
+
+## Version 0.1.0
+*25th June 2022*
+Fixed some bugs.
+First Beta/Alpha release!
