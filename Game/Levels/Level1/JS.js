@@ -74,7 +74,7 @@ async function typing() {
     delay_text = '65'
     color_text = "white"
     await sleep(5000);
-    proceed_to_typer_element("Puzzle: The mainframe is on a circuit that leads to no other component. Click on the component you think, is the answer.");
+    proceed_to_typer_element("Puzzle: The mainframe is on a circuit that leads to no other component. Click on the component you think is the answer.");
     await sleep(7500);
     document.getElementById("puzzle_image").src="../../../Media/Images/Puzzle 1/PCB.png";
     await sleep(1000);

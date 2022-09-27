@@ -103,7 +103,7 @@ async function check_answer() {
         color_text = "white"
         proceed_to_typer_element(". . .")
         await sleep(4000)
-        window.open('../../Story/Story3/HTML.html','_self')
+        window.open('../../../Story/Story3/HTML.html','_self')
     }
 
     else {

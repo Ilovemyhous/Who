@@ -197,7 +197,7 @@ function check_answer() {
         window.clearInterval(countdown);
 
         if (correct >= 10) {
-            window.open("../../Story2/HTML.html","_self")
+            window.open("../../Story/Story2/HTML.html","_self")
         }
         else {
             correct++
