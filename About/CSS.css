@@ -7,7 +7,7 @@
     font-family: sans-serif;
 }
 
-p, h1, h2, h3, h4, h6, div {
+p, h1, h2, h3, h4, h5, h6, div {
     color: white;
     font-family: sans-serif;
 }
@@ -24,10 +24,15 @@ a {
     color: #3471eb; transition: 1s; text-decoration: none;
 }
 
+img {
+    width: 10%;
+    height: 10%
+}
+
 #background {
     position: fixed;
     right: 0;
     bottom: 0;
     min-width: 100%;
     min-height: 100%;
-  }
+}

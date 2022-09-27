@@ -237,7 +237,7 @@ async function code(){
 
     let choice_help = "";
 
-    async function ask_help(params) {
+    async function ask_help() {
         let choice_help = "";
         do{
             choice_help = prompt("Do you want to help me? (Yes or No)");
@@ -291,7 +291,7 @@ async function code(){
                 var typing_sound = sound.play()
             }
             await sleep(10000)
-            window.open("../Level1/HTML.html","_self")
+            window.open("../Levels/Level1/HTML.html","_self")
         }
         else if (choice_help == "No"){
             console.info("Help rejected");

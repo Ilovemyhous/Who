@@ -1,6 +1,7 @@
 let video = document.querySelector('video');
 let promise = video.play();
 
+// CODE FOR AUTOPLAY CHECK
 if (promise !== undefined) {
   promise.then(_ => {
     // Autoplay allowed!
@@ -15,6 +16,12 @@ if (promise !== undefined) {
     document.getElementById("autoplay_fail").style.color = "red"
     //alert("Autoplay has to be enabled for the game.")
   });
+}
+
+// CODE FOR CANVAS CHECK
+window.onload = function() {
+  var gl1 = Object.create(glitch_exec);
+  gl1.start(document.getElementById("canvas_check"));
 }
 
 // CODE FOR THE AUDIO CHECKBOX

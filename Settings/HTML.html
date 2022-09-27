@@ -12,8 +12,15 @@
     <p id="autoplay_fail"></p>
     <video autoplay controls muted id="autoplay" width="25%">
         <source src="../Media/Settings/Autoplay.mp4" type="video/mp4">
-    </video>
+    </video>    
     <p id="autoplay_success"></p>
+    <br>
+    <h2>Canvas check</h2>
+    <h3>Some browsers block HTML canvas, due to privacy, for this, you need to enabled those. The image below should glitch normally.</h3>
+    <p>No tracking is done in any way.</p>
+    <div id="canvas_check">
+        <img src="../Media/Images/Puzzle 1/Chip.png" width="5%" length="5%">
+    </div>
     <br>
     <h2>Audio settings</h2>
     <h3>Check with the audio file below if the volume on your device is adequate.</h3>
@@ -34,6 +41,11 @@
         <button>Go back</button>
     </a>
     <script src="JS.js"></script>
-    <footer style="position: absolute; bottom: 5px; color: white;">By Ilovemyhouse</footer>
+    <!--Required libs to check the canvas block-->
+    <script src="../libs/glitch-execute.js"></script>
+    <script src="../libs/glitch-lib.js"></script>
+    <script src="../libs/html2canvas.js"></script>
+
+    <footer style="position: absolute; bottom: 5px; color: white; right: 10px;">By Ilovemyhouse</footer>
 </body>
 </html>

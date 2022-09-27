@@ -1,5 +1,5 @@
 ﻿# Changelog
-*3th Febraury 2022 10:38*
+*3th February 2022 10:38*
 Created the repository
 
 ## Version 0.0.1
@@ -56,7 +56,7 @@ Got some music. The credits belong to their respective owner.
 ## Version 0.0.10
 *11th April 2022*
 Finished the [Level 1](https://github.com/Ilovemyhous/Who/blob/main/Game/Level 1/HTML.html), and [Level 2(https://github.com/Ilovemyhous/Who/blob/main/Game/Level 2/HTML.html)].
-Started the [Level 3](https://github.com/Ilovemyhous/Who/blob/main/Game/Level 3/HTML.html), but I have no ideas what to do. *(Depreaceated)*
+Started the [Level 3](https://github.com/Ilovemyhous/Who/blob/main/Game/Level 3/HTML.html), but I have no ideas what to do. *(Deprecated)*
 
 ## Version 0.0.11
 *12th April 2022*
@@ -100,3 +100,14 @@ Story 2 finished.
 *25th June 2022*
 Fixed some bugs.
 First Beta/Alpha release!
+
+## Version 0.1.1
+*14th August 2022 - 27 September 2022*
+Made a system that loads the 4K version of the title screen, if a screen with a certain resolution has been detected.
+Some fixes and changes here and there.
+Added the 3rd story page.
+Added 4th puzzle.
+Changed the path of the levels and story's.
+Spelling corrections.
+Added a new music.
+Probably a few more...

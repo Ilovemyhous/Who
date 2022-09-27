@@ -1,12 +1,14 @@
-﻿# Who ?
+# Who ?
 A game for a school project coded in JavaScript.
 Made by *Ilovemyhouse*.
 ### Version
 0.1.0
 
-![Somes notes I before creating the project, and yes I have a horrible handwriting, thank you.](https://cdn.discordapp.com/attachments/670769691936948265/938693325832216617/image0.jpg)
+![Somes notes before I creating the project, and yes I have a horrible handwriting, thank you.](https://cdn.discordapp.com/attachments/670769691936948265/938693325832216617/image0.jpg)
 ## About
 This is a game about one person (or two if we count you) were you will be asked questions, resolve puzzles, having an adventure, a bit of horror (which means; jumpscares), and maybe having multiple endings.
+
+The inspiration of this project, was a way to describe/show of, how I sometimes see things... and what I see, when I want to be alone. I was also mainly inspired by the [Professor Layton](https://www.laytonseries.com/) series.
 
 The game is only writen in HTML, CSS and JavaScript... that's it.
 ## To-Do
@@ -21,6 +23,7 @@ The game is only writen in HTML, CSS and JavaScript... that's it.
  - [X] Add credits
  - [X] Add easter eggs
  - [ ] Fix audio issues
+ - [ ] Propose to choose between HQ audio (if available), or compressed audio
 
  *More to come...*
 
@@ -31,8 +34,9 @@ To use things like the audio setting in the settings, you will need [*vscode-liv
 
 ## Credits
 Inspiration: The [Professor Layton](https://www.laytonseries.com/) series
+My own personall life experiences
 
-Libraries: [p5.js](https://p5js.org/) | [Typer.js](https://steven.codes/typerjs/) | [howler.js](https://github.com/goldfire/howler.js) | [FileSaver.js](https://github.com/eligrey/FileSaver.js)
+Libraries: [p5.js](https://p5js.org/) | [Typer.js](https://steven.codes/typerjs/) | [howler.js](https://github.com/goldfire/howler.js) | [FileSaver.js](https://github.com/eligrey/FileSaver.js) | [Glitch animation effect](https://github.com/commodo/glitch-animation-effect)
 
 Backgrounds: [Hub](https://github.com/Ilovemyhous/Who/blob/main/Hub/HTML.html) background by Ilovemyhouse | Rest made by [Elisabéth](https://codepen.io/elisabethdiang/pen/WNbBxXq)
 
