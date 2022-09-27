@@ -222,6 +222,6 @@ console.log(OS);
     await sleep(7500)
     proceed_to_typer_element("?????: We'll talk about the rest later...")
     await sleep(5000)
-    window.open('../../Level3/HTML.html','_self')
+    window.open('../../Levels/Level3/HTML.html','_self')
 }
 typing()
