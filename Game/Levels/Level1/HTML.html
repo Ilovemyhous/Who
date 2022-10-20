@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="CSS.css" rel="stylesheet" type="text/css"/>
+    <meta charset="utf-8" name="author" content="Ilovemyhouse">
+    <title>Puzzle 1</title>
+</head>
+<body onload="audio()">
+    <div id="background"></div>  
+    <h1><span>Puzzle 1</span></h1>
+    <div class="scanlines"></div>
+    <h2>
+        <div>
+            <!--Code for the text-->
+            <span class="typer" 
+            data-words="Computer: So finally we are here."
+            data-delay="100"
+            data-colors="gray"
+            data-loop="1"></span>
+            <!--Code for the cursor-->
+            <span class="cursor" data-owner="main"></span>
+        </div>
+    </h2>
+    <div id="images">
+        <img id="puzzle_image" width="25%" length="25%">
+        <img onclick="window.open('../Level2/HTML.html','_self')" id="chip_1" width="2%" length="2%">
+        <img onclick="window.open('../../GameOver/HTML.html','_self')" id="chip_2" width="2%" length="2%">
+        <img onclick="window.open('../../GameOver/HTML.html','_self')" id="chip_3" width="2%" length="2%">
+        <img onclick="window.open('../../GameOver/HTML.html','_self')" id="chip_4" width="2%" length="2%">
+        <img onclick="window.open('../../GameOver/HTML.html','_self')" id="chip_5" width="2%" length="2%">
+    </div>
+    <script src="JS.js"></script>
+    <script src="../../../libs/typer.js"></script>
+    <script src="../../../libs/howler.js"></script>
+</body>
+</html>

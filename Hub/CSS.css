@@ -1,0 +1,65 @@
+.content {
+    position: fixed;
+}
+
+#black {
+    color: rgb(0, 0, 0);
+    font-family: sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+#background {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
+
+a:hover {
+    color: #fff;
+    font-size: 300%;
+    transition: 0.5s;
+}
+
+a {
+    font-size: 200%;
+    position: fixed;
+    color: #34b7eb;
+    transition: 1.5s;
+    right: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+noscript {
+    color: red;
+    font-style: oblique;
+}
+
+#start {
+    position: fixed;
+    top: 40%;
+}
+
+#settings {
+    position: fixed;
+    top: 50%;
+}
+
+#settings_text {
+    position: fixed;
+    top: 52%;
+}
+
+#about {
+    position: fixed;
+    top: 60%;
+}

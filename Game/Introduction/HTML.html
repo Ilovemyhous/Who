@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="CSS.css" rel="stylesheet" type="text/css"/>
+    <meta charset="utf-8" name="author" content="Ilovemyhouse">
+    <meta name="viewport" content="width=device-width" />
+    <title>Introduction</title>
+</head>
+<body onload="audio()" id="body">
+    <div class="scanlines"></div>
+    <h2>
+        <div>
+            <!--Code for the text-->
+            <span class="typer" id="recovery_mode" 
+            data-words="Booting into recovery mode..."
+            data-delay="100"
+            data-colors="red"
+            data-loop="1"></span>
+            <!--Code for the cursor-->
+            <span class="cursor" data-owner="main"></span>
+        </div>
+    </h2>
+    <script src="../../libs/typer.js"></script>
+    <script src="../../libs/howler.js"></script>
+    <script src="JS.js"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="CSS.css" rel="stylesheet" type="text/css"/>
+    <meta charset="utf-8" name="author" content="Ilovemyhouse">
+    <title>Settings</title>
+</head>
+<body onload="setCheck()">
+    <h1>Settings/Checks</h1>
+    <h2>Autoplay check</h2>
+    <br>
+    <p id="autoplay_fail"></p>
+    <video autoplay controls muted id="autoplay" width="25%">
+        <source src="../Media/Settings/Autoplay.mp4" type="video/mp4">
+    </video>    
+    <p id="autoplay_success"></p>
+    <br>
+    <h2>Canvas check</h2>
+    <h3>Some browsers block HTML canvas, due to privacy, for this, you need to enabled those. The image below should glitch normally.</h3>
+    <p>No tracking is done in any way.</p>
+    <div id="canvas_check">
+        <img src="../Media/Images/Puzzle 1/Chip.png" width="5%" length="5%">
+    </div>
+    <br>
+    <h2>Audio settings</h2>
+    <h3>Check with the audio file below if the volume on your device is adequate.</h3>
+    <p><i>Change the volume on your computer, not the audio file.</i></p>
+    <audio controls>
+        <source src="../Media/Sound/Dramatic Pad 2.wav" type="audio/wav">
+    </audio>
+    <br><br><br>
+    <div>
+        <input id="sound" type="checkbox" value="true">
+        <label>Play audio during the game?</label>
+        <h6>Some audio will still be played, but stuff like music won't.</h6>
+    <i><p style="font-size: small;">This only works if you enabled/use <a href="https://github.com/ritwickdey/vscode-live-server">Live Server</a>.</p></i>
+    </div>
+    <br>
+    <i><p style="font-size: small;">Playing with headphones and in fullscreen is also recommanded.</p></i>
+    <a href="../Hub/HTML.html">
+        <button>Go back</button>
+    </a>
+    <script src="JS.js"></script>
+    <!--Required libs to check the canvas block-->
+    <script src="../libs/glitch-execute.js"></script>
+    <script src="../libs/glitch-lib.js"></script>
+    <script src="../libs/html2canvas.js"></script>
+
+    <footer style="position: absolute; bottom: 5px; color: white; right: 10px;">By Ilovemyhouse</footer>
+</body>
+</html>

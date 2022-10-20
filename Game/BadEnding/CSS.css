@@ -1,0 +1,180 @@
+.content {
+    position: fixed;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+  display: flex;
+  position: absolute;
+  opacity: 65%;
+  font-size:large;
+  text-decoration: underline azure;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+#back {
+  bottom: 25%;
+}
+
+#restart {
+  bottom: 15%;
+}
+
+#white {
+    color: white;
+    font-family: sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #000;
+  overflow: hidden;
+}
+
+h1 {
+  position: relative;
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size: calc(20px + 5vw);
+  font-weight: 700;
+  color: rgb(172, 23, 23);
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  text-shadow: 0 0 0.15em #cc1d1d;
+  user-select: none;
+  white-space: nowrap;
+  filter: blur(0.007em);
+  animation: blur 11s linear forwards, shake 1.75s linear forwards;
+}
+
+h1 span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  -webkit-clip-path: polygon(10% 0%, 44% 0%, 70% 100%, 55% 100%);
+          clip-path: polygon(10% 0%, 44% 0%, 70% 100%, 55% 100%);
+}
+
+h1::before,
+h1::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+h1::before {
+  animation: crack1 1.75s linear forwards;
+  -webkit-clip-path: polygon(0% 0%, 10% 0%, 55% 100%, 0% 100%);
+          clip-path: polygon(0% 0%, 10% 0%, 55% 100%, 0% 100%);
+}
+
+h1::after {
+  animation: crack2 3.75s linear forwards;
+  -webkit-clip-path: polygon(44% 0%, 100% 0%, 100% 100%, 70% 100%);
+          clip-path: polygon(43% 0%, 100% 0%, 100% 100%, 70% 100%);
+}
+
+@keyframes shake {
+  5%, 15%, 25%, 35%, 55%, 65%, 75%, 95% {
+      transform: translateY(0.008em) rotate(0deg);
+  }
+
+  10%, 30%, 40%, 50%, 70%, 80%, 90% {
+      transform: translateY(-0.018em) rotate(0.05deg);
+  }
+
+  20%, 60% {
+      transform: translate(-0.0075em, 0.01em) rotate(0.05deg);
+  }
+
+  45%, 85% {
+      transform: translate(0.00em, -0.01em) rotate(0deg);
+  }
+
+  100% {
+      transform: translate(0.0em) rotate(-7.5deg);
+  }
+}
+
+@keyframes blur {
+    5%, 15%, 25%, 35%, 55%, 65%, 75%, 95% {
+      filter: blur(0.018em);
+      transform: translateY(0.008em) rotate(0deg);
+  }
+
+  10%, 30%, 40%, 50%, 70%, 80%, 90% {
+      filter: blur(0.01em);
+  }
+
+  20%, 60% {
+      filter: blur(0.03em);
+  }
+
+  45%, 85% {
+      filter: blur(0.25em);
+  }
+
+  100% {
+      filter: blur(0.000em);
+  }
+}
+
+@keyframes crack1 {
+  0%, 95% {
+      transform: translate(-50%, -50%);
+  }
+
+  100% {
+      transform: translate(-53%, -46%);
+  }
+}
+
+@keyframes crack2 {
+  0%, 95% {
+      transform: translate(-50%, -50%);
+  }
+
+  100% {
+      transform: translate(-48%, -52%);
+  }
+}
+
+body {
+    background-color: #000000;
+    animation: bg-color 3s;
+    -webkit-animation: bg-color 3s;
+  }
+  
+  @-webkit-keyframes bg-color {
+    0% { background-color: #ffffff; }
+    100% { background-color: #000000; }
+  }
+  
+  @keyframes bg-color {
+    0% { background-color: #ffffff; }
+    100% { background-color: #000000; }
+  }
+
+h2, h3, h7, div {
+    color: white;
+    font-family: sans-serif;
+}
+
+@keyframes opacity_image {
+  0% { opacity: 0%; }
+  100% { opacity: 100%; }
+}
+
+@keyframes opacity_text {
+  0% { opacity: 100%; }
+  100% { opacity: 0%; }
+}
