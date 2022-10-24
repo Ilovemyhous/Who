@@ -111,6 +111,7 @@ async function typing() {
             await sleep(1000);
             proceed_to_typer_element("?????: Okay! Let's do this.")
             await sleep(5000)
+            input.value=""
             input.classList.toggle("show");
             start()
             return true
@@ -194,6 +195,7 @@ function check_answer() {
     console.log("User input: "+userInput);
     if (userInput === choosen_word) {
         console.log("Correct!");
+        document.getElementById("word_display").style="color: white;"
         window.clearInterval(countdown);
 
         if (correct >= 10) {

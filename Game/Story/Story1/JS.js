@@ -209,8 +209,9 @@ async function typing() {
         "Edge";
       if (navigator.userAgent.indexOf("Opera") != -1) browser = 
         "Opera";
-
-console.log(OS);
+      if (navigator.userAgent.indexOf("Safari") != -1) browser = 
+        "Safari";
+    console.log(browser);
 
     await sleep(6000)
     proceed_to_typer_element("?????: Right now you're using "+OS+" and a browser based on "+browser+"." )

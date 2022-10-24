@@ -115,6 +115,7 @@ async function typing() {
         }while(choice_question1 == "" || choice_question1 == null || choice_question1 == undefined);
 
     if (choice_question1 == "Yes") {
+        console.log("Numbers of no: "+choose_no);
         await sleep(10);
         proceed_to_typer_element("?????: We are but dust and shadows. -Horace")
     }
@@ -140,7 +141,7 @@ async function typing() {
 
     //Choice 2
     document.getElementById('shake').style.animation = "";
-    await sleep(7500)
+    await sleep(7750)
     proceed_to_typer_element("?????: Do you know WHO you are?")
     await sleep(7500)
     let choice_question2 = "";
@@ -149,6 +150,7 @@ async function typing() {
         }while(choice_question2 == "" || choice_question2 == null || choice_question2 == undefined);
 
     if (choice_question2 == "Yes") {
+        console.log("Numbers of no: "+choose_no);
         await sleep(10);
         proceed_to_typer_element("?????: What's the point?")
     }
@@ -196,7 +198,8 @@ async function typing() {
             choice_question3 = prompt("Do you know WHY you are here? (Yes or No)");
         }while(choice_question3 == "" || choice_question3 == null || choice_question3 == undefined);
 
-    if (choice_question2 == "Yes") {
+    if (choice_question3 == "Yes") {
+        console.log("Numbers of no: "+choose_no);
         await sleep(10);
         delay_text = "555"
         username = localStorage.name
@@ -210,6 +213,8 @@ async function typing() {
     }
 
     else {
+        choose_no ++;
+        console.log("Numbers of no: "+choose_no);
         await sleep(10)
         //Glitch effect script
             console.info("Debug glitch");
@@ -224,8 +229,6 @@ async function typing() {
         document.getElementById('shake').style.animation = "shake 0.5s";
         var sfx = new Audio("../../../Media/Sound/Glitch.mp3")
         sfx.play()
-        choose_no ++
-        console.log("Numbers of no: "+choose_no);
     }
 
     if (choose_no == 3) {
@@ -250,7 +253,7 @@ async function typing() {
         await sleep(8500)
         document.getElementById('placeholder').innerHTML = "LEAVE ME ALONE!"
         await sleep(100)
-        window.open("../../Levels/Level4/HTML.html","_self")
+        window.open("../../BadEnding/HTML.html","_self")
     }
 
 }
