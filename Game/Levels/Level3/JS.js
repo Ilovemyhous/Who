@@ -8,7 +8,7 @@ let random
 let countdown
 let correct = 0;
 let time = 5
-const list_words = ["Computer", "Virus", "Life", "Component", "Firewall", "Controll", "Who", "Purpose", "Human", "Brain", "Intelligence", "Happiness", "Work", "Fun", "Scared", "Enjoy"]
+const list_words = ["Computer", "Virus", "Life", "Component", "Firewall", "Control", "Who", "Purpose", "Human", "Brain", "Intelligence", "Happiness", "Work", "Fun", "Scared", "Enjoy", "Panic", "Alone", "Leave"]
 let choosen_word
 function sleep(ms) {        //Command that allow the sleep command
     return new Promise(resolve => setTimeout(resolve, ms));

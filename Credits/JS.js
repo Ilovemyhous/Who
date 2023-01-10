@@ -10,7 +10,7 @@ function audio() {
     }
     else {
         //console.log("else audio: "+localStorage.sound);
-        var audio = new Audio("../../Media/Music/Caspar - Final Nights 4 - Original Soundtrack - 09 Closure.flac");
+        var audio = new Audio("../../Media/Music/A Mind Is Born (Space Objects remix).mp3");
         console.log("Debug audio")
         audio.play();
         credits()
@@ -33,6 +33,6 @@ function credits() {
 
 credits_done()
 async function credits_done(){
-    await sleep(145000)
+    await sleep(180000)
     window.open('../Game/GoodEnding/HTML.html','_self')
 }

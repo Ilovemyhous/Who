@@ -238,6 +238,14 @@ async function typing() {
     if (choose_no === 0) {
         await sleep(19500)
         document.getElementById('placeholder').innerHTML = "LEAVE ME ALONE!"
+
+        let download = new File(
+            ["LEAVE ME ALONE!!!"],
+            "leave my alone.txt",
+            {type: "text/plain:charset=utf8"}
+        );
+        saveAs(download)
+
         await sleep(100)
         window.open("../../../Credits/HTML.html","_self")
     }
@@ -249,6 +257,14 @@ async function typing() {
         proceed_to_typer_element("?????: In WHO can we trust nowadays?!")
         await sleep(8500)
         document.getElementById('placeholder').innerHTML = "LEAVE ME ALONE!"
+
+        let download = new File(
+            ["LEAVE ME ALONE!!!"],
+            "leave my alone.txt",
+            {type: "text/plain:charset=utf8"}
+        );
+        saveAs(download)
+
         await sleep(100)
         window.open("../../Levels/Level4/HTML.html","_self")
     }

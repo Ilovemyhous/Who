@@ -26,6 +26,14 @@ The game is only writen in HTML, CSS and JavaScript... that's it.
 
  *More to come...*
 
+## Known issues:
+- The credits scroll faster on larger screens (like 4K)
+- Story 2 sends you straight to the credits instead of continuing the game.
+- Level 4 sends you to a broken Story 3.
+- Last question in Story 2 counts as Yes, even though No was said.
+- Fix animations at Story 2.
+- Probably more
+
 ## Install
 Download/Clone the code, and launch the *Arrival.html* file.
 

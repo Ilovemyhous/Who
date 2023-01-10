@@ -29,7 +29,7 @@ body {
           position: absolute;
           top: 100%;
           width: 99%;
-          animation: creditRoll 130s linear forwards infinite;
+          animation: creditRoll 173s linear forwards infinite;
           animation-iteration-count: 1;
        }
        
