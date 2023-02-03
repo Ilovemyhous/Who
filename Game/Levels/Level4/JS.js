@@ -73,7 +73,7 @@ async function typing() {
     await sleep(11000);
     delay_text = "35"
     color_text = "white"
-    proceed_to_typer_element("Puzzle: Ten candles stand burning in a dining room. A strong breeze blows in through an open window and extinguishes two of them. Checking back in on the candles later you see that one more candle has gone out. To make sure no more flames go out you shut the window. Assuming the wind doesn't extinguish any more candles how many candles do you have left in the end? (Answer only in numbers.)")
+    proceed_to_typer_element("Puzzle: Ten candles stand burning in a dining room. A strong breeze blows in through an open window and extinguishes two of them. Checking back in on the candles later you see that one more candle has gone out. To make sure no more flames go out you shut the window. Assuming the wind doesn't extinguish any more candles how many candles do you have left in the end?")
     await sleep(20000);
     //var answer = prompt("Your answer.")
     let answer_input = document.getElementById("answer");

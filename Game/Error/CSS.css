@@ -2,6 +2,8 @@ body {
     background: black;
     font-family: "Oswald", sans-serif;
     font-style: italic;
+    overflow-y: hidden;
+    overflow-x: hidden;
   }
   
   .container {

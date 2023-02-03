@@ -20,9 +20,10 @@ body {
   }
 
 a:hover {
-    color: #fff;
+    color: rgb(255, 0, 0);
     font-size: 300%;
     transition: 0.5s;
+    text-decoration: underline;
 }
 
 a {

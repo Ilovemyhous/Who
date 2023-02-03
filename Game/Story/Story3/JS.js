@@ -22,12 +22,8 @@ async function audio() {
     else {
         //Defines the audio for the typing sound, and audio.
         var sound = {
-            jumpscare: new Howl({
-                src: ['../../../Media/Sound/Violin scare.wav'],
-                volume: 1,
-            }),
             music: new Howl({
-                src: ['../../../Media/Sound/Ominous Background.wav'],
+                src: ['../../../Media/Music/Story 3 - iustitia.wav'],
                 html5: true,
                 volume: 0,
                 loop: true,

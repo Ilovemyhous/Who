@@ -23,7 +23,7 @@ function audio() {
             img.innerText = image*/
 
         let img = document.createElement("img")
-        img.style = "animation: opacity_image 75s linear forwards"
+        img.style = "animation: opacity_image 110s linear forwards"
         //img.style = "animation: opacity_text 1s linear 10s forwards"
         img.src = "../../Media/Images/GameOver/Creepy face.png"
         document.getElementById("easter_egg").appendChild(img)

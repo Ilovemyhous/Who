@@ -35,4 +35,4 @@ If applicable, add screenshots to help explain your problem.
 **Additional context**
 Add any other context about the problem here.
 
-[ ] I tried to reload the page, to check if the issue persist.
+- [ ] I tried to reload the page, to check if the issue persist.

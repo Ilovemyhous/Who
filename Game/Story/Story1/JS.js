@@ -88,7 +88,7 @@ async function typing() {
 
     delay_text = '100'
     color_text = "gray"
-    await sleep(8000);
+    await sleep(9000);
     proceed_to_typer_element("Computer: What... what do you mean?");
 
     delay_text = '100'

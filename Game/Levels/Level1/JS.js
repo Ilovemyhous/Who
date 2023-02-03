@@ -23,7 +23,6 @@ async function audio() {
         var sound = {
             music: new Howl({
                 src: ['../../../Media/Music/Running - DanThePianoMan.wav'],
-                //src: ['../../../Media/Sound/Wii crashing sound.mp3'],
                 html5: true,
                 volume: 0,
             }),
@@ -75,7 +74,7 @@ async function typing() {
     color_text = "white"
     await sleep(5000);
     proceed_to_typer_element("Puzzle: The mainframe is on a circuit that leads to no other component. Click on the component you think is the answer.");
-    await sleep(7500);
+    await sleep(10000);
     document.getElementById("puzzle_image").src="../../../Media/Images/Puzzle 1/PCB.png";
     await sleep(1000);
     document.getElementById("chip_4").src='../../../Media/Images/Puzzle 1/Chip.png';

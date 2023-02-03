@@ -111,3 +111,12 @@ Changed the path of the levels and story's.
 Spelling corrections.
 Added a new music.
 Probably a few more...
+
+## Version 0.1.3
+*2nd and 3rd February 2023*
+Removed the glitch effect due to optimisation.
+Fixed some text delays.
+The Story 2 page now redirect's you correctly.
+Minor fixes.
+Changed credit music.
+Created a new credits category; Beta and Alpha testers.

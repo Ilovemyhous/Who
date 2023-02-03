@@ -99,7 +99,7 @@ async function typing() {
     await sleep(3475)
     document.getElementById('shake').style.animation = "shake 0.35s";
 
-    await sleep(3500)
+    await sleep(3600)
     delay_text = '175'
     proceed_to_typer_element("?????: Now let me ask you a few questions...")
 
@@ -117,19 +117,11 @@ async function typing() {
     if (choice_question1 == "Yes") {
         await sleep(10);
         proceed_to_typer_element("?????: We are but dust and shadows. -Horace")
+        console.log("Numbers of no: "+choose_no);
     }
 
     else {
         await sleep(10)
-        //Glitch effect script
-            console.info("Debug glitch");
-            var gl = Object.create(glitch_exec);
-            gl.GLITCH_RENDER_COUNT = 2;
-            /*gl.done_callback = function() {
-                alert("Stopped Glitching");
-            }*/
-            gl.start(document.body);
-        //Glitch effect script END
         document.getElementById("glass_1").src='../../../Media/Images/Story 2/Glass1.png';
         document.getElementById('shake').style.animation = "shake 0.5s";
         var sfx = new Audio("../../../Media/Sound/Glitch.mp3")
@@ -151,19 +143,11 @@ async function typing() {
     if (choice_question2 == "Yes") {
         await sleep(10);
         proceed_to_typer_element("?????: What's the point?")
+        console.log("Numbers of no: "+choose_no);
     }
 
     else {
         await sleep(10)
-        //Glitch effect script
-            console.info("Debug glitch");
-            var gl = Object.create(glitch_exec);
-            gl.GLITCH_RENDER_COUNT = 2;
-            /*gl.done_callback = function() {
-                alert("Stopped Glitching");
-            }*/
-            gl.start(document.body);
-        //Glitch effect script END
         document.getElementById("glass_2").src='../../../Media/Images/Story 2/Glass2.png';
         document.getElementById('shake').style.animation = "shake 0.5s";
         var sfx = new Audio("../../../Media/Sound/Glitch.mp3")
@@ -195,8 +179,12 @@ async function typing() {
         do{
             choice_question3 = prompt("Do you know WHY you are here? (Yes or No)");
         }while(choice_question3 == "" || choice_question3 == null || choice_question3 == undefined);
+    
+    console.log(choice_question2);
+    console.log(choice_question3);
 
     if (choice_question2 == "Yes") {
+        console.log("Numbers of no: "+choose_no);
         await sleep(10);
         delay_text = "555"
         username = localStorage.name
@@ -211,15 +199,6 @@ async function typing() {
 
     else {
         await sleep(10)
-        //Glitch effect script
-            console.info("Debug glitch");
-            var gl = Object.create(glitch_exec);
-            gl.GLITCH_RENDER_COUNT = 2;
-            /*gl.done_callback = function() {
-                alert("Stopped Glitching");
-            }*/
-            gl.start(document.body);
-        //Glitch effect script END
         document.getElementById("glass_3").src='../../../Media/Images/Story 2/Glass3.png';
         document.getElementById('shake').style.animation = "shake 0.5s";
         var sfx = new Audio("../../../Media/Sound/Glitch.mp3")
@@ -247,10 +226,10 @@ async function typing() {
         saveAs(download)
 
         await sleep(100)
-        window.open("../../../Credits/HTML.html","_self")
+        window.open("../../Levels/Level4/HTML.html","_self")
     }
 
-    if (choose_no > 0 && choose_no < 4) {
+    if (choose_no < 0 && choose_no > 4) {
         delay_text = "200"
         proceed_to_typer_element("?????: And I thought I could trust you...")
         await sleep(11000)
@@ -265,7 +244,7 @@ async function typing() {
         );
         saveAs(download)
 
-        await sleep(100)
+        await sleep(1000)
         window.open("../../Levels/Level4/HTML.html","_self")
     }
 

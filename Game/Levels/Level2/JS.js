@@ -1,6 +1,3 @@
-//  TO-DO
-//X
-
 // Debugging stuff
 //console.log(localStorage);
 console.info(localStorage.sound);
@@ -22,12 +19,12 @@ async function audio() {
         //Defines the audio for the typing sound, and audio.
         var sound = {
             music: new Howl({
-                src: ['../../Media/Music/Mystery - Wee Free Music.wav'],
+                src: ['../../../Media/Music/Mystery - Wee Free Music.wav'],
                 html5: true,
                 volume: 0,
             }),
             typing_sound: new Howl({
-                src: ['../../Media/Sound/Computer typing.mp3']
+                src: ['../../../Media/Sound/Computer typing.mp3']
             })
         };
 
@@ -73,8 +70,8 @@ async function typing() {
     delay_text = '65'
     color_text = "white"
     await sleep(5000);
-    proceed_to_typer_element("Puzzle: Mice are famous for their ability to multiply at breakneck speeds. The type of mouse we have here gives birth once a month birthing 12 babies each time. Baby mice mature and can give birth two months after they are born. You picked up one of these darling baby mice at the pet shop and brought it home the day after it was born. In 10 months from now how many mice will you have?  (Answer only in numbers)");
-    await sleep(30000);
+    proceed_to_typer_element("Puzzle: Mice are famous for their ability to multiply at breakneck speeds. The type of mouse we have here gives birth once a month birthing 12 babies each time. Baby mice mature and can give birth two months after they are born. You picked up one of these darling baby mice at the pet shop and brought it home the day after it was born. In 10 months from now how many mice will you have?");
+    await sleep(32000);
     //var answer = prompt("Your answer.")
     let answer_input = document.getElementById("answer");
     answer_input.classList.toggle("show");

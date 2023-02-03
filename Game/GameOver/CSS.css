@@ -51,7 +51,7 @@ h1 {
   user-select: none;
   white-space: nowrap;
   filter: blur(0.007em);
-  animation: blur 11s linear forwards, shake 1.75s linear forwards;
+  animation: blur 11s linear forwards, shake 1.9s linear forwards;
 }
 
 h1 span {
@@ -72,7 +72,7 @@ h1::after {
 }
 
 h1::before {
-  animation: crack1 1.75s linear forwards;
+  animation: crack1 1.9s linear forwards;
   -webkit-clip-path: polygon(0% 0%, 10% 0%, 55% 100%, 0% 100%);
           clip-path: polygon(0% 0%, 10% 0%, 55% 100%, 0% 100%);
 }

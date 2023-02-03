@@ -6,6 +6,20 @@ setTimeout(function bar() {
     var width = 0;
     var id = setInterval(frame, 100);
     function frame() {
+      //Loads the music, so that it get's stored in the cache.
+      //This ain't working, so goodbye I guess... for now.
+      /* if (width >= 50) {
+        if (localStorage.sound === "off") {
+          console.log("Don't load the music, because the sound is off");
+        }
+
+        else {
+          var music = new Audio("../../Media/Music/Mystery - Wee Free Music.wav");
+          music.play();
+          music.volume = 0.5;
+        }
+      } */
+
       if (width >= 99) {
         clearInterval(id);
         document.getElementById("bar_filling").style.background = "red"
