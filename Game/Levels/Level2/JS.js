@@ -91,15 +91,15 @@ async function skippable_typer_element(text_to_print, delay) {
 async function typing() {
     await sleep(100)
     //console.log("Debug function")
-    skippable_typer_element("Computer: Here we are. At the mainframe.", 5000);
-    skippable_typer_element("Computer: Hold on. There's a password with a puzzle on it.", 2000);
+    await skippable_typer_element("Computer: Here we are. At the mainframe.", 5000);
+    await skippable_typer_element("Computer: Hold on. There's a password with a puzzle on it.", 2000);
     //var typing_sound = sound.typing_sound.play()
     //sound.stop()
 
     delay_text = '65'
     color_text = "white"
     await skippable_sleep(5000);
-    skippable_typer_element("Puzzle: Mice are famous for their ability to multiply at breakneck speeds. The type of mouse we have here gives birth once a month birthing 12 babies each time. Baby mice mature and can give birth two months after they are born. You picked up one of these darling baby mice at the pet shop and brought it home the day after it was born. In 10 months from now how many mice will you have?", 32000);
+    await skippable_typer_element("Puzzle: Mice are famous for their ability to multiply at breakneck speeds. The type of mouse we have here gives birth once a month birthing 12 babies each time. Baby mice mature and can give birth two months after they are born. You picked up one of these darling baby mice at the pet shop and brought it home the day after it was born. In 10 months from now how many mice will you have?", 32000);
     //var answer = prompt("Your answer.")
     let answer_input = document.getElementById("answer");
     answer_input.classList.toggle("show");

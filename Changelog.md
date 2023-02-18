@@ -120,3 +120,9 @@ The Story 2 page now redirect's you correctly.
 Minor fixes.
 Changed credit music.
 Created a new credits category; Beta and Alpha testers.
+
+## Version 0.1.4
+*18th Febuary 2023*
+Fixed minor bug conserning colors on level 3
+Added skippable text to puzzles
+Moved "typer elements" to JS on puzzles

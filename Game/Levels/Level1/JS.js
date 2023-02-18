@@ -94,15 +94,15 @@ async function skippable_typer_element(text_to_print, delay) {
 async function typing() {
     await skippable_sleep(100)
     //console.log("Debug function")
-    skippable_typer_element("Computer: So finally we are here.",5000);
-    skippable_typer_element("Computer: We need to find a way to the mainframe.",2000);
+    await skippable_typer_element("Computer: So finally we are here.",5000);
+    await skippable_typer_element("Computer: We need to find a way to the mainframe.",2000);
     //var typing_sound = sound.typing_sound.play()
     //sound.stop()
 
     delay_text = '65'
     color_text = "white"
     await skippable_sleep(5000);
-    skippable_typer_element("Puzzle: The mainframe is on a circuit that leads to no other component. Click on the component you think is the answer.",10000);
+    await skippable_typer_element("Puzzle: The mainframe is on a circuit that leads to no other component. Click on the component you think is the answer.",10000);
     document.getElementById("puzzle_image").src="../../../Media/Images/Puzzle 1/PCB.png";
     await sleep(1000);
     document.getElementById("chip_4").src='../../../Media/Images/Puzzle 1/Chip.png';
