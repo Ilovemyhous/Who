@@ -9,6 +9,31 @@ function sleep(ms) {        //Command that allow the sleep command
     return new Promise(resolve => setTimeout(resolve, ms));
 }
 
+function skippable_sleep(ms) {
+    return new Promise(resolve => {
+        function skip(event){
+            console.log("skipping");
+            console.log(event);
+            switch(event.key) {
+            case "Enter":
+            case " ":
+            case "Space":
+            case "Escape":
+                end();
+            defualt:
+                break;
+            }
+        }
+        function end(){
+            console.log("end");
+            document.removeEventListener("keydown", skip);
+            resolve();
+        }
+        document.addEventListener("keydown", skip);
+        setTimeout(end, ms);
+    });
+}
+
     //Code responsible for audio
 async function audio() {
     if (localStorage.sound === "off"){
@@ -53,25 +78,28 @@ function proceed_to_typer_element(text_to_print) {
     const cursor = document.querySelector('.cursor');
     div.appendChild(cursor);
     document.querySelector('h2').appendChild(div);
-    new Typer(my_element);
+    return new Typer(my_element);
+}
+
+async function skippable_typer_element(text_to_print, delay) {
+    let typer = proceed_to_typer_element(text_to_print);
+    await skippable_sleep(delay);
+    typer.delay = 0;
 }
 
 // "Main" code, where you can input text, colour, and delay.
 async function typing() {
     await sleep(100)
     //console.log("Debug function")
-    delay_text = "100"
-    await sleep(5000);
-    proceed_to_typer_element("Computer: Hold on. There's a password with a puzzle on it.");
+    skippable_typer_element("Computer: Here we are. At the mainframe.", 5000);
+    skippable_typer_element("Computer: Hold on. There's a password with a puzzle on it.", 2000);
     //var typing_sound = sound.typing_sound.play()
-    await sleep(2000);
     //sound.stop()
 
     delay_text = '65'
     color_text = "white"
-    await sleep(5000);
-    proceed_to_typer_element("Puzzle: Mice are famous for their ability to multiply at breakneck speeds. The type of mouse we have here gives birth once a month birthing 12 babies each time. Baby mice mature and can give birth two months after they are born. You picked up one of these darling baby mice at the pet shop and brought it home the day after it was born. In 10 months from now how many mice will you have?");
-    await sleep(32000);
+    await skippable_sleep(5000);
+    skippable_typer_element("Puzzle: Mice are famous for their ability to multiply at breakneck speeds. The type of mouse we have here gives birth once a month birthing 12 babies each time. Baby mice mature and can give birth two months after they are born. You picked up one of these darling baby mice at the pet shop and brought it home the day after it was born. In 10 months from now how many mice will you have?", 32000);
     //var answer = prompt("Your answer.")
     let answer_input = document.getElementById("answer");
     answer_input.classList.toggle("show");
