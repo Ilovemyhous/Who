@@ -1,7 +1,3 @@
-//  TO-DO
-//Add the audio
-//Finish the sotry for this page.
-
 // Debugging stuff
 //console.log(localStorage);
 
@@ -117,6 +113,8 @@ async function check_answer() {
             var audio = new Audio("../../../Media/Sound/MetalClang.wav");
             audio.play()
         }
+        button_answer.classList.toggle("hide");
+        answer_input.classList.toggle("hide");
         delay_text ="64"
         color_text = "red"
         proceed_to_typer_element("ERROR: System is in lockdown mode!")

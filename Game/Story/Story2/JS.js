@@ -1,7 +1,3 @@
-//  TO-DO
-//Add the audio
-//Finish the sotry for this page.
-
 // Debugging stuff
 //console.log(localStorage);
 //console.info(localStorage.sound);
@@ -103,6 +99,7 @@ async function typing() {
     delay_text = '175'
     proceed_to_typer_element("?????: Now let me ask you a few questions...")
 
+
     //Choice 1
     document.getElementById('shake').style.animation = "";
     await sleep(8500)
@@ -114,7 +111,7 @@ async function typing() {
             choice_question1 = prompt("Do you know WHO I am? (Yes or No)");
         }while(choice_question1 == "" || choice_question1 == null || choice_question1 == undefined);
 
-    if (choice_question1 == "Yes") {
+    if (choice_question1.trim() == "Yes") {
         await sleep(10);
         proceed_to_typer_element("?????: We are but dust and shadows. -Horace")
         console.log("Numbers of no: "+choose_no);
@@ -122,16 +119,16 @@ async function typing() {
 
     else {
         await sleep(10)
+        document.getElementById('shake').style.animation = "shake 0.25s";
         document.getElementById("glass_1").src='../../../Media/Images/Story 2/Glass1.png';
-        document.getElementById('shake').style.animation = "shake 0.5s";
         var sfx = new Audio("../../../Media/Sound/Glitch.mp3")
         sfx.play()
         choose_no ++
         console.log("Numbers of no: "+choose_no);
+        document.getElementById('shake').style.animation = "";
     }
 
     //Choice 2
-    document.getElementById('shake').style.animation = "";
     await sleep(7500)
     proceed_to_typer_element("?????: Do you know WHO you are?")
     await sleep(7500)
@@ -149,7 +146,7 @@ async function typing() {
     else {
         await sleep(10)
         document.getElementById("glass_2").src='../../../Media/Images/Story 2/Glass2.png';
-        document.getElementById('shake').style.animation = "shake 0.5s";
+        document.getElementById('shake').style.animation = "shake 0.25s";
         var sfx = new Audio("../../../Media/Sound/Glitch.mp3")
         sfx.play()
         choose_no ++
@@ -183,7 +180,7 @@ async function typing() {
     console.log(choice_question2);
     console.log(choice_question3);
 
-    if (choice_question2 == "Yes") {
+    if (choice_question3 == "Yes") {
         console.log("Numbers of no: "+choose_no);
         await sleep(10);
         delay_text = "555"
@@ -199,6 +196,7 @@ async function typing() {
 
     else {
         await sleep(10)
+        console.log("Debug");
         document.getElementById("glass_3").src='../../../Media/Images/Story 2/Glass3.png';
         document.getElementById('shake').style.animation = "shake 0.5s";
         var sfx = new Audio("../../../Media/Sound/Glitch.mp3")
@@ -229,7 +227,7 @@ async function typing() {
         window.open("../../Levels/Level4/HTML.html","_self")
     }
 
-    if (choose_no < 0 && choose_no > 4) {
+    if (choose_no > 0 && choose_no < 4) {
         delay_text = "200"
         proceed_to_typer_element("?????: And I thought I could trust you...")
         await sleep(11000)

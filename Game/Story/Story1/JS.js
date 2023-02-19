@@ -1,7 +1,3 @@
-//  TO-DO
-//Add the audio
-//Finish the sotry for this page.
-
 // Debugging stuff
 //console.log(localStorage);
 console.info(localStorage.sound);

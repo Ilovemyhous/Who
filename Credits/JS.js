@@ -43,6 +43,10 @@ if (window.screen.availWidth >= 3000 && window.screen.availHeight >= 2000) {
 else if (window.screen.availWidth >= 2000 && window.screen.availHeight >= 1250) {
     console.info ("QHD detected");
     //alert("QHD detected");
+
+    var styleEl = document.createElement('style');
+    styleEl.innerHTML = '#Credits {height: 100vh; display: block; position: absolute; top: 100%; width: 99%; animation: creditRoll 171s linear forwards infinite; animation-iteration-count: 1; } @keyframes creditRoll { 0% { top: 150%; } 100% { top: -443%; }}'
+    document.head.appendChild(styleEl);
 }
 
 else if (window.screen.availWidth <= 2000 && window.screen.availHeight <= 1100) {

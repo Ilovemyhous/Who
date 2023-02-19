@@ -1,6 +1,3 @@
-//  TO-DO
-//X
-
 // Debugging stuff
 //console.log(localStorage);
 console.info(localStorage.sound);

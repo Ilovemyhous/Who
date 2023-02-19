@@ -2,7 +2,7 @@
 A game for a school project coded in JavaScript.
 Made by *Ilovemyhouse*.
 ### Version
-0.1.4
+0.1.5
 
 ## About
 This is a game about one person (or two if we count you) were you will be asked questions, resolve puzzles, having an adventure, a bit of horror (which means; jumpscares), and maybe having multiple endings.
@@ -23,7 +23,7 @@ The game is only writen in HTML, CSS and JavaScript... that's it.
  - [X] Add easter eggs
  - [ ] Fix audio issues
  - [ ] Propose to choose between HQ audio (if available), or compressed audio
- - [ ] Make the dialog faster
+ - [X] Make the dialog faster
 
  *More to come...*
 
@@ -31,10 +31,10 @@ The game is only writen in HTML, CSS and JavaScript... that's it.
 
 - Last question in Story 2 counts as Yes, even though No was said.
 - Fix animations at Story 2.
-- Probably more
 - Limit to one input, Level 4.
+- Probably more
 
-## Normally fixed fixed issues (needs testing)
+## Normally fixed issues (needs testing)
 - Story 2 sends you straight to the credits instead of continuing the game.
 - The credits scroll faster on larger screens (like 4K)
 

@@ -11,17 +11,6 @@ function audio() {
         console.log("Debug audio")
         audio.play();
 
-        //IGNORE GARBAGE CODE
-            /*//var image = ['../../Media/Images/GameOver/Creepy face.png']
-            //document.getElementById("easter_egg").style.backgroundImage ="url('../../Media/Images/GameOver/Creepy face.png')"
-            //document.getElementById("easter_egg_image").src = "../../Media/Images/GameOver/Creepy face.png"
-            //document.getElementById("easter_egg").animation = "opacity 7.5s linear forwards;"
-            //document.getElementById("easter_egg").innerHTML = <img id="easter_egg_image" src="../../Media/Images/GameOver/Creepy face.png"></img>
-            /*var image = ['../../Media/Images/GameOver/Creepy face.png']
-            var img = document.getElementById("img")
-            img.style.backgroundImage = "url(" + image + ")"
-            img.innerText = image*/
-
         let img = document.createElement("img")
         img.style = "animation: opacity_image 110s linear forwards"
         //img.style = "animation: opacity_text 1s linear 10s forwards"

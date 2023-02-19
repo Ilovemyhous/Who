@@ -122,7 +122,15 @@ Changed credit music.
 Created a new credits category; Beta and Alpha testers.
 
 ## Version 0.1.4
-*18th Febuary 2023*
-Fixed minor bug conserning colors on level 3
+*18th February 2023*
+By [MasterTrainerPK](https://github.com/MasterTrainerPK)
+Fixed minor bug concerning colors on level 3
 Added skippable text to puzzles
 Moved "typer elements" to JS on puzzles
+
+## Version 0.1.5
+*19th February 2023*
+Changed the font on the error page to not contact Google servers anymore.
+Added support for QHD in the credits.
+Removed some unnecessary Todo lists.
+Updated the GameOver screen animation slightly.
