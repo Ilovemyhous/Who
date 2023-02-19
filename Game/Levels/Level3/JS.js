@@ -14,7 +14,32 @@ function sleep(ms) {        //Command that allow the sleep command
     return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-    //Code responsible for audio
+function skippable_sleep(ms) {
+    return new Promise(resolve => {
+        function skip(event){
+            console.log("skipping");
+            console.log(event);
+            switch(event.key) {
+            case "Enter":
+            case " ":
+            case "Space":
+            case "Escape":
+                end();
+            defualt:
+                break;
+            }
+        }
+        function end(){
+            console.log("end");
+            document.removeEventListener("keydown", skip);
+            resolve();
+        }
+        document.addEventListener("keydown", skip);
+        setTimeout(end, ms);
+    });
+}
+
+//Code responsible for audio
 async function audio() {
     if (localStorage.sound === "off"){
         //console.log("if audio: "+localStorage.sound);
@@ -59,44 +84,46 @@ function proceed_to_typer_element(text_to_print) {
     const cursor = document.querySelector('.cursor');
     div.appendChild(cursor);
     document.querySelector('h2').appendChild(div);
-    new Typer(my_element);
+    return new Typer(my_element);
+}
+
+async function skippable_typer_element(text_to_print, delay) {
+    let typer = proceed_to_typer_element(text_to_print);
+    await skippable_sleep(delay);
+    typer.delay = 0;
 }
 
 // "Main" code, where you can input text, colour, and delay.
 async function typing() {
     //start()
-    await sleep(100)
+    color_text = "yellow"
+    
+    await skippable_sleep(100)
+    await skippable_typer_element("Computer: What... who was he?!",5000);
     //console.log("Debug function")
-    delay_text = "100"
-    await sleep(5000);
-    proceed_to_typer_element("Computer: Anyway! We need to fix this as soon as possible!");
+    color_text = "gray"
+    await skippable_typer_element("Computer: Anyway! We need to fix this as soon as possible!", 8500);
     //var typing_sound = sound.typing_sound.play()
-    await sleep(8500);
+    //await sleep(8500);
     //sound.stop()
 
-    delay_text = '100'
     color_text = "red"
-    proceed_to_typer_element("?????: Hello again!");
-    await sleep(3500);
-    proceed_to_typer_element("?????: Here's your next puzzle.")
-    await sleep(4000)
-    proceed_to_typer_element("?????: Words will appear on your screen and you'll need to copy them... fast enough.")
-    await sleep(9500)
-    proceed_to_typer_element("?????: Easy enough right?")
-    await sleep(3500)
+    await skippable_typer_element("?????: Hello again!", 3500)
+    await skippable_typer_element("?????: Here's your next puzzle.", 4000)
+    await skippable_typer_element("?????: Words will appear on your screen and you'll need to copy them... fast enough.", 9500)
+    await skippable_typer_element("?????: Easy enough right?", 3500)
 
     color_text = "gray"
     //console.log("Name: "+localStorage.name);
     username = localStorage.name
     if (username == "" || username == null || username == undefined) {
-        proceed_to_typer_element("Computer: I count on you!")
+        skippable_typer_element("Computer: I count on you!", 5000)
     }
 
     else {
-        proceed_to_typer_element("Computer: I count on you " +username+"!")
+        skippable_typer_element("Computer: I count on you " +username+"!", 5000)
     }
 
-    await sleep(5000)
     color_text = "red"
     ask_ready()
     async function ask_ready(params) {
@@ -108,9 +135,8 @@ async function typing() {
             }while(choice_ready == "" || choice_ready == null || choice_ready == undefined);
 
         if (choice_ready == "Yes") {
-            await sleep(1000);
-            proceed_to_typer_element("?????: Okay! Let's do this.")
-            await sleep(5000)
+            await skippable_sleep(1000);
+            await skippable_typer_element("?????: Okay! Let's do this.", 5000);
             input.classList.toggle("show");
             start()
             return true
@@ -173,12 +199,8 @@ function timer(){
     else if (time <= 3) {
         document.getElementById("word_display").style="color: indianred;"
     }
-
-    else {
-        document.getElementById("word_display").style="color: white;"
-    }
-
 }
+
 //Runs the "check_answer" function when you press enter.
 function clickPress(event) {
     if (event.keyCode == 13 && can_check) {
@@ -195,7 +217,7 @@ function check_answer() {
     if (userInput === choosen_word) {
         console.log("Correct!");
         window.clearInterval(countdown);
-
+        document.getElementById("word_display").style="color: white;"
         if (correct >= 10) {
             window.open("../../Story/Story2/HTML.html","_self")
         }

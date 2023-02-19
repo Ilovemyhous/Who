@@ -12,6 +12,31 @@ function sleep(ms) {        //Command that allow the sleep command
     return new Promise(resolve => setTimeout(resolve, ms));
 }
 
+function skippable_sleep(ms) {
+    return new Promise(resolve => {
+        function skip(event){
+            console.log("skipping");
+            console.log(event);
+            switch(event.key) {
+            case "Enter":
+            case " ":
+            case "Space":
+            case "Escape":
+                end();
+            defualt:
+                break;
+            }
+        }
+        function end(){
+            console.log("end");
+            document.removeEventListener("keydown", skip);
+            resolve();
+        }
+        document.addEventListener("keydown", skip);
+        setTimeout(end, ms);
+    });
+}
+
     //Code responsible for audio
 async function audio() {
     if (localStorage.sound === "off"){
@@ -56,25 +81,28 @@ function proceed_to_typer_element(text_to_print) {
     const cursor = document.querySelector('.cursor');
     div.appendChild(cursor);
     document.querySelector('h2').appendChild(div);
-    new Typer(my_element);
+    return new Typer(my_element);
+}
+
+async function skippable_typer_element(text_to_print, delay) {
+    let typer = proceed_to_typer_element(text_to_print);
+    await skippable_sleep(delay);
+    typer.delay = 0;
 }
 
 // "Main" code, where you can input text, colour, and delay.
 async function typing() {
-    await sleep(100)
+    await skippable_sleep(100)
     //console.log("Debug function")
-    delay_text = "100"
-    await sleep(5000);
-    proceed_to_typer_element("Computer: We need to find a way to the mainframe.");
+    await skippable_typer_element("Computer: So finally we are here.",5000);
+    await skippable_typer_element("Computer: We need to find a way to the mainframe.",2000);
     //var typing_sound = sound.typing_sound.play()
-    await sleep(2000);
     //sound.stop()
 
     delay_text = '65'
     color_text = "white"
-    await sleep(5000);
-    proceed_to_typer_element("Puzzle: The mainframe is on a circuit that leads to no other component. Click on the component you think is the answer.");
-    await sleep(10000);
+    await skippable_sleep(5000);
+    await skippable_typer_element("Puzzle: The mainframe is on a circuit that leads to no other component. Click on the component you think is the answer.",10000);
     document.getElementById("puzzle_image").src="../../../Media/Images/Puzzle 1/PCB.png";
     await sleep(1000);
     document.getElementById("chip_4").src='../../../Media/Images/Puzzle 1/Chip.png';
