@@ -38,6 +38,10 @@ console.info("Width:"+window.screen.availWidth);
 if (window.screen.availWidth >= 3000 && window.screen.availHeight >= 2000) {
     console.info ("4K detected");
     //alert("4K detected");
+
+    var styleEl = document.createElement('style');
+    styleEl.innerHTML = '#Credits {height: 100vh; display: block; position: absolute; top: 100%; width: 99%; animation: creditRoll 171s linear forwards infinite; animation-iteration-count: 1; } @keyframes creditRoll { 0% { top: 117%; } 100% { top: -277%; }}'
+    document.head.appendChild(styleEl);
 }
 
 else if (window.screen.availWidth >= 2000 && window.screen.availHeight >= 1250) {

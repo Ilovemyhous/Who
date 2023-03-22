@@ -217,8 +217,8 @@ async function typing() {
         document.getElementById('placeholder').innerHTML = "LEAVE ME ALONE!"
 
         let download = new File(
-            ["LEAVE ME ALONE!!!"],
-            "leave my alone.txt",
+            ["WHY ARE YOU HERE???"],
+            "why?.txt",
             {type: "text/plain:charset=utf8"}
         );
         saveAs(download)
@@ -237,7 +237,7 @@ async function typing() {
 
         let download = new File(
             ["LEAVE ME ALONE!!!"],
-            "leave my alone.txt",
+            "leave me alone.txt",
             {type: "text/plain:charset=utf8"}
         );
         saveAs(download)

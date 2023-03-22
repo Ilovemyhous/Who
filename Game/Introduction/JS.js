@@ -307,7 +307,7 @@ async function code(){
             window.open("../GameOver/HTML.html","_self")
         }
         else {
-            proceed_to_typer_element("Computer: Sorry I didn't understood you.")
+            proceed_to_typer_element("Computer: Sorry I didn't understand you.")
             var typing_sound = sound.play()
             await sleep(4000);
             sound.stop()
