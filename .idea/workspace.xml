@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="78e899f7-cbd8-4c4a-8bad-9ae483cbde83" name="Changes" comment="- Replaced home menu animation&#10;- Reworked some old code&#10;- Removed unused code">
+      <change afterPath="$PROJECT_DIR$/.idea/PhpstormProjects.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/About/HTML.html" beforeDir="false" afterPath="$PROJECT_DIR$/About/HTML.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Arrival.html" beforeDir="false" afterPath="$PROJECT_DIR$/Arrival.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Changelog.md" beforeDir="false" afterPath="$PROJECT_DIR$/CHANGELOG.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hub/CSS.css" beforeDir="false" afterPath="$PROJECT_DIR$/Hub/CSS.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hub/HTML.html" beforeDir="false" afterPath="$PROJECT_DIR$/Hub/HTML.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hub/JS.js" beforeDir="false" afterPath="$PROJECT_DIR$/Hub/JS.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Media/Hub/Background 4K.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/Media/Hub/Background 4K.mp4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Media/Hub/Background.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/Media/Hub/Background.mp4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Settings/HTML.html" beforeDir="false" afterPath="$PROJECT_DIR$/Settings/HTML.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Settings/JS.js" beforeDir="false" afterPath="$PROJECT_DIR$/Settings/JS.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <favorite-branches>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="before_rewrite" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </favorite-branches>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="before_rewrite" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2dAjAVgjSItW5XvJDooyTjaBp0z" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Tom/Documents/PhpstormProjects/Who&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.web.browsers&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-php-predefined-ba97393d7c68-6f8e3395a2b4-com.jetbrains.php.sharedIndexes-PS-233.14475.35" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="78e899f7-cbd8-4c4a-8bad-9ae483cbde83" name="Changes" comment="" />
+      <created>1709457634280</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1709457634280</updated>
+      <workItem from="1709457639581" duration="772000" />
+      <workItem from="1709459518017" duration="784000" />
+      <workItem from="1709460920798" duration="1822000" />
+      <workItem from="1709467752621" duration="1088000" />
+      <workItem from="1709480494925" duration="17000" />
+      <workItem from="1709480674253" duration="1739000" />
+      <workItem from="1709484661233" duration="870000" />
+      <workItem from="1709485660425" duration="1184000" />
+      <workItem from="1709496151013" duration="6554000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="- Replaced home menu animation&#10;- Reworked some old code&#10;- Removed unused code" />
+    <option name="LAST_COMMIT_MESSAGE" value="- Replaced home menu animation&#10;- Reworked some old code&#10;- Removed unused code" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

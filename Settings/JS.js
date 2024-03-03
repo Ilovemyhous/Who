@@ -19,15 +19,16 @@ if (promise !== undefined) {
 }
 
 // CODE FOR CANVAS CHECK
-window.onload = function() {
-  var gl1 = Object.create(glitch_exec);
+// Not used anymore
+/*window.onload = function() {
+  let gl1 = Object.create(glitch_exec);
   gl1.start(document.getElementById("canvas_check"));
-}
+}*/
 
 // CODE FOR THE AUDIO CHECKBOX
 function setCheck() {
-  if (localStorage.sound === 'on') {
-      var x = document.getElementById("sound");
+  if (localStorage.sound === 'on' || !localStorage.sound) {
+      let x = document.getElementById("sound");
       x.checked = true;
       //console.log("Debug setCheck");
       let sound = true
@@ -53,7 +54,9 @@ document.getElementById('sound').onclick = function() {
       console.log(sound);
       localStorage.sound = "off"
       console.log("sound debug: "+localStorage.sound);
-      var test = localStorage.getItem('sound')
-      console.log("Test: "+test);
+      let test = localStorage.getItem('sound')
   }
 }
+
+// Call setCheck when the page loads
+document.addEventListener('DOMContentLoaded', setCheck);

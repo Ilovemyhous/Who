@@ -21,8 +21,8 @@ body {
 
 a:hover {
     color: rgb(255, 0, 0);
-    font-size: 300%;
-    transition: 0.5s;
+    font-size: 250%;
+    transition: 1s;
     text-decoration: underline;
 }
 

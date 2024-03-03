@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8" name="author" content="Ilovemyhouse">
     <title>Arrival</title>
@@ -9,16 +9,25 @@
 	 <br>
 	 <br>
     <h2>Hello!</h2>
+    <h2>Please note this version is the development branch of the game, so expect a rough ending, weird messages and other things, along with bugs (some of which I'm aware of).</h2>
     <br>
-    <h2>Please note this version is the development branch of the game, so expect a rough ending, weird messages and other things, along with bugs.</h2>
-    <br>
-    <h2>There aren't as much levels as I hoped too, but there's an ending. It's abrupt, but the deadline was tight.</h2>
-    <h2>And please note; there are still bugs in it that I'm aware of, otherwise, have fun!</h2>
+    <h2>There aren't as many levels as I hoped to have, but there's an ending. It's abrupt, but better than nothing.</h2>
     <a href="Hub/HTML.html">
-        <button>Start the experience.</button>
+        <button id="button" onmouseover="changeText()" onmouseout="originalText()">Start the experience.</button>
     </a>
+
+    <script>
+        function changeText() {
+            document.getElementById("button").innerHTML = "Start the experience?";
+        }
+
+        function originalText() {
+            document.getElementById("button").innerHTML = "Start the experience.";
+        }
+    </script>
+
     <br>
     <b><noscript style="color: red; font-style: oblique;">This game requires JavaScript to be enabled!</noscript></b>
-    <footer style="position: absolute; bottom: 5px">By Ilovemyhouse - Version 0.1.4</footer>
+    <footer style="position: absolute; bottom: 5px">By Ilovemyhouse - Version 0.2.0</footer>
 </body>
 </html>
