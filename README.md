@@ -13,7 +13,7 @@ The game is only written in HTML, CSS and JavaScript... that's it.
 
 About the name, it's called *Who ?* because you will be asked questions, and you will have to answer them. The game will then adapt to your answer, and will give you a different outcome.
 
-Why a remake? I started this project in 2022, and since then, my programming skills have ~~hopefully~~ improved, and I wanted to make a better version of the game. I can't really call this a V2, since the game is not finished yet, but some original things have been kept.
+Why a remake? I started this project in 2022, and since then, my programming skills have ~~hopefully~~ improved, and I wanted to make a better version of the game. I can't really call this a V2, since the game is not finished yet, but some original things have been kept, it's just that I try to restructure the code.
 
 ## To-Do
 *Along with their time and date of completion. (If available)*
@@ -21,9 +21,10 @@ Why a remake? I started this project in 2022, and since then, my programming ski
  - [x] Finish the arrival
  - [X] Finish the hub
  - [X] Finish the settings
- - [ ] Finish the error screen
+ - [X] Finish the error screen
  - [ ] Finish the levels
  - [X] Finish the credits
+ - [ ] Add RegEx to the user input
  - [X] Add credits
  - [X] Add Easter eggs
  - [ ] Fix audio issues

@@ -21,6 +21,11 @@ function audio() {
         document.getElementById("restart").style = "animation: opacity_text 10s linear forwards"
         document.getElementById("back").innerHTML = "No exit"
         document.getElementById("restart").innerHTML = "YOU ARE STUCK WITH ME!"
+
+        window.onbeforeunload = confirmExit;
+        function confirmExit() {
+            return "Do you really want to leave me alone?";
+        }
     }
 
     else {

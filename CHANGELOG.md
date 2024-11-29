@@ -1,6 +1,11 @@
 ﻿# Changelog
 All notable changes to this project will be documented in this file. For a more detailed changelog, please check the [commit history](https://github.com/Ilovemyhous/Who/commits/main/).
 
+## [0.2.1] - 2024-11-23
+### Changed
+- Updated the naming of the files
+- Updated some HTML files that didn't have the basic HTML structure
+
 ## [0.2.0] - 2024-03-03
 ### Changed
 - "V2" of the project where I'll start to rework the whole project.

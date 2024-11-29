@@ -1,35 +1,35 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <link href="CSS.css" rel="stylesheet" type="text/css"/>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
     <meta charset="utf-8" name="author" content="Ilovemyhouse">
-    <title>Level 4</title>
+    <title>Story 2</title>
 </head>
 <body onload="audio()">
     <div id="background"></div>
-    <div class="shake" id="shake">
+    <div class="shake" id="shake"></div>
     <div class="scanlines"></div>
     <h2>
+        <div id="images">
+            <img id="glass_1" width="25%" length="25%">
+            <img id="glass_2" width="35%" length="35%">
+            <img id="glass_3" width="27%" length="27%">
+        </div>
         <div>
             <!--Code for the text-->
             <span class="typer"
-            data-words=" "
+            data-words="?????: Alright! I have ENOUGH!"
             data-delay="100"
-            data-colors="black"
+            data-colors="red"
             data-loop="1"></span>
             <!--Code for the cursor-->
             <span class="cursor" data-owner="main"></span>
         </div>
         <h1 style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size: xx-large;" id="placeholder"></h1>
-    </div>
     </h2>
-    <div>
-        <input type="number" name="answer" id="answer" class="hide" onkeypress="clickPress(event)" required>
-        <br>
-        <button type="button" name="confirm" id="button_answer" onclick="check_answer()" class="hide">Submit answer</button>
-    </div>
-    <script src="JS.js"></script>
+    <script src="script.js"></script>
     <script src="../../../libs/typer.js"></script>
     <script src="../../../libs/howler.js"></script>
+    <script src="../../../libs/FileSaver.js"></script>
 </body>
 </html>

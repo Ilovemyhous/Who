@@ -12,10 +12,11 @@ h1, h2, h3, h6 {
     font-family: sans-serif;
 }
 
-body {	
+body {
     text-align:center;
     font-size: 56px;
     background-color: black;
+    overflow: hidden;
 }
 
 #CreditHeader {

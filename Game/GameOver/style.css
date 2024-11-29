@@ -153,18 +153,18 @@ body {
     animation: bg-color 3s;
     -webkit-animation: bg-color 3s;
   }
-  
+
   @-webkit-keyframes bg-color {
     0% { background-color: #ffffff; }
     100% { background-color: #000000; }
   }
-  
+
   @keyframes bg-color {
     0% { background-color: #ffffff; }
     100% { background-color: #000000; }
   }
 
-h2, h3, h7, div {
+h2, h3, h6, div {
     color: white;
     font-family: sans-serif;
 }

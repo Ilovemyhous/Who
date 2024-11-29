@@ -27,7 +27,7 @@ function credits() {
     }
 
     else {
-        document.getElementById("user").innerHTML = "And thank you, "+username+" for playing!" 
+        document.getElementById("user").innerHTML = "And thank you, "+username+" for playing!"
     }
 }
 
@@ -66,5 +66,5 @@ else if (window.screen.availWidth <= 2000 && window.screen.availHeight <= 1100) 
 credits_done()
 async function credits_done(){
     await sleep(180000)
-    window.open('../Game/GoodEnding/HTML.html','_self')
+    window.open('../Game/GoodEnding/index.html','_self')
 }
