@@ -1,10 +1,15 @@
 ﻿# Changelog
 All notable changes to this project will be documented in this file. For a more detailed changelog, please check the [commit history](https://github.com/Ilovemyhous/Who/commits/main/).
 
-## [0.2.1] - 2024-11-23
+## [0.2.2] - 2024-12-01
 ### Changed
-- Updated the naming of the files
-- Updated some HTML files that didn't have the basic HTML structure
+- Fixed redirection issues from the previous commit.
+- Changed the easter egg from the game over screen.
+
+## [0.2.1] - 2024-11-29
+### Changed
+- Updated the naming of the files.
+- Updated some HTML files that didn't have the basic HTML structure.
 
 ## [0.2.0] - 2024-03-03
 ### Changed

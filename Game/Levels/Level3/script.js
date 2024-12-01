@@ -7,7 +7,7 @@ let delay_text = '100';
 let random
 let countdown
 let correct = 0;
-let time = 5
+let time = 10
 const list_words = ["Computer", "Virus", "Life", "Component", "Firewall", "Control", "Who", "Purpose", "Human", "Brain", "Intelligence", "Happiness", "Work", "Fun", "Scared", "Enjoy", "Panic", "Alone", "Leave"]
 let choosen_word
 function sleep(ms) {        //Command that allow the sleep command
@@ -97,7 +97,7 @@ async function skippable_typer_element(text_to_print, delay) {
 async function typing() {
     //start()
     color_text = "yellow"
-    
+
     await skippable_sleep(100)
     await skippable_typer_element("Computer: What... who was he?!",5000);
     //console.log("Debug function")
@@ -148,14 +148,14 @@ async function typing() {
             await sleep(3000)
             proceed_to_typer_element("?????: Well I'm not going to waste any more time.")
             await sleep(6000)
-            window.open("../../GameOver/HTML.html","_self")
+            window.open("../../GameOver/index.html","_self")
         }
 
         else {
             ask_ready()
         }
     }
-        
+
 }
 
 typing()
@@ -190,20 +190,20 @@ function timer(){
         can_check = false
         proceed_to_typer_element("?????: Well I'm not going to waste any more time.")
         sleep(6000)
-        window.open("../../GameOver/HTML.html","_self")
+        window.open("../../GameOver/index.html","_self")
 
     }
-    else if (time <= 1){
+    else if (time <= 3){
         document.getElementById("word_display").style = "color: crimson;"
     }
-    else if (time <= 3) {
+    else if (time <= 5) {
         document.getElementById("word_display").style="color: indianred;"
     }
 }
 
 //Runs the "check_answer" function when you press enter.
 function clickPress(event) {
-    if (event.keyCode == 13 && can_check) {
+    if (event.keyCode === 13 && can_check) {
         check_answer()
     }
 }
@@ -219,7 +219,7 @@ function check_answer() {
         window.clearInterval(countdown);
         document.getElementById("word_display").style="color: white;"
         if (correct >= 10) {
-            window.open("../../Story/Story2/HTML.html","_self")
+            window.open("../../Story/Story2/index.html","_self")
         }
         else {
             correct++
@@ -231,7 +231,7 @@ function check_answer() {
     }
     else {
         console.log("Wrong!");
-        window.open("../../GameOver/HTML.html","_self")
+        window.open("../../GameOver/index.html","_self")
         return false;
     }
     return true;

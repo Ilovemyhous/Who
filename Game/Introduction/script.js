@@ -288,7 +288,7 @@ async function code(){
                 var typing_sound = sound.play()
             }
             await sleep(10000)
-            window.open("../Levels/Level1/HTML.html","_self")
+            window.open("../Levels/Level1/index.html","_self")
         }
         else if (choice_help == "No"){
             console.info("Help rejected");
@@ -304,7 +304,7 @@ async function code(){
             await sleep(500)
             close;
             window.close(); //Alternative scenario. Just for fun.
-            window.open("../GameOver/HTML.html","_self")
+            window.open("../GameOver/index.html","_self")
         }
         else {
             proceed_to_typer_element("Computer: Sorry I didn't understand you.")

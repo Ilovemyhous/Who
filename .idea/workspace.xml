@@ -4,66 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="78e899f7-cbd8-4c4a-8bad-9ae483cbde83" name="Changes" comment="Renamed the files to have a more standard name">
-      <change afterPath="$PROJECT_DIR$/Game/Error/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" afterPath="$PROJECT_DIR$/.gitattributes" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="78e899f7-cbd8-4c4a-8bad-9ae483cbde83" name="Changes" comment="Fixed redirection issues from the previous commit">
+      <change afterPath="$PROJECT_DIR$/Media/Images/GameOver/dark-eye.gif" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/About/CSS.css" beforeDir="false" afterPath="$PROJECT_DIR$/About/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/About/HTML.html" beforeDir="false" afterPath="$PROJECT_DIR$/About/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/About/SFX/CSS.css" beforeDir="false" afterPath="$PROJECT_DIR$/About/SFX/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/About/SFX/HTML.html" beforeDir="false" afterPath="$PROJECT_DIR$/About/SFX/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Arrival.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/CHANGELOG.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Credits/CSS.css" beforeDir="false" afterPath="$PROJECT_DIR$/Credits/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Credits/HTML.html" beforeDir="false" afterPath="$PROJECT_DIR$/Credits/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Credits/JS.js" beforeDir="false" afterPath="$PROJECT_DIR$/Credits/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/BadEnding/CSS.css" beforeDir="false" afterPath="$PROJECT_DIR$/Game/BadEnding/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/BadEnding/HTML.html" beforeDir="false" afterPath="$PROJECT_DIR$/Game/BadEnding/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/BadEnding/JS.js" beforeDir="false" afterPath="$PROJECT_DIR$/Game/BadEnding/script.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Game/Error/CSS.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Error/HTML.html" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Error/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Error/JS.js" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Error/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/GameOver/CSS.css" beforeDir="false" afterPath="$PROJECT_DIR$/Game/GameOver/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/GameOver/HTML.html" beforeDir="false" afterPath="$PROJECT_DIR$/Game/GameOver/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/GameOver/JS.js" beforeDir="false" afterPath="$PROJECT_DIR$/Game/GameOver/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/GoodEnding/CSS.css" beforeDir="false" afterPath="$PROJECT_DIR$/Game/GoodEnding/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/GoodEnding/HTML.html" beforeDir="false" afterPath="$PROJECT_DIR$/Game/GoodEnding/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/GoodEnding/JS.js" beforeDir="false" afterPath="$PROJECT_DIR$/Game/GoodEnding/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Introduction/CSS.css" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Introduction/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Introduction/HTML.html" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Introduction/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Introduction/JS.js" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Introduction/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Levels/Level1/CSS.css" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Levels/Level1/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Levels/Level1/HTML.html" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Levels/Level1/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Levels/Level1/JS.js" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Levels/Level1/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Levels/Level2/CSS.css" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Levels/Level2/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Levels/Level2/HTML.html" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Levels/Level2/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Levels/Level2/JS.js" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Levels/Level2/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Levels/Level3/CSS.css" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Levels/Level3/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Levels/Level3/HTML.html" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Levels/Level3/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Levels/Level3/JS.js" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Levels/Level3/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Levels/Level4/CSS.css" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Levels/Level4/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Levels/Level4/HTML.html" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Levels/Level4/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Levels/Level4/JS.js" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Levels/Level4/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Loading/CSS.css" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Loading/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Loading/HTML.html" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Loading/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Loading/JS.js" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Loading/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Story/Story1/CSS.css" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Story/Story1/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Story/Story1/HTML.html" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Story/Story1/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Story/Story1/JS.js" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Story/Story1/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Story/Story2/CSS.css" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Story/Story2/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Story/Story2/HTML.html" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Story/Story2/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Story/Story2/JS.js" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Story/Story2/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Story/Story3/CSS.css" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Story/Story3/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Story/Story3/HTML.html" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Story/Story3/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Story/Story3/JS.js" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Story/Story3/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hub/CSS.css" beforeDir="false" afterPath="$PROJECT_DIR$/Hub/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hub/HTML.html" beforeDir="false" afterPath="$PROJECT_DIR$/Hub/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hub/JS.js" beforeDir="false" afterPath="$PROJECT_DIR$/Hub/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game/Error/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Error/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game/GameOver/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Game/GameOver/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game/GameOver/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/Game/GameOver/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game/GameOver/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Game/GameOver/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game/Introduction/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Introduction/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game/Levels/Level1/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Levels/Level1/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game/Levels/Level2/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Levels/Level2/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game/Levels/Level3/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Levels/Level3/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game/Levels/Level4/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Levels/Level4/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game/Loading/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Loading/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game/Story/Story1/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Story/Story1/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game/Story/Story2/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Story/Story2/script.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Settings/CSS.css" beforeDir="false" afterPath="$PROJECT_DIR$/Settings/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Settings/HTML.html" beforeDir="false" afterPath="$PROJECT_DIR$/Settings/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Settings/JS.js" beforeDir="false" afterPath="$PROJECT_DIR$/Settings/script.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,24 +78,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/Tom/Documents/PhpstormProjects/Who",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Tom/Documents/PhpstormProjects/Who&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.fwdekker.randomness.template.TemplateListConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -182,8 +140,21 @@
       <workItem from="1732870231800" duration="58000" />
       <workItem from="1732881524225" duration="5000" />
       <workItem from="1732881879326" duration="112000" />
-      <workItem from="1732884194238" duration="2455000" />
+      <workItem from="1732884194238" duration="12930000" />
+      <workItem from="1732961945527" duration="293000" />
+      <workItem from="1732962490483" duration="230000" />
+      <workItem from="1732995694367" duration="2000" />
+      <workItem from="1733089899599" duration="439000" />
     </task>
+    <task id="LOCAL-00001" summary="Renamed the files to have a more standard name">
+      <option name="closed" value="true" />
+      <created>1732886860643</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1732886860643</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -203,7 +174,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="- Replaced home menu animation&#10;- Reworked some old code&#10;- Removed unused code" />
     <MESSAGE value="Renamed the files to have a more standard name" />
-    <option name="LAST_COMMIT_MESSAGE" value="Renamed the files to have a more standard name" />
+    <MESSAGE value="Fixed redirection issues from the previous commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed redirection issues from the previous commit" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

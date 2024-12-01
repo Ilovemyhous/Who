@@ -176,7 +176,7 @@ async function typing() {
         do{
             choice_question3 = prompt("Do you know WHY you are here? (Yes or No)");
         }while(choice_question3 == "" || choice_question3 == null || choice_question3 == undefined);
-    
+
     console.log(choice_question2);
     console.log(choice_question3);
 
@@ -224,7 +224,7 @@ async function typing() {
         saveAs(download)
 
         await sleep(100)
-        window.open("../../Levels/Level4/HTML.html","_self")
+        window.open("../../Levels/Level4/index.html","_self")
     }
 
     if (choose_no > 0 && choose_no < 4) {
@@ -243,7 +243,7 @@ async function typing() {
         saveAs(download)
 
         await sleep(1000)
-        window.open("../../Levels/Level4/HTML.html","_self")
+        window.open("../../Levels/Level4/index<<.html","_self")
     }
 
 }

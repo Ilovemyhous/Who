@@ -99,7 +99,7 @@ async function check_answer() {
         color_text = "white"
         proceed_to_typer_element(". . .")
         await sleep(4000)
-        window.open('../../Story/Story3/HTML.html','_self')
+        window.open('../../Story/Story3/index.html','_self')
     }
 
     else {
@@ -121,6 +121,6 @@ async function check_answer() {
         await sleep(3500)
         proceed_to_typer_element("ERROR: Reboot canceled!")
         await sleep(2500)
-        window.open('../../GameOver/HTML.html','_self')
+        window.open('../../GameOver/index.html','_self')
     }
 }

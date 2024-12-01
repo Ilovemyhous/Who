@@ -53,4 +53,4 @@ To use things like the audio setting in the settings, you will need [*vscode-liv
 I've only tested the game on a Firefox based browser on Linux. The experience might differ from the browser, and/or OS.
 
 ## Credits
-The full list of credits can be found [here](https://github.com/Ilovemyhous/Who/blob/main/Credits/HTML.html).
+The full list of credits can be found [here](https://github.com/Ilovemyhous/Who/blob/main/Credits/index.html).

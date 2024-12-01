@@ -178,3 +178,21 @@ h2, h3, h6, div {
   0% { opacity: 100%; }
   100% { opacity: 0%; }
 }
+
+#creepy-eyes {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../../Media/Images/GameOver/dark-eye.gif');
+    background-position: center;
+    /*background-size: cover;*/
+    opacity: 0;
+    transition: opacity 220s;
+    z-index: -1;
+}
+
+body.fade_in_eye #creepy-eyes {
+    opacity: 1; /* Fade in the overlay */
+}

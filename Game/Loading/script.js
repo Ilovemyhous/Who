@@ -36,7 +36,7 @@ setTimeout(function bar() {
             audio.play();
           }
         setTimeout(function(){
-            window.open("../Error/HTML.html","_self")
+            window.open("../Error/index.html","_self")
         }, 2500)
       } else {
         width++;

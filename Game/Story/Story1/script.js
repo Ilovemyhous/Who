@@ -120,7 +120,7 @@ async function typing() {
     };
     })
     // Always check for errors at the end.
-    .catch(function(err) { 
+    .catch(function(err) {
     console.log(err.name + ": " + err.message);
     console.log(err.name);
     if (err.name == "NotAllowedError") {
@@ -133,7 +133,7 @@ async function typing() {
         proceed_to_typer_element("?????: Hmmm... no webcam detected. That's fine.")
     }
     });
-    
+
     function access_granted() {
         proceed_to_typer_element("?????: Hello there!")
     }
@@ -185,25 +185,25 @@ async function typing() {
 
     //Detect the OS
     var OS = "Not known";
-      if (navigator.appVersion.indexOf("Win") != -1) OS = 
+      if (navigator.appVersion.indexOf("Win") != -1) OS =
         "Windows";
-      if (navigator.appVersion.indexOf("Mac") != -1) OS = 
+      if (navigator.appVersion.indexOf("Mac") != -1) OS =
         "MacOS";
-      if (navigator.appVersion.indexOf("X11") != -1) OS = 
+      if (navigator.appVersion.indexOf("X11") != -1) OS =
         "Linux";
-      if (navigator.appVersion.indexOf("Linux") != -1) OS = 
+      if (navigator.appVersion.indexOf("Linux") != -1) OS =
         "Linux";
     console.log(OS);
 
     //Detect the browser
     var browser = "Not known";
-      if (navigator.userAgent.indexOf("Firefox") != -1) browser = 
+      if (navigator.userAgent.indexOf("Firefox") != -1) browser =
         "Firefox";
-      if (navigator.userAgent.indexOf("Chrome") != -1) browser = 
+      if (navigator.userAgent.indexOf("Chrome") != -1) browser =
         "Chrome";
-      if (navigator.userAgent.indexOf("Edge") != -1) browser = 
+      if (navigator.userAgent.indexOf("Edge") != -1) browser =
         "Edge";
-      if (navigator.userAgent.indexOf("Opera") != -1) browser = 
+      if (navigator.userAgent.indexOf("Opera") != -1) browser =
         "Opera";
 
 console.log(OS);
@@ -218,6 +218,6 @@ console.log(OS);
     await sleep(7500)
     proceed_to_typer_element("?????: We'll talk about the rest later...")
     await sleep(5000)
-    window.open('../../Levels/Level3/HTML.html','_self')
+    window.open('../../Levels/Level3/index.html','_self')
 }
 typing()

@@ -20,7 +20,7 @@ function skippable_sleep(ms) {
             case "Space":
             case "Escape":
                 end();
-            defualt:
+            default:
                 break;
             }
         }
@@ -120,11 +120,11 @@ function check_answer() {
     let answer = document.getElementById("answer").value
     if (answer === "1") {
         //console.info("Correct answer!");
-        window.open('../../Story/Story1/HTML.html','_self')
+        window.open('../../Story/Story1/index.html','_self')
     }
 
     else {
         //console.info("Wrong answer!");
-        window.open('../../GameOver/HTML.html','_self')
+        window.open('../../GameOver/index.html','_self')
     }
 }
