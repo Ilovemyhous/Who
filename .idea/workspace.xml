@@ -5,23 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="78e899f7-cbd8-4c4a-8bad-9ae483cbde83" name="Changes" comment="Fixed redirection issues from the previous commit">
-      <change afterPath="$PROJECT_DIR$/Media/Images/GameOver/dark-eye.gif" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/About/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/About/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/CHANGELOG.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Error/CSS.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Error/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Error/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/GameOver/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Game/GameOver/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Credits/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Credits/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Game/GameOver/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/Game/GameOver/script.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Game/GameOver/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Game/GameOver/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Game/Introduction/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Introduction/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Levels/Level1/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Levels/Level1/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Levels/Level2/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Levels/Level2/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Levels/Level3/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Levels/Level3/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Levels/Level4/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Levels/Level4/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Loading/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Loading/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Story/Story1/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Story/Story1/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Story/Story2/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Story/Story2/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hub/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Hub/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -145,6 +136,9 @@
       <workItem from="1732962490483" duration="230000" />
       <workItem from="1732995694367" duration="2000" />
       <workItem from="1733089899599" duration="439000" />
+      <workItem from="1733426453351" duration="1481000" />
+      <workItem from="1733432634307" duration="269000" />
+      <workItem from="1733477223370" duration="582000" />
     </task>
     <task id="LOCAL-00001" summary="Renamed the files to have a more standard name">
       <option name="closed" value="true" />

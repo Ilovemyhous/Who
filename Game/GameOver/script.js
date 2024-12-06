@@ -1,8 +1,8 @@
 function audio() {
 
     //EASTER EGG
-    //let random = 1 //To define it manually.
-    let random = Math.floor(Math.random() * 100);
+    let random = 1 //To define it manually.
+    //let random = Math.floor(Math.random() * 100);
 
     if (random === 1) {
         console.log(random);

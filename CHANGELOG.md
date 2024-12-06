@@ -1,9 +1,17 @@
 ﻿# Changelog
 All notable changes to this project will be documented in this file. For a more detailed changelog, please check the [commit history](https://github.com/Ilovemyhous/Who/commits/main/).
 
-## [0.2.2] - 2024-12-01
+## [0.2.3] - 2024-12-06
+### Fixed
+- Fixed that it only accepts letters less than 20 character in the name input field.
 ### Changed
+- Changed the hub button size
+- Changed the game over animation
+
+## [0.2.2] - 2024-12-01
+### Fixed
 - Fixed redirection issues from the previous commit.
+### Changed
 - Changed the easter egg from the game over screen.
 
 ## [0.2.1] - 2024-11-29

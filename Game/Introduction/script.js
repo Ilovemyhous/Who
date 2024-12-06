@@ -88,22 +88,22 @@ async function code(){
     else {
         //console.log("else audio: "+localStorage.sound);
         //console.log("Debug audio")
-            
+
         var typing_sound = sound.play()
         await sleep(2750);
         sound.stop()
     }
 
     await sleep(5000);
-    
+
     let name;
 
-    // System that prevents empty names
-    do{
+    // Prevent empty names, character limit (20) and only letters
+    while (name === "" || name == null || name.length > 20 || !/^[a-zA-Z]*$/g.test(name)) {
         name = prompt("Who are you ?");
-    }while(name == "" || name == null || name == undefined);
-    localStorage.name = name
-    console.log("Name: "+localStorage.name);
+        localStorage.name = name
+        console.log("Name: "+localStorage.name);
+    }
 
     //For the easter egg.
     if (name == "root" || name == "sudo") {
@@ -116,7 +116,7 @@ async function code(){
 
         do{
             name = prompt("Who are you ?");
-        }while(name == "" || name == null || name == undefined || name == "sudo" || name == "root");
+        }while(name === "" || name == null || name.length > 20 || !/^[a-zA-Z]*$/g.test(name) || name === "sudo" || name === "root");
         localStorage.name = name
         console.log("Name: "+localStorage.name);
     }
@@ -139,7 +139,7 @@ async function code(){
     else {
         //console.log("else audio: "+localStorage.sound);
         //console.log("Debug audio")
-            
+
         var typing_sound = sound.play()
         await sleep(2750);
         sound.stop()
@@ -154,7 +154,7 @@ async function code(){
     else {
         //console.log("else audio: "+localStorage.sound);
         //console.log("Debug audio")
-            
+
         var typing_sound = sound.play()
         await sleep(3000);
         sound.stop()
@@ -176,7 +176,7 @@ async function code(){
     else {
         //console.log("else audio: "+localStorage.sound);
         //console.log("Debug audio")
-            
+
         var typing_sound = sound.play()
         await sleep(4000);
         sound.stop()
@@ -192,7 +192,7 @@ async function code(){
     else {
         //console.log("else audio: "+localStorage.sound);
         //console.log("Debug audio")
-            
+
         var typing_sound = sound.play()
         await sleep(4000);
         sound.stop()
@@ -208,7 +208,7 @@ async function code(){
     else {
         //console.log("else audio: "+localStorage.sound);
         //console.log("Debug audio")
-            
+
         var typing_sound = sound.play()
         await sleep(3525);
         sound.stop()
@@ -224,7 +224,7 @@ async function code(){
     else {
         //console.log("else audio: "+localStorage.sound);
         //console.log("Debug audio")
-            
+
         var typing_sound = sound.play()
         await sleep(3250);
         sound.stop()
@@ -253,11 +253,11 @@ async function code(){
             else {
                 //console.log("else audio: "+localStorage.sound);
                 //console.log("Debug audio")
-                    
+
                 audio = new Audio("../../Media/Sound/User Interface, Data, Processing, Loading, Old Computer, Fast Stutter Followed By Choppy Stutter SND68328 1.wav");
                 audio.play();
             }
-            
+
             proceed_to_typer_element("Computer: Thank you.")
             await sleep(10500)
             color_text = "gray"
@@ -270,7 +270,7 @@ async function code(){
             else {
                 //console.log("else audio: "+localStorage.sound);
                 //console.log("Debug audio")
-                    
+
                 var typing_sound = sound.play()
                 await sleep(3000);
                 sound.stop()
@@ -284,7 +284,7 @@ async function code(){
             else {
                 //console.log("else audio: "+localStorage.sound);
                 //console.log("Debug audio")
-                    
+
                 var typing_sound = sound.play()
             }
             await sleep(10000)
@@ -316,7 +316,7 @@ async function code(){
             ask_help()
         }
     }
-    
+
 }
 
 code();
