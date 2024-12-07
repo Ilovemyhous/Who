@@ -1,15 +1,14 @@
 let video = document.querySelector('video');
 let promise = video.play();
 
-// CODE FOR AUTOPLAY CHECK
+// Code for autoplay check
 if (promise !== undefined) {
-  promise.then(_ => {
+  promise.then(() => {
     // Autoplay allowed!
     console.log("Autoplay enabled");
-    //document.getElementById("autoplay_success").innerHTML = "Autoplay is enabled, the video above should play."
     document.getElementById("autoplay_success").innerHTML = "Autoplay is enabled, the video above should play."
     document.getElementById("autoplay_success").style.color = "green"
-  }).catch(error => {
+  }).catch(() => {
     // Autoplay not allowed!
     console.log("Autoplay disabled");
     document.getElementById("autoplay_fail").innerHTML = "Autoplay has to be enabled for the game. Enable it, (for the browser NOT this tab) and reload the page."
@@ -25,7 +24,7 @@ if (promise !== undefined) {
   gl1.start(document.getElementById("canvas_check"));
 }*/
 
-// CODE FOR THE AUDIO CHECKBOX
+// Code for the sound checkbox
 function setCheck() {
   if (localStorage.sound === 'on' || !localStorage.sound) {
       let x = document.getElementById("sound");
@@ -54,7 +53,7 @@ document.getElementById('sound').onclick = function() {
       console.log(sound);
       localStorage.sound = "off"
       console.log("sound debug: "+localStorage.sound);
-      let test = localStorage.getItem('sound')
+      //let test = localStorage.getItem('sound')
   }
 }
 

@@ -7,12 +7,12 @@ if (localStorage.sound === "off"){
     console.log("No audio");
     setTimeout(function(){
         window.open("../Introduction/index.html","_self")
-    }, 7500)
+    }, 5000)
 }
 
 else {
-    console.log("else audio: "+localStorage.sound);w
-    var audio = new Audio("../../Media/Sound/Black hole.wav");
+    console.log("else audio: "+localStorage.sound);
+    let audio = new Audio("../../Media/Sound/Black hole.wav");
     console.log("Debug audio")
     audio.play();
     setTimeout(function(){

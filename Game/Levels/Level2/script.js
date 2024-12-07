@@ -20,6 +20,7 @@ function skippable_sleep(ms) {
             case "Space":
             case "Escape":
                 end();
+                break;
             default:
                 break;
             }
@@ -35,14 +36,14 @@ function skippable_sleep(ms) {
 }
 
     //Code responsible for audio
-async function audio() {
+window.onload = function() {
     if (localStorage.sound === "off"){
         //console.log("if audio: "+localStorage.sound);
         //console.info("No audio");
     }
     else {
         //Defines the audio for the typing sound, and audio.
-        var sound = {
+        let sound = {
             music: new Howl({
                 src: ['../../../Media/Music/Mystery - Wee Free Music.wav'],
                 html5: true,
@@ -53,9 +54,9 @@ async function audio() {
             })
         };
 
-        var music = sound.music.play();
+        let music = sound.music.play();
         sound.music.fade(0,0.5,5000,music);
-        var typing_sound = sound.typing_sound.play()
+        //let typing_sound = sound.typing_sound.play()
     }
 }
 
@@ -93,26 +94,27 @@ async function typing() {
     //console.log("Debug function")
     await skippable_typer_element("Computer: Here we are. At the mainframe.", 5000);
     await skippable_typer_element("Computer: Hold on. There's a password with a puzzle on it.", 2000);
-    //var typing_sound = sound.typing_sound.play()
+    //let typing_sound = sound.typing_sound.play()
     //sound.stop()
 
     delay_text = '65'
     color_text = "white"
     await skippable_sleep(5000);
     await skippable_typer_element("Puzzle: Mice are famous for their ability to multiply at breakneck speeds. The type of mouse we have here gives birth once a month birthing 12 babies each time. Baby mice mature and can give birth two months after they are born. You picked up one of these darling baby mice at the pet shop and brought it home the day after it was born. In 10 months from now how many mice will you have?", 32000);
-    //var answer = prompt("Your answer.")
+    //let answer = prompt("Your answer.")
     let answer_input = document.getElementById("answer");
     answer_input.classList.toggle("show");
     await sleep(1000);
+    let button_answer = document.getElementById("button_answer");
     button_answer.classList.toggle("show");
 }
 typing()
 
 
 //Runs the "check_answer" function when you press enter.
-function clickPress(event) {
-    if (event.keyCode == 13) {
-        check_answer()
+document.onkeydown = function(event) {
+    if (event.key === "Enter") {
+        check_answer();
     }
 }
 

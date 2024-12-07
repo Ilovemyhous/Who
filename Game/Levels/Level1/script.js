@@ -18,13 +18,14 @@ function skippable_sleep(ms) {
             console.log("skipping");
             console.log(event);
             switch(event.key) {
-            case "Enter":
-            case " ":
-            case "Space":
-            case "Escape":
-                end();
-            defualt:
-                break;
+                case "Enter":
+                case " ":
+                case "Space":
+                case "Escape":
+                    end();
+                    break;
+                default:
+                    break;
             }
         }
         function end(){
@@ -37,15 +38,15 @@ function skippable_sleep(ms) {
     });
 }
 
-    //Code responsible for audio
-async function audio() {
+//Code responsible for audio
+window.onload = function() {
     if (localStorage.sound === "off"){
         //console.log("if audio: "+localStorage.sound);
         //console.info("No audio");
     }
     else {
         //Defines the audio for the typing sound, and audio.
-        var sound = {
+        let sound = {
             music: new Howl({
                 src: ['../../../Media/Music/Running - DanThePianoMan.wav'],
                 html5: true,
@@ -56,9 +57,9 @@ async function audio() {
             })
         };
 
-        var music = sound.music.play();
+        let music = sound.music.play();
         sound.music.fade(0,0.5,10000,music);
-        var typing_sound = sound.typing_sound.play()
+        //let typing_sound = sound.typing_sound.play()
     }
 }
 
@@ -96,7 +97,7 @@ async function typing() {
     //console.log("Debug function")
     await skippable_typer_element("Computer: So finally we are here.",5000);
     await skippable_typer_element("Computer: We need to find a way to the mainframe.",2000);
-    //var typing_sound = sound.typing_sound.play()
+    //let typing_sound = sound.typing_sound.play()
     //sound.stop()
 
     delay_text = '65'

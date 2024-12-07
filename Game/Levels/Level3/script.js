@@ -8,7 +8,7 @@ let random
 let countdown
 let correct = 0;
 let time = 10
-const list_words = ["Computer", "Virus", "Life", "Component", "Firewall", "Control", "Who", "Purpose", "Human", "Brain", "Intelligence", "Happiness", "Work", "Fun", "Scared", "Enjoy", "Panic", "Alone", "Leave"]
+const list_words = ["Computer", "Virus", "Life", "Component", "Firewall", "Control", "Who", "Purpose", "Human", "Brain", "Intelligence", "Happiness", "Work", "Fun", "Scared", "Enjoy", "Panic", "Alone", "Leave", "Soul"]
 let choosen_word
 function sleep(ms) {        //Command that allow the sleep command
     return new Promise(resolve => setTimeout(resolve, ms));
@@ -25,7 +25,8 @@ function skippable_sleep(ms) {
             case "Space":
             case "Escape":
                 end();
-            defualt:
+                break;
+            default:
                 break;
             }
         }
@@ -40,14 +41,14 @@ function skippable_sleep(ms) {
 }
 
 //Code responsible for audio
-async function audio() {
+window.onload = function() {
     if (localStorage.sound === "off"){
         //console.log("if audio: "+localStorage.sound);
         //console.info("No audio");
     }
     else {
         //Defines the audio for the typing sound, and audio.
-        var sound = {
+        let sound = {
             music: new Howl({
                 src: ['../../../Media/Music/Come-Play-with-Me.mp3'],
                 html5: true,
@@ -59,9 +60,9 @@ async function audio() {
             })
         };
 
-        var music = sound.music.play();
+        let music = sound.music.play();
         sound.music.fade(0,0.5,5000,music);
-        var typing_sound = sound.typing_sound.play()
+        //let typing_sound = sound.typing_sound.play()
     }
 }
 
@@ -103,7 +104,7 @@ async function typing() {
     //console.log("Debug function")
     color_text = "gray"
     await skippable_typer_element("Computer: Anyway! We need to fix this as soon as possible!", 8500);
-    //var typing_sound = sound.typing_sound.play()
+    //let typing_sound = sound.typing_sound.play()
     //await sleep(8500);
     //sound.stop()
 
@@ -115,8 +116,8 @@ async function typing() {
 
     color_text = "gray"
     //console.log("Name: "+localStorage.name);
-    username = localStorage.name
-    if (username == "" || username == null || username == undefined) {
+    let username = localStorage.name
+    if (username === "" || username == null) {
         skippable_typer_element("Computer: I count on you!", 5000)
     }
 
@@ -126,23 +127,25 @@ async function typing() {
 
     color_text = "red"
     ask_ready()
-    async function ask_ready(params) {
+    async function ask_ready() {
         proceed_to_typer_element("?????: Are you ready?")
         await sleep (3000)
         let choice_ready = "";
             do{
                 choice_ready = prompt("Are you ready? (Yes or No)");
-            }while(choice_ready == "" || choice_ready == null || choice_ready == undefined);
+            }while(choice_ready === "" || choice_ready == null);
 
-        if (choice_ready == "Yes") {
+        if (choice_ready.toLowerCase() === "yes") {
             await skippable_sleep(1000);
             await skippable_typer_element("?????: Okay! Let's do this.", 5000);
-            input.classList.toggle("show");
+            document.getElementById("input").focus();
+            let input = document.getElementById("input");
+            input.classList.toggle("show")
             start()
             return true
         }
 
-        else if (choice_ready === "No"){
+        else if (choice_ready.toLowerCase() === "no"){
             await sleep(1000)
             proceed_to_typer_element("?????: Oh really?")
             await sleep(3000)
@@ -161,13 +164,14 @@ async function typing() {
 typing()
 
 function start() {
-    countdown = window.setInterval( timer , 1000);
-    console.log("List of words: "+list_words);
-    random = Math.floor(Math.random()*15) //Chooses a random word
-    //random = 7 //Define the choosen word manually
-    choosen_word = list_words[random]
-    console.log("Choosen word: "+choosen_word);
-    document.getElementById("word_display").innerHTML = choosen_word
+    countdown = window.setInterval(timer, 1000);
+    console.log("List of words: " + list_words);
+    random = Math.floor(Math.random() * list_words.length);
+    //random = 7 //Define the chosen word manually
+    choosen_word = list_words[random];
+    console.log("Choosen word: " + choosen_word);
+    document.getElementById("word_display").innerHTML = choosen_word;
+
 
 
     //timer()
@@ -178,7 +182,6 @@ function start() {
         check_answer(userInput)
     }*/
 }
-let can_check = true
 
 function timer(){
     time -= 1
@@ -187,7 +190,6 @@ function timer(){
 
         if (check_answer()){return}
         //input.classList.toggle("show")
-        can_check = false
         proceed_to_typer_element("?????: Well I'm not going to waste any more time.")
         sleep(6000)
         window.open("../../GameOver/index.html","_self")
@@ -202,36 +204,41 @@ function timer(){
 }
 
 //Runs the "check_answer" function when you press enter.
+document.onkeydown = function(event) {
+    if (event.key === "Enter") {
+        check_answer();
+    }
+};
+
 function clickPress(event) {
-    if (event.keyCode === 13 && can_check) {
-        check_answer()
+    if (event.key === "Enter") {
+        check_answer();
     }
 }
 
-
 function check_answer() {
-    let userInput = document.getElementById("input").value
-    console.log("Random: "+random);
-    console.log("Choosen word: "+choosen_word);
-    console.log("User input: "+userInput);
+    let userInput = document.getElementById("input").value;
+    console.log("Random: " + random);
+    console.log("Choosen word: " + choosen_word);
+    console.log("User input: " + userInput);
     if (userInput === choosen_word) {
         console.log("Correct!");
         window.clearInterval(countdown);
-        document.getElementById("word_display").style="color: white;"
+        document.getElementById("word_display").style = "color: white;";
         if (correct >= 10) {
-            window.open("../../Story/Story2/index.html","_self")
+            window.open("../../Story/Story2/index.html", "_self");
         }
         else {
-            correct++
-            console.log("Correct: "+correct);
-            time = 5
-            document.getElementById("input").value = ""
-            start()
+            correct++;
+            console.log("Correct: " + correct);
+            time = 10;
+            document.getElementById("input").value = "";
+            start();
         }
     }
     else {
         console.log("Wrong!");
-        window.open("../../GameOver/index.html","_self")
+        window.open("../../GameOver/index.html", "_self");
         return false;
     }
     return true;

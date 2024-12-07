@@ -5,14 +5,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="78e899f7-cbd8-4c4a-8bad-9ae483cbde83" name="Changes" comment="Fixed redirection issues from the previous commit">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/About/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/About/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/CHANGELOG.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Credits/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Credits/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Credits/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/Credits/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game/BadEnding/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Game/BadEnding/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game/BadEnding/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/Game/BadEnding/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game/Error/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Error/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game/GameOver/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Game/GameOver/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Game/GameOver/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/Game/GameOver/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/GameOver/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Game/GameOver/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game/GoodEnding/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Game/GoodEnding/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game/GoodEnding/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/Game/GoodEnding/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game/Introduction/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Introduction/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Game/Introduction/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Introduction/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hub/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Hub/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game/Levels/Level1/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Levels/Level1/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game/Levels/Level2/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Levels/Level2/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game/Levels/Level2/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Levels/Level2/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game/Levels/Level3/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Levels/Level3/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game/Levels/Level3/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Levels/Level3/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game/Levels/Level4/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Levels/Level4/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game/Story/Story1/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Story/Story1/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game/Story/Story2/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Story/Story2/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game/Story/Story3/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Story/Story3/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Settings/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Settings/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Settings/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/Settings/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/typer.js" beforeDir="false" afterPath="$PROJECT_DIR$/libs/typer.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,24 +86,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Tom/Documents/PhpstormProjects/Who&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.fwdekker.randomness.template.TemplateListConfigurable&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/Tom/Documents/PhpstormProjects/Who",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.standard": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "ts.external.directory.path": "/opt/phpstorm/plugins/javascript-plugin/jsLanguageServicesImpl/external",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -139,6 +159,12 @@
       <workItem from="1733426453351" duration="1481000" />
       <workItem from="1733432634307" duration="269000" />
       <workItem from="1733477223370" duration="582000" />
+      <workItem from="1733490321861" duration="353000" />
+      <workItem from="1733491614498" duration="4021000" />
+      <workItem from="1733496683735" duration="963000" />
+      <workItem from="1733525156587" duration="973000" />
+      <workItem from="1733561185029" duration="4188000" />
+      <workItem from="1733571745167" duration="21479000" />
     </task>
     <task id="LOCAL-00001" summary="Renamed the files to have a more standard name">
       <option name="closed" value="true" />

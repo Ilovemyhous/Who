@@ -2,7 +2,7 @@ function sleep(ms) {        //Command that allow the sleep command
     return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-function audio() {
+window.onload = function() {
     if (localStorage.sound === "off"){
         //console.log("if audio: "+localStorage.sound);
         console.log("No audio");
@@ -10,7 +10,7 @@ function audio() {
     }
     else {
         //console.log("else audio: "+localStorage.sound);
-        var audio = new Audio("../../Media/Music/A Mind Is Born (Space Objects remix).mp3");
+        let audio = new Audio("../../Media/Music/A Mind Is Born (Space Objects remix).mp3");
         console.log("Debug audio")
         audio.play();
         credits()
@@ -21,8 +21,8 @@ function credits() {
     //window.scrollTo(0,5000000,{ behavior: 'smooth' });
     //console.log("Debug function");
     console.log("Name: "+localStorage.name);
-    username = localStorage.name
-    if (username == "" || username == null || username == undefined) {
+    let username = localStorage.name
+    if (username === "" || username == null) {
         document.getElementById("user").innerHTML = "And thank YOU for playing!"
     }
 
@@ -39,7 +39,7 @@ if (window.screen.availWidth >= 3000 && window.screen.availHeight >= 2000) {
     console.info ("4K detected");
     //alert("4K detected");
 
-    var styleEl = document.createElement('style');
+    let styleEl = document.createElement('style');
     styleEl.innerHTML = '#Credits {height: 100vh; display: block; position: absolute; top: 100%; width: 99%; animation: creditRoll 171s linear forwards infinite; animation-iteration-count: 1; } @keyframes creditRoll { 0% { top: 117%; } 100% { top: -277%; }}'
     document.head.appendChild(styleEl);
 }
@@ -48,7 +48,7 @@ else if (window.screen.availWidth >= 2000 && window.screen.availHeight >= 1250) 
     console.info ("QHD detected");
     //alert("QHD detected");
 
-    var styleEl = document.createElement('style');
+    let styleEl = document.createElement('style');
     styleEl.innerHTML = '#Credits {height: 100vh; display: block; position: absolute; top: 100%; width: 99%; animation: creditRoll 171s linear forwards infinite; animation-iteration-count: 1; } @keyframes creditRoll { 0% { top: 150%; } 100% { top: -443%; }}'
     document.head.appendChild(styleEl);
 }
@@ -57,7 +57,7 @@ else if (window.screen.availWidth <= 2000 && window.screen.availHeight <= 1100) 
     console.info ("HD detected");
     //alert("HD detected");
 
-    var styleEl = document.createElement('style');
+    let styleEl = document.createElement('style');
     styleEl.innerHTML = '#Credits {height: 100vh; display: block; position: absolute; top: 100%; width: 99%; animation: creditRoll 171s linear forwards infinite; animation-iteration-count: 1; } @keyframes creditRoll { 0% { top: 130%; } 100% { top: -522%; }}'
     document.head.appendChild(styleEl);
 }

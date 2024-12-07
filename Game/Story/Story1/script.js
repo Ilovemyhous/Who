@@ -10,14 +10,14 @@ function sleep(ms) {        //Command that allow the sleep command
 }
 
     //Code responsible for audio
-async function audio() {
+window.onload = function() {
     if (localStorage.sound === "off"){
         //console.log("if audio: "+localStorage.sound);
         //console.info("No audio");
     }
     else {
         //Defines the audio for the typing sound, and audio.
-        var sound = {
+        let sound = {
             hello: new Howl({
                 src: ['../../../Media/Sound/Hello.wav'],
                 volume: 1,
@@ -32,10 +32,11 @@ async function audio() {
             })
         };
 
-        var hello = sound.hello.play();
-        var music = sound.music.play();
+        sound.hello.play();
+        let music = sound.music.play();
         sound.music.fade(0,0.5,5000,music);
-        var typing_sound = sound.typing_sound
+        //let typing_sound = sound.typing_sound
+        //sound.typing_sound.play();
     }
 }
 
@@ -69,7 +70,7 @@ async function typing() {
     await sleep(10000);
     color_text = "yellow"
     proceed_to_typer_element("Computer: What... what was that?");
-    //var typing_sound = sound.typing_sound.play()
+    //let typing_sound = sound.typing_sound.play()
     await sleep(2000);
     //sound.stop()
 
@@ -97,8 +98,8 @@ async function typing() {
     await sleep(7000);
     delay_text = '100'
     console.log("Name: "+localStorage.name);
-    username = localStorage.name
-    if (username == "" || username == null || username == undefined) {
+    let username = localStorage.name
+    if (username === "" || username == null) {
         proceed_to_typer_element("?????: I also know a few things about you.")
     }
 
@@ -107,13 +108,13 @@ async function typing() {
     }
     await sleep(7500)
     //Code for the webcam
-    var constraints = { audio: false, video: { width: 1920, height: 1080 } };
+    let constraints = { audio: false, video: { width: 1920, height: 1080 } };
 
     navigator.mediaDevices.getUserMedia(constraints)
     .then(function(mediaStream) {
-    var video = document.querySelector('video');
+    let video = document.querySelector('video');
     video.srcObject = mediaStream;
-    video.onloadedmetadata = function(e) {
+    video.onloadedmetadata = function() {
         video.play();
         console.log("Webcam access granted.");
         access_granted()
@@ -123,12 +124,12 @@ async function typing() {
     .catch(function(err) {
     console.log(err.name + ": " + err.message);
     console.log(err.name);
-    if (err.name == "NotAllowedError") {
+    if (err.name === "NotAllowedError") {
         //alert("Access to camera rejected.")
         proceed_to_typer_element("?????: So you rejected the access to your webcam? I would probably have done the same.")
     }
 
-    if (err.name == "NotFoundError") {
+    if (err.name === "NotFoundError") {
         //alert("No Webcam has been detected.")
         proceed_to_typer_element("?????: Hmmm... no webcam detected. That's fine.")
     }
@@ -141,8 +142,8 @@ async function typing() {
     await sleep(7500)
     proceed_to_typer_element("?????: I can also access your location.")
     navigator.geolocation.getCurrentPosition(function(position) {
-        gps_long = position.coords.latitude
-        gps_lat = position.coords.longitude
+        let gps_long = position.coords.latitude
+        let gps_lat = position.coords.longitude
         console.log(gps_long);
         console.log(gps_lat);
         proceed_to_typer_element("?????: You're at "+gps_long+" and "+gps_long+".")
@@ -162,13 +163,13 @@ async function typing() {
 
     proceed_to_typer_element("?????: And I can also download stuff on your computer.")
     await sleep(7500)
-    if (username == "" || username == null || username == undefined) {
+    if (username === "" || username == null) {
         let download = new File(
             ["Hello there!"],
             "Hello.txt",
             {type: "text/plain:charset=utf8"}
         );
-        saveAs(download)
+        window.saveAs(download)
     }
 
     else {
@@ -177,33 +178,33 @@ async function typing() {
             username+".txt",
             {type: "text/plain:charset=utf8"}
         );
-        saveAs(download)
+        window.saveAs(download)
     }
 
     await sleep(7500)
     proceed_to_typer_element("?????: Finally I can detect what browser and OS you use.")
 
     //Detect the OS
-    var OS = "Not known";
-      if (navigator.appVersion.indexOf("Win") != -1) OS =
+    let OS = "Not known";
+      if (navigator.appVersion.indexOf("Win") !== -1) OS =
         "Windows";
-      if (navigator.appVersion.indexOf("Mac") != -1) OS =
+      if (navigator.appVersion.indexOf("Mac") !== -1) OS =
         "MacOS";
-      if (navigator.appVersion.indexOf("X11") != -1) OS =
+      if (navigator.appVersion.indexOf("X11") !== -1) OS =
         "Linux";
-      if (navigator.appVersion.indexOf("Linux") != -1) OS =
+      if (navigator.appVersion.indexOf("Linux") !== -1) OS =
         "Linux";
     console.log(OS);
 
     //Detect the browser
-    var browser = "Not known";
-      if (navigator.userAgent.indexOf("Firefox") != -1) browser =
+    let browser = "Not known";
+      if (navigator.userAgent.indexOf("Firefox") !== -1) browser =
         "Firefox";
-      if (navigator.userAgent.indexOf("Chrome") != -1) browser =
+      if (navigator.userAgent.indexOf("Chrome") !== -1) browser =
         "Chrome";
-      if (navigator.userAgent.indexOf("Edge") != -1) browser =
+      if (navigator.userAgent.indexOf("Edge") !== -1) browser =
         "Edge";
-      if (navigator.userAgent.indexOf("Opera") != -1) browser =
+      if (navigator.userAgent.indexOf("Opera") !== -1) browser =
         "Opera";
 
 console.log(OS);

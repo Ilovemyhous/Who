@@ -10,14 +10,14 @@ function sleep(ms) {        //Command that allow the sleep command
 }
 
     //Code responsible for audio
-async function audio() {
+window.onload = function() {
     if (localStorage.sound === "off"){
         //console.log("if audio: "+localStorage.sound);
         //console.info("No audio");
     }
     else {
         //Defines the audio for the typing sound, and audio.
-        var sound = {
+        let sound = {
             music: new Howl({
                 src: ['../../../Media/Music/Story 3 - iustitia.wav'],
                 html5: true,

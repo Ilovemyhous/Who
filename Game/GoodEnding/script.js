@@ -1,4 +1,4 @@
-function audio() {
+window.onload = function() {
     if (localStorage.sound === "off"){
         //console.log("if audio: "+localStorage.sound);
         console.log("No audio");

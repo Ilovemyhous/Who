@@ -10,8 +10,8 @@ function sleep(ms) {        //Command that allow the sleep command
     return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-    //Code responsible for audio
-async function audio() {
+//Code responsible for audio
+window.onload = function() {
     console.info("Debug audio");
     if (localStorage.sound === "off"){
         //console.log("if audio: "+localStorage.sound);
@@ -75,14 +75,15 @@ async function typing() {
     let answer_input = document.getElementById("answer");
     answer_input.classList.toggle("show");
     await sleep(1000);
+    let button_answer = document.getElementById("button_answer");
     button_answer.classList.toggle("show");
 }
 typing()
 
 //Runs the "check_answer" function when you press enter.
-function clickPress(event) {
-    if (event.keyCode == 13) {
-        check_answer()
+document.onkeydown = function(event) {
+    if (event.key === "Enter") {
+        check_answer();
     }
 }
 
@@ -113,7 +114,9 @@ async function check_answer() {
             var audio = new Audio("../../../Media/Sound/MetalClang.wav");
             audio.play()
         }
+        let button_answer = document.getElementById("button_answer");
         button_answer.classList.toggle("hide");
+        let answer_input = document.getElementById("answer");
         answer_input.classList.toggle("hide");
         delay_text ="64"
         color_text = "red"

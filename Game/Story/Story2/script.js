@@ -9,15 +9,15 @@ function sleep(ms) {        //Command that allow the sleep command
     return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-    //Code responsible for audio
-async function audio() {
+//Code responsible for audio
+window.onload = function() {
     if (localStorage.sound === "off"){
         //console.log("if audio: "+localStorage.sound);
         //console.info("No audio");
     }
     else {
         //Defines the audio for the typing sound, and audio.
-        var sound = {
+        let sound = {
             jumpscare: new Howl({
                 src: ['../../../Media/Sound/Violin scare.wav'],
                 volume: 1,
@@ -33,10 +33,10 @@ async function audio() {
             })
         };
 
-        var jumpscare = sound.jumpscare.play();
-        var music = sound.music.play();
+        sound.jumpscare.play();
+        let music = sound.music.play();
         sound.music.fade(0,1,5000,music);
-        var typing_sound = sound.typing_sound
+        //let typing_sound = sound.typing_sound
     }
 }
 
@@ -71,7 +71,7 @@ async function typing() {
     await sleep(6500);
     color_text = "gray"
     proceed_to_typer_element("Computer: Enough of...");
-    //var typing_sound = sound.typing_sound.play()
+    //let typing_sound = sound.typing_sound.play()
     await sleep(2000);
     //sound.stop()
 
@@ -84,8 +84,8 @@ async function typing() {
 
     await sleep(5000)
     document.getElementById('shake').style.animation = "";
-    username = localStorage.name
-    if (username == "" || username == null || username == undefined) {
+    let username = localStorage.name
+    if (username === "" || username == null) {
         proceed_to_typer_element("?????: Everything was fine until YOU joined!")
     }
 
@@ -109,9 +109,9 @@ async function typing() {
     let choice_question1 = "";
         do{
             choice_question1 = prompt("Do you know WHO I am? (Yes or No)");
-        }while(choice_question1 == "" || choice_question1 == null || choice_question1 == undefined);
+        }while(choice_question1 === "" || choice_question1 == null);
 
-    if (choice_question1.trim() == "Yes") {
+    if (choice_question1.toLowerCase() === "yes") {
         await sleep(10);
         proceed_to_typer_element("?????: We are but dust and shadows. -Horace")
         console.log("Numbers of no: "+choose_no);
@@ -121,7 +121,7 @@ async function typing() {
         await sleep(10)
         document.getElementById('shake').style.animation = "shake 0.25s";
         document.getElementById("glass_1").src='../../../Media/Images/Story 2/Glass1.png';
-        var sfx = new Audio("../../../Media/Sound/Glitch.mp3")
+        let sfx = new Audio("../../../Media/Sound/Glitch.mp3")
         sfx.play()
         choose_no ++
         console.log("Numbers of no: "+choose_no);
@@ -135,9 +135,9 @@ async function typing() {
     let choice_question2 = "";
         do{
             choice_question2 = prompt("Do you know WHO you are? (Yes or No)");
-        }while(choice_question2 == "" || choice_question2 == null || choice_question2 == undefined);
+        }while(choice_question2 === "" || choice_question2 == null);
 
-    if (choice_question2 == "Yes") {
+    if (choice_question2.toLowerCase() === "yes") {
         await sleep(10);
         proceed_to_typer_element("?????: What's the point?")
         console.log("Numbers of no: "+choose_no);
@@ -147,25 +147,25 @@ async function typing() {
         await sleep(10)
         document.getElementById("glass_2").src='../../../Media/Images/Story 2/Glass2.png';
         document.getElementById('shake').style.animation = "shake 0.25s";
-        var sfx = new Audio("../../../Media/Sound/Glitch.mp3")
+        let sfx = new Audio("../../../Media/Sound/Glitch.mp3")
         sfx.play()
         choose_no ++
         console.log("Numbers of no: "+choose_no);
     }
 
-    if (choose_no == 2) {
+    if (choose_no === 2) {
         //console.log("Debug, 2 no");
-        var audio_no = new Audio("../../../Media/Sound/Scary Violin.mp3")
+        let audio_no = new Audio("../../../Media/Sound/Scary Violin.mp3")
         audio_no.play()
-        /*var sound = {
+        /*let sound = {
             jumpscare: new Howl({
                 src: ['../../../Media/Sound/Scary violin loop.wav'],
                 volume: 1,
                 loop: false,
             })
         };
-        var jumpscare = sound.jumpscare.play();*/
-    };
+        let jumpscare = sound.jumpscare.play();*/
+    }
 
     //Choice 3
     document.getElementById('shake').style.animation = "";
@@ -175,17 +175,17 @@ async function typing() {
     let choice_question3 = "";
         do{
             choice_question3 = prompt("Do you know WHY you are here? (Yes or No)");
-        }while(choice_question3 == "" || choice_question3 == null || choice_question3 == undefined);
+        }while(choice_question3 === "" || choice_question3 == null);
 
     console.log(choice_question2);
     console.log(choice_question3);
 
-    if (choice_question3 == "Yes") {
+    if (choice_question3.toLowerCase() === "yes") {
         console.log("Numbers of no: "+choose_no);
         await sleep(10);
         delay_text = "555"
         username = localStorage.name
-        if (username == "" || username == null || username == undefined) {
+        if (username === "" || username == null) {
             proceed_to_typer_element("?????: Why do you persist?")
         }
 
@@ -199,17 +199,17 @@ async function typing() {
         console.log("Debug");
         document.getElementById("glass_3").src='../../../Media/Images/Story 2/Glass3.png';
         document.getElementById('shake').style.animation = "shake 0.5s";
-        var sfx = new Audio("../../../Media/Sound/Glitch.mp3")
+        let sfx = new Audio("../../../Media/Sound/Glitch.mp3")
         sfx.play()
         choose_no ++
         console.log("Numbers of no: "+choose_no);
     }
 
-    if (choose_no == 3) {
+    if (choose_no === 3) {
         document.body.style.background = "darkred";
-    };
+    }
 
-    var rise = new Audio("../../../Media/Sound/Cinematic Rise.wav")
+    let rise = new Audio("../../../Media/Sound/Cinematic Rise.wav")
     rise.play()
 
     if (choose_no === 0) {
@@ -221,7 +221,7 @@ async function typing() {
             "why?.txt",
             {type: "text/plain:charset=utf8"}
         );
-        saveAs(download)
+        window.saveAs(download)
 
         await sleep(100)
         window.open("../../Levels/Level4/index.html","_self")
@@ -229,6 +229,7 @@ async function typing() {
 
     if (choose_no > 0 && choose_no < 4) {
         delay_text = "200"
+        await sleep(1000)
         proceed_to_typer_element("?????: And I thought I could trust you...")
         await sleep(11000)
         proceed_to_typer_element("?????: In WHO can we trust nowadays?!")
@@ -240,10 +241,10 @@ async function typing() {
             "leave me alone.txt",
             {type: "text/plain:charset=utf8"}
         );
-        saveAs(download)
+        window.saveAs(download)
 
-        await sleep(1000)
-        window.open("../../Levels/Level4/index<<.html","_self")
+        await sleep(100)
+        window.open("../../Levels/Level4/index.html","_self")
     }
 
 }

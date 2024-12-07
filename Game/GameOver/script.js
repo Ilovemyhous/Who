@@ -1,13 +1,13 @@
-function audio() {
+window.onload = function() {
 
     //EASTER EGG
-    let random = 1 //To define it manually.
-    //let random = Math.floor(Math.random() * 100);
+    //let random = 1 //To define it manually.
+    let random = Math.floor(Math.random() * 100);
 
     if (random === 1) {
         console.log(random);
         console.log("Easter egg");
-        var audio = new Audio("../../Media/Sound/snd_bgmV5.ogg");
+        let audio = new Audio("../../Media/Sound/snd_bgmV5.ogg");
         console.log("Debug audio")
         audio.play();
 
@@ -43,9 +43,15 @@ function audio() {
         }
         else {
             //console.log("else audio: "+localStorage.sound);
-            var audio = new Audio("../../Media/Sound/Game Over.ogg");
+            let audio = new Audio("../../Media/Sound/Game Over.ogg");
             console.log("Debug audio")
             audio.play();
+        }
+    }
+
+    document.getElementById("restart-link").onclick = function(event) {
+        if (!confirm("Are you sure you want to restart the game?")) {
+            event.preventDefault();
         }
     }
 }
