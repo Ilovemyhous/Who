@@ -1,6 +1,10 @@
 ﻿# Changelog
 All notable changes to this project will be documented in this file. For a more detailed changelog, please check the [commit history](https://github.com/Ilovemyhous/Who/commits/main/).
 
+## [0.2.4] - 2024-12-07
+### Fixed
+- Did pretty much let ESLint go through the whole project, and fixed some issues.
+
 ## [0.2.3] - 2024-12-06
 ### Fixed
 - Fixed that it only accepts letters less than 20 character in the name input field.

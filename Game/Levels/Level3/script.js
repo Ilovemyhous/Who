@@ -210,11 +210,11 @@ document.onkeydown = function(event) {
     }
 };
 
-function clickPress(event) {
+/*function clickPress(event) {
     if (event.key === "Enter") {
         check_answer();
     }
-}
+}*/
 
 function check_answer() {
     let userInput = document.getElementById("input").value;

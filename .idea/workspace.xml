@@ -4,32 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="78e899f7-cbd8-4c4a-8bad-9ae483cbde83" name="Changes" comment="Fixed redirection issues from the previous commit">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="78e899f7-cbd8-4c4a-8bad-9ae483cbde83" name="Changes" comment="ESLint code cleanup.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Credits/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Credits/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Credits/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/Credits/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/BadEnding/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Game/BadEnding/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/BadEnding/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/Game/BadEnding/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Error/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Error/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/GameOver/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Game/GameOver/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/GameOver/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/Game/GameOver/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/GoodEnding/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Game/GoodEnding/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/GoodEnding/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/Game/GoodEnding/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Introduction/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Introduction/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Introduction/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Introduction/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Levels/Level1/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Levels/Level1/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Levels/Level2/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Levels/Level2/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Levels/Level2/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Levels/Level2/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/About/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/About/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/CHANGELOG.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Game/Levels/Level3/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Levels/Level3/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Game/Levels/Level3/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Levels/Level3/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Levels/Level4/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Levels/Level4/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Story/Story1/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Story/Story1/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Story/Story2/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Story/Story2/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Story/Story3/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Story/Story3/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Settings/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Settings/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Settings/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/Settings/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/typer.js" beforeDir="false" afterPath="$PROJECT_DIR$/libs/typer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -164,7 +146,7 @@
       <workItem from="1733496683735" duration="963000" />
       <workItem from="1733525156587" duration="973000" />
       <workItem from="1733561185029" duration="4188000" />
-      <workItem from="1733571745167" duration="21479000" />
+      <workItem from="1733571745167" duration="22402000" />
     </task>
     <task id="LOCAL-00001" summary="Renamed the files to have a more standard name">
       <option name="closed" value="true" />
@@ -174,7 +156,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732886860643</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="ESLint code cleanup.">
+      <option name="closed" value="true" />
+      <created>1733594079610</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1733594079610</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -195,7 +185,8 @@
     <MESSAGE value="- Replaced home menu animation&#10;- Reworked some old code&#10;- Removed unused code" />
     <MESSAGE value="Renamed the files to have a more standard name" />
     <MESSAGE value="Fixed redirection issues from the previous commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed redirection issues from the previous commit" />
+    <MESSAGE value="ESLint code cleanup." />
+    <option name="LAST_COMMIT_MESSAGE" value="ESLint code cleanup." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
