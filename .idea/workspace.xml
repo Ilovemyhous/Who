@@ -4,13 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="78e899f7-cbd8-4c4a-8bad-9ae483cbde83" name="Changes" comment="ESLint code cleanup.">
+    <list default="true" id="78e899f7-cbd8-4c4a-8bad-9ae483cbde83" name="Changes" comment="Mostly more ESLint fixes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/About/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/About/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/CHANGELOG.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Levels/Level3/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Levels/Level3/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Credits/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/Credits/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game/BadEnding/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/Game/BadEnding/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game/Error/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Error/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game/GameOver/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/Game/GameOver/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game/GoodEnding/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/Game/GoodEnding/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game/Introduction/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Introduction/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game/Levels/Level1/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Levels/Level1/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game/Levels/Level2/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Levels/Level2/script.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Game/Levels/Level3/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Levels/Level3/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game/Levels/Level4/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Levels/Level4/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game/Levels/Level4/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Levels/Level4/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game/Loading/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Loading/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game/Story/Story1/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Story/Story1/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game/Story/Story2/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Story/Story2/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game/Story/Story3/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Story/Story3/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hub/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/Hub/script.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Settings/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/Settings/script.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -68,32 +83,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/Tom/Documents/PhpstormProjects/Who",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.standard": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.standard": "",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "ts.external.directory.path": "/opt/phpstorm/plugins/javascript-plugin/jsLanguageServicesImpl/external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Tom/Documents/PhpstormProjects/Who&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.inline.completion&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/opt/phpstorm/plugins/javascript-plugin/jsLanguageServicesImpl/external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-e768b9ed790e-JavaScript-PS-243.21565.202" />
-        <option value="bundled-php-predefined-a98d8de5180a-5fbe0c30323e-com.jetbrains.php.sharedIndexes-PS-243.21565.202" />
+        <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-PS-243.22562.164" />
+        <option value="bundled-php-predefined-a98d8de5180a-7980c7aaca61-com.jetbrains.php.sharedIndexes-PS-243.22562.164" />
       </set>
     </attachedChunks>
   </component>
@@ -146,7 +161,13 @@
       <workItem from="1733496683735" duration="963000" />
       <workItem from="1733525156587" duration="973000" />
       <workItem from="1733561185029" duration="4188000" />
-      <workItem from="1733571745167" duration="22402000" />
+      <workItem from="1733571745167" duration="22455000" />
+      <workItem from="1733755641296" duration="638000" />
+      <workItem from="1733756450607" duration="5398000" />
+      <workItem from="1733765482738" duration="2586000" />
+      <workItem from="1734093770812" duration="746000" />
+      <workItem from="1734094568772" duration="5211000" />
+      <workItem from="1734276970672" duration="5468000" />
     </task>
     <task id="LOCAL-00001" summary="Renamed the files to have a more standard name">
       <option name="closed" value="true" />
@@ -164,7 +185,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733594079610</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Hotfix, forgot version bump and changelog">
+      <option name="closed" value="true" />
+      <created>1733595435948</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1733595435948</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -186,7 +215,9 @@
     <MESSAGE value="Renamed the files to have a more standard name" />
     <MESSAGE value="Fixed redirection issues from the previous commit" />
     <MESSAGE value="ESLint code cleanup." />
-    <option name="LAST_COMMIT_MESSAGE" value="ESLint code cleanup." />
+    <MESSAGE value="Hotfix, forgot version bump and changelog" />
+    <MESSAGE value="Mostly more ESLint fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Mostly more ESLint fixes" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

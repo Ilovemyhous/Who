@@ -1,6 +1,11 @@
 ﻿# Changelog
 All notable changes to this project will be documented in this file. For a more detailed changelog, please check the [commit history](https://github.com/Ilovemyhous/Who/commits/main/).
 
+## [0.2.5] - 2024-12-15
+### Fixed
+- Fixed more ESLint issues.
+- Level2 & Level3 now have their input fields properly working.
+
 ## [0.2.4] - 2024-12-07
 ### Fixed
 - Did pretty much let ESLint go through the whole project, and fixed some issues.

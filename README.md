@@ -2,7 +2,7 @@
 A game for a school project coded in JavaScript.
 Made by *Ilovemyhouse*.
 ### Version
-0.2.4
+0.2.5
 
 ## About
 This is a game about one person (or two if we count you) were you will be asked questions, resolve puzzles, having an adventure, a bit of horror (which means; jumpscares), and maybe having multiple endings.

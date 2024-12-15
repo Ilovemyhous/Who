@@ -2,8 +2,8 @@
 //console.log(localStorage);
 console.info(localStorage.sound);
 
-let color_text = 'gray';
-let delay_text = '100';
+let color_text = "gray";
+let delay_text = "100";
 
 // Define the audio for the typing sound.
 let sound;
@@ -13,24 +13,24 @@ if (localStorage.sound === "off") {
 }
 else {
     sound = new Howl({
-        src: ['../../Media/Sound/Computer typing.wav'],
+        src: ["../../Media/Sound/Computer typing.wav"],
     });
 }
 
 // Check audio
-window.onload = function () {
+window.onload = function() {
     if (localStorage.sound === "off") {
         console.log("No audio");
     } else {
         let typingSound = new Audio("../../Media/Sound/Tuesday T.wav");
         typingSound.play();
         let typingSoundHowl = new Howl({
-            src: ['../../Media/Sound/Computer typing.mp3'],
+            src: ["../../Media/Sound/Computer typing.mp3"],
             preload: true
         });
         typingSoundHowl.play();
     }
-}
+};
 
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
@@ -39,10 +39,10 @@ function sleep(ms) {
 function create_element_typer(text_to_print) {
     const paragraph = document.createElement("span");
     paragraph.classList.add("typer");
-    paragraph.setAttribute('data-colors', color_text);
-    paragraph.setAttribute('data-words', text_to_print);
-    paragraph.setAttribute('data-delay', delay_text);
-    paragraph.setAttribute('data-loop', "1");
+    paragraph.setAttribute("data-colors", color_text);
+    paragraph.setAttribute("data-words", text_to_print);
+    paragraph.setAttribute("data-delay", delay_text);
+    paragraph.setAttribute("data-loop", "1");
     return paragraph;
 }
 
@@ -50,9 +50,9 @@ function proceed_to_typer_element(text_to_print) {
     const div = document.createElement("div");
     const my_element = create_element_typer(text_to_print);
     div.appendChild(my_element);
-    const cursor = document.querySelector('.cursor');
+    const cursor = document.querySelector(".cursor");
     div.appendChild(cursor);
-    document.querySelector('h2').appendChild(div);
+    document.querySelector("h2").appendChild(div);
     new Typer(my_element);
 }
 
@@ -177,9 +177,6 @@ async function code() {
         sound.stop();
     }
 
-    await sleep(5000);
-    ask_help();
-
     async function ask_help() {
         let choice_help = "";
         do {
@@ -256,6 +253,8 @@ async function code() {
             ask_help(); // Retry asking for help
         }
     }
+    await sleep(5000);
+    ask_help();
 }
 
 // Start the code execution

@@ -6,7 +6,7 @@ window.onload = function() {
     else {
         //console.log("else audio: "+localStorage.sound);
         let audio = new Audio("../../Media/Sound/RiserCorpus.wav");
-        console.log("Debug audio")
+        console.log("Debug audio");
         audio.play();
     }
-}
+};
